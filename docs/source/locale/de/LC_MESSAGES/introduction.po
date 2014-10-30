@@ -1,0 +1,55 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Effektif adminstrators guide 2.11\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-10-30 13:50+0100\n"
+"PO-Revision-Date: 2014-10-30 15:01+0100\n"
+"Last-Translator: Christian Wiggert <christian.wiggert@signavio.com>\n"
+"Language-Team: Effektif <dev@effektif.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"X-Generator: Poedit 1.6.9\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+#: ../../source/introduction.rst:2
+msgid "Introduction"
+msgstr "Einleitung"
+
+#: ../../source/introduction.rst:4
+msgid ""
+"This is the Effektif administration manual. It will provide you with "
+"information to setup the Effektif system on your own server infrastructure. "
+"Effektif officially supports Microsoft Windows Server 64Bit and Debian "
+"Stable 64Bit. It is possible to setup Effektif also on other Linux "
+"distributions. However, the instructions in this manual are only tested for "
+"Debian. Probably, you will have to adjust the instructions to your system, "
+"but the used software should work on most distributions."
+msgstr "Das ist das Effektif Administratorenhandbuch… bla bla bla..."
+
+#: ../../source/introduction.rst:8
+msgid "Software components"
+msgstr "Software-Komponenten"
+
+#: ../../source/introduction.rst:10
+msgid ""
+"In order to setup and work with Effektif, several software components are "
+"necessary."
+msgstr ""
+"Um Effektif zu installieren und mit Effektif zu arbeiten, werden mehrere "
+"Software-Komponenten benötigt."
+
+#: ../../source/introduction.rst:13
+msgid "Effektif system"
+msgstr "Effektif System"
+
+#: ../../source/introduction.rst:15
+msgid ""
+"The Effektif system refers to the application that you will run on your "
+"server and that consists of a Java web archive (WAR) that is deployed on "
+"Tomcat and a MongoDB database."
+msgstr ""
+"Das Effektif System bezeichnet die Anwendung, die Sie auf Ihrem Server "
+"ausführen…."
