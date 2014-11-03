@@ -1,4 +1,4 @@
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: Effektif adminstrators guide 2.11\n"
@@ -18,22 +18,11 @@ msgstr ""
 msgid "Introduction"
 msgstr "Einleitung"
 
-#: ../../source/introduction.rst:4
-msgid ""
-"This is the Effektif administration manual. It will provide you with "
-"information to setup the Effektif system on your own server infrastructure. "
-"Effektif officially supports Microsoft Windows Server 64Bit and Debian "
-"Stable 64Bit. It is possible to setup Effektif also on other Linux "
-"distributions. However, the instructions in this manual are only tested for "
-"Debian. Probably, you will have to adjust the instructions to your system, "
-"but the used software should work on most distributions."
-msgstr "Das ist das Effektif Administratorenhandbuch… bla bla bla..."
-
 #: ../../source/introduction.rst:8
 msgid "Software components"
 msgstr "Software-Komponenten"
 
-#: ../../source/introduction.rst:10
+#: ../../source/introduction.rst:9
 msgid ""
 "In order to setup and work with Effektif, several software components are "
 "necessary."
@@ -41,11 +30,11 @@ msgstr ""
 "Um Effektif zu installieren und mit Effektif zu arbeiten, werden mehrere "
 "Software-Komponenten benötigt."
 
-#: ../../source/introduction.rst:13
+#: ../../source/introduction.rst:12
 msgid "Effektif system"
 msgstr "Effektif System"
 
-#: ../../source/introduction.rst:15
+#: ../../source/introduction.rst:13
 msgid ""
 "The Effektif system refers to the application that you will run on your "
 "server and that consists of a Java web archive (WAR) that is deployed on "
@@ -53,3 +42,107 @@ msgid ""
 msgstr ""
 "Das Effektif System bezeichnet die Anwendung, die Sie auf Ihrem Server "
 "ausführen…."
+
+#: ../../source/introduction.rst:3
+msgid ""
+"This is the Effektif administration manual. It will provide you with "
+"information to setup the Effektif system on your own server infrastructure. "
+"Effektif officially supports Microsoft Windows Server 64Bit and Debian "
+"Stable 64Bit."
+msgstr ""
+
+#: ../../source/introduction.rst:5
+msgid ""
+"It is possible to setup Effektif also on other Linux distributions. However,"
+" the instructions in this manual are only tested for Debian. Probably, you "
+"will have to adjust the instructions to your system, but the used software "
+"should work on most distributions."
+msgstr ""
+
+#: ../../source/introduction.rst:16
+msgid "Apache Tomcat"
+msgstr ""
+
+#: ../../source/introduction.rst:17
+msgid ""
+"The Apache Tomcat is an application server that hosts the Effektif web "
+"application.  The Effektif web application serves the Effektif application "
+"to the users’ browser and it also includes the backend of the Effektif "
+"system."
+msgstr ""
+
+#: ../../source/introduction.rst:20
+msgid "MongoDB"
+msgstr ""
+
+#: ../../source/introduction.rst:21
+msgid ""
+"MongoDB is a document-oriented database system. It is the only database "
+"system that is supported by Effektif. More detailed information about "
+"MongoDB can be found in the MongoDB documentation: "
+"http://docs.mongodb.org/v2.4/"
+msgstr ""
+
+#: ../../source/introduction.rst:24
+msgid "Mail server (SMTP)"
+msgstr ""
+
+#: ../../source/introduction.rst:25
+msgid ""
+"The mail server is necessary to send notifications and invitation requests "
+"to users. Any server that is accessible via SMTP can be used."
+msgstr ""
+
+#: ../../source/introduction.rst:28
+msgid "Web browser"
+msgstr ""
+
+#: ../../source/introduction.rst:29
+msgid ""
+"Effektif runs as a web application. The user interface can be accessed using"
+" a modern web browser. More details about the supported browsers can be "
+"found in the system requirements section."
+msgstr ""
+
+#: ../../source/introduction.rst:32
+msgid "Naming conventions"
+msgstr ""
+
+#: ../../source/introduction.rst:33
+msgid ""
+"Within this adminstrators guide several placeholders are used to increase "
+"the readability."
+msgstr ""
+
+#: ../../source/introduction.rst:35
+msgid ""
+"``$EFFEKTIF_HOME`` - Refers to the directory that contains the unzipped "
+"content of the downloaded effektif-{version}.zip."
+msgstr ""
+
+#: ../../source/introduction.rst:36
+msgid ""
+"``$TOMCAT_HOME`` - Refers to the directory where your Apache Tomcat is "
+"installed."
+msgstr ""
+
+#: ../../source/introduction.rst:37
+msgid ""
+"``$MONGO_HOME`` - Referes to the directory where your MongoDB is installed."
+msgstr ""
+
+#: ../../source/introduction.rst:39
+msgid ""
+"Those placeholders are used within example command line code. You need to "
+"replace those placeholders with the appropriate paths on your system."
+msgstr ""
+
+#~ msgid ""
+#~ "This is the Effektif administration manual. It will provide you with "
+#~ "information to setup the Effektif system on your own server infrastructure. "
+#~ "Effektif officially supports Microsoft Windows Server 64Bit and Debian "
+#~ "Stable 64Bit. It is possible to setup Effektif also on other Linux "
+#~ "distributions. However, the instructions in this manual are only tested for "
+#~ "Debian. Probably, you will have to adjust the instructions to your system, "
+#~ "but the used software should work on most distributions."
+#~ msgstr "Das ist das Effektif Administratorenhandbuch… bla bla bla..."

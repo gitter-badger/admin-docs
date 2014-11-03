@@ -1,0 +1,521 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Effektif adminstrators guide 2.11\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-10-31 11:18+0100\n"
+"PO-Revision-Date: 2014-10-31 11:22+0100\n"
+"Last-Translator: Christian Wiggert <christian.wiggert@signavio.com>\n"
+"Language-Team: Effektif <dev@effektif.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"X-Generator: Poedit 1.6.9\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+#: ../../source/installation.rst:2
+msgid "Installation"
+msgstr "Installation"
+
+#: ../../source/installation.rst:3
+msgid ""
+"This section will guide you through the setup of Effektif. Simply follow the "
+"subsections step by step."
+msgstr ""
+"This section will guide you through the setup of Effektif. Simply follow the "
+"subsections step by step."
+
+#: ../../source/installation.rst:6
+msgid "System requirements"
+msgstr "System requirements"
+
+#: ../../source/installation.rst:9
+msgid "Operating system"
+msgstr "Operating system"
+
+#: ../../source/installation.rst:10
+msgid ""
+"The Effektif system can be deployed on different operating systems. "
+"Officially supported are the following operating systems:"
+msgstr ""
+"The Effektif system can be deployed on different operating systems. "
+"Officially supported are the following operating systems:"
+
+#: ../../source/installation.rst:12
+msgid "Debian Stable Release 64Bit"
+msgstr "Debian Stable Release 64Bit"
+
+#: ../../source/installation.rst:13
+msgid "Microsoft Windows Server 64Bit"
+msgstr "Microsoft Windows Server 64Bit"
+
+#: ../../source/installation.rst:15
+msgid ""
+"You are advised to use a 64Bit operating system in order to be able to "
+"assign more than 1.5GB of heap space to the Java VM. Furthermore, MongoDB is "
+"limited to 2GB of content on 32Bit operating systems."
+msgstr ""
+"You are advised to use a 64Bit operating system in order to be able to "
+"assign more than 1.5GB of heap space to the Java VM. Furthermore, MongoDB is "
+"limited to 2GB of content on 32Bit operating systems."
+
+#: ../../source/installation.rst:18
+msgid "Hardware requirements"
+msgstr "Hardware requirements"
+
+#: ../../source/installation.rst:19
+msgid ""
+"The described installation in this adminstration guide will setup the "
+"database and the application server on the same system. However, it is also "
+"possible to setup the database and application server on separate systems. "
+"For instance, if you have already an infrastructure that provides MongoDB "
+"instances for different applications, you can simply reuse your "
+"infrastructure and just create another database for Effektif."
+msgstr ""
+"The described installation in this adminstration guide will setup the "
+"database and the application server on the same system. However, it is also "
+"possible to setup the database and application server on separate systems. "
+"For instance, if you have already an infrastructure that provides MongoDB "
+"instances for different applications, you can simply reuse your "
+"infrastructure and just create another database for Effektif."
+
+#: ../../source/installation.rst:21
+msgid ""
+"The minimal hardware requirements for the combined system of application and "
+"database server are:"
+msgstr ""
+"The minimal hardware requirements for the combined system of application and "
+"database server are:"
+
+#: ../../source/installation.rst:23
+msgid "4 GB RAM"
+msgstr "4 GB RAM"
+
+#: ../../source/installation.rst:24
+msgid "4 core CPU"
+msgstr "4 core CPU"
+
+#: ../../source/installation.rst:25
+msgid "50 GB disk space"
+msgstr "50 GB disk space"
+
+#: ../../source/installation.rst:27
+msgid ""
+"The mentioned amount of RAM will be sufficient to execute the Effektif "
+"system. Nevertheless, if you can provide the system with more memory, you "
+"are advised to do so. Especially MongoDB will benefit from additional system "
+"memory."
+msgstr ""
+"The mentioned amount of RAM will be sufficient to execute the Effektif "
+"system. Nevertheless, if you can provide the system with more memory, you "
+"are advised to do so. Especially MongoDB will benefit from additional system "
+"memory."
+
+#: ../../source/installation.rst:29
+msgid ""
+"The required disk space depends on how you will use Effektif. 50 GB should "
+"be sufficient disk space for most scenarios. However, if you plan on using a "
+"lot of file uploads in your processes the required disk space depends "
+"largely on the number and size of the uploaded files. Be aware, the required "
+"disk space does not include the space necessary for backups. If you plan on "
+"storing the backups on the same server, you should add more."
+msgstr ""
+"The required disk space depends on how you will use Effektif. 50 GB should "
+"be sufficient disk space for most scenarios. However, if you plan on using a "
+"lot of file uploads in your processes the required disk space depends "
+"largely on the number and size of the uploaded files. Be aware, the required "
+"disk space does not include the space necessary for backups. If you plan on "
+"storing the backups on the same server, you should add more."
+
+#: ../../source/installation.rst:32
+msgid "Other systems"
+msgstr "Other systems"
+
+#: ../../source/installation.rst:33
+msgid ""
+"The Effektif system relies on a SMTP mail server to send notifications and "
+"invite users. You can simply reuse any existing mail server in your "
+"organization that supports access via SMTP."
+msgstr ""
+"The Effektif system relies on a SMTP mail server to send notifications and "
+"invite users. You can simply reuse any existing mail server in your "
+"organization that supports access via SMTP."
+
+#: ../../source/installation.rst:36
+msgid "Software requirements"
+msgstr "Software requirements"
+
+#: ../../source/installation.rst:37
+msgid ""
+"In order to run Effektif on your server, you will need to install some "
+"additional software. Depending on your deployment strategy (combined or "
+"separate system for application and database), you have to install the "
+"following software requirements either on the same server or the respective "
+"separate servers. The next sections will contain additional instructions on "
+"how to install and configure the additional software components."
+msgstr ""
+"In order to run Effektif on your server, you will need to install some "
+"additional software. Depending on your deployment strategy (combined or "
+"separate system for application and database), you have to install the "
+"following software requirements either on the same server or the respective "
+"separate servers. The next sections will contain additional instructions on "
+"how to install and configure the additional software components."
+
+#: ../../source/installation.rst:39
+msgid "The application server requires the following additional software:"
+msgstr "The application server requires the following additional software:"
+
+#: ../../source/installation.rst:41
+msgid "Java: Oracle JSE version 7 (1.7.0_67+)"
+msgstr "Java: Oracle JSE version 7 (1.7.0_67+)"
+
+#: ../../source/installation.rst:42
+msgid "Apache Tomcat 7"
+msgstr "Apache Tomcat 7"
+
+#: ../../source/installation.rst:44
+msgid "The database server requires the following additional software:"
+msgstr "The database server requires the following additional software:"
+
+#: ../../source/installation.rst:46
+msgid "MongoDB version 2.4.x"
+msgstr "MongoDB version 2.4.x"
+
+#: ../../source/installation.rst:48
+msgid ""
+"Be aware, MongoDB version 2.6.x is not yet officially supported by Effektif. "
+"Please, make sure to install version 2.4.x."
+msgstr ""
+"Be aware, MongoDB version 2.6.x is not yet officially supported by Effektif. "
+"Please, make sure to install version 2.4.x."
+
+#: ../../source/installation.rst:51
+msgid "Web browser"
+msgstr "Web browser"
+
+#: ../../source/installation.rst:52
+msgid ""
+"A current web browser is necessary on every client that shall display the "
+"Effektif user interface. The following list shows the supported web browsers "
+"and versions:"
+msgstr ""
+"A current web browser is necessary on every client that shall display the "
+"Effektif user interface. The following list shows the supported web browsers "
+"and versions:"
+
+#: ../../source/installation.rst:54
+msgid "Google Chrome 23 or newer"
+msgstr "Google Chrome 23 or newer"
+
+#: ../../source/installation.rst:55
+msgid "Mozilla Firefox 10 or newer"
+msgstr "Mozilla Firefox 10 or newer"
+
+#: ../../source/installation.rst:56
+msgid "Microsoft Internet Explorer 9 or newer"
+msgstr "Microsoft Internet Explorer 9 or newer"
+
+#: ../../source/installation.rst:57
+msgid "Apple Safari 5 or newer"
+msgstr "Apple Safari 5 or newer"
+
+#: ../../source/installation.rst:60
+msgid "Unpack Effektif"
+msgstr "Unpack Effektif"
+
+#: ../../source/installation.rst:61
+msgid ""
+"Unzip the effektif-{version}.zip to a directory of your choice, e.g. ``/"
+"yourlocation/effektif-{version}`` In the rest of this guide, we'll refer to "
+"the effektif home directory as ``$EFFEKTIF_HOME``\\ . The directory will "
+"contain the following files:"
+msgstr ""
+"Unzip the effektif-{version}.zip to a directory of your choice, e.g. ``/"
+"yourlocation/effektif-{version}`` In the rest of this guide, we'll refer to "
+"the effektif home directory as ``$EFFEKTIF_HOME``\\ . The directory will "
+"contain the following files:"
+
+#: ../../source/installation.rst:65
+msgid "\\*.sh - Linux shell scripts"
+msgstr "\\*.sh - Linux shell scripts"
+
+#: ../../source/installation.rst:66
+msgid "db - directory that contains MongoDB configuration files"
+msgstr "db - directory that contains MongoDB configuration files"
+
+#: ../../source/installation.rst:68
+msgid "mongodb.conf - configuration file for Linux"
+msgstr "mongodb.conf - configuration file for Linux"
+
+#: ../../source/installation.rst:69
+msgid "mongod.cfg - configuration file for Windows"
+msgstr "mongod.cfg - configuration file for Windows"
+
+#: ../../source/installation.rst:71
+msgid "effektif - directory"
+msgstr "effektif - directory"
+
+#: ../../source/installation.rst:73
+msgid "ROOT - this directory contains the web application"
+msgstr "ROOT - this directory contains the web application"
+
+#: ../../source/installation.rst:75
+msgid ""
+"On Linux systems you need to make the scripts executable with the chmod "
+"command like this:"
+msgstr ""
+"On Linux systems you need to make the scripts executable with the chmod "
+"command like this:"
+
+#: ../../source/installation.rst:77
+msgid "``chmod a+x $EFFEKTIF_HOME/*.sh``"
+msgstr "``chmod a+x $EFFEKTIF_HOME/*.sh``"
+
+#: ../../source/installation.rst:80
+msgid "Install Java"
+msgstr "Install Java"
+
+#: ../../source/installation.rst:81
+msgid ""
+"The application server requires a Java runtime environment in order to "
+"execute the Java backend of Effektif. Therefore, you have to install Java 7 "
+"64Bit on the application server. You can download a respective installation "
+"package for your operating system here:"
+msgstr ""
+"The application server requires a Java runtime environment in order to "
+"execute the Java backend of Effektif. Therefore, you have to install Java 7 "
+"64Bit on the application server. You can download a respective installation "
+"package for your operating system here:"
+
+#: ../../source/installation.rst:83
+msgid "https://www.java.com/en/download/manual.jsp"
+msgstr "https://www.java.com/en/download/manual.jsp"
+
+#: ../../source/installation.rst:86
+msgid "Install Tomcat"
+msgstr "Install Tomcat"
+
+#: ../../source/installation.rst:87
+msgid ""
+"The Java backend of the Effektif system is executed using Apache Tomcat 7. "
+"Effektif does not support any older or younger versions of Tomcat than "
+"version 7."
+msgstr ""
+"The Java backend of the Effektif system is executed using Apache Tomcat 7. "
+"Effektif does not support any older or younger versions of Tomcat than "
+"version 7."
+
+#: ../../source/installation.rst:89
+msgid ""
+"You can download the latest installation files for different operating "
+"systems from the following site:"
+msgstr ""
+"You can download the latest installation files for different operating "
+"systems from the following site:"
+
+#: ../../source/installation.rst:91
+msgid "http://tomcat.apache.org/download-70.cgi"
+msgstr "http://tomcat.apache.org/download-70.cgi"
+
+#: ../../source/installation.rst:93
+msgid ""
+"In general, please make sure the user executing the Tomcat has read / write "
+"permissions for the folder ``$TOMCAT_HOME/webapps`` and the containing "
+"subfolders."
+msgstr ""
+"In general, please make sure the user executing the Tomcat has read / write "
+"permissions for the folder ``$TOMCAT_HOME/webapps`` and the containing "
+"subfolders."
+
+#: ../../source/installation.rst:96 ../../source/installation.rst:134
+msgid "Windows"
+msgstr "Windows"
+
+#: ../../source/installation.rst:97
+msgid ""
+"If you are using a Windows system, the download site offers a Windows "
+"Service Installer (“32-bit/64-bit Windows Service Installer”). This "
+"installer will install the Apache Tomcat as a Windows service which can be "
+"started, stopped and configured over a graphical user interface. The service "
+"installer is the recommended way for Windows users to install the Tomcat "
+"server. Please, make sure you execute the installer with administrator "
+"privileges."
+msgstr ""
+"If you are using a Windows system, the download site offers a Windows "
+"Service Installer (“32-bit/64-bit Windows Service Installer”). This "
+"installer will install the Apache Tomcat as a Windows service which can be "
+"started, stopped and configured over a graphical user interface. The service "
+"installer is the recommended way for Windows users to install the Tomcat "
+"server. Please, make sure you execute the installer with administrator "
+"privileges."
+
+#: ../../source/installation.rst:99
+msgid ""
+"Furthermore, it is recommended to install the Apache Tomcat into a root "
+"folder on ``C:\\``\\ ."
+msgstr ""
+"Furthermore, it is recommended to install the Apache Tomcat into a root "
+"folder on ``C:\\``\\ ."
+
+#: ../../source/installation.rst:102 ../../source/installation.rst:146
+msgid "Debian"
+msgstr "Debian"
+
+#: ../../source/installation.rst:103
+msgid ""
+"If you are using Linux, you might consider installing Apache Tomcat using a "
+"packet manager. In case of Debian, you can use the Advanced Packaging Tool "
+"(APT) and execute the following command:"
+msgstr ""
+"If you are using Linux, you might consider installing Apache Tomcat using a "
+"packet manager. In case of Debian, you can use the Advanced Packaging Tool "
+"(APT) and execute the following command:"
+
+#: ../../source/installation.rst:105
+msgid "``apt-get install tomcat7``"
+msgstr "``apt-get install tomcat7``"
+
+#: ../../source/installation.rst:108
+msgid "Configure Tomcat"
+msgstr "Configure Tomcat"
+
+#: ../../source/installation.rst:109
+msgid ""
+"This section will point the configuration options that are required to run "
+"Effektif. However, Tomcat offers more configuration options that can be "
+"found in the official documentation:"
+msgstr ""
+"This section will point the configuration options that are required to run "
+"Effektif. However, Tomcat offers more configuration options that can be "
+"found in the official documentation:"
+
+#: ../../source/installation.rst:111
+msgid "http://tomcat.apache.org/tomcat-7.0-doc/"
+msgstr "http://tomcat.apache.org/tomcat-7.0-doc/"
+
+#: ../../source/installation.rst:114
+msgid "Java options"
+msgstr "Java options"
+
+#: ../../source/installation.rst:115
+msgid ""
+"There are some Java options that need to be configured before starting the "
+"Tomcat server. These options are configured using the ``JAVA_OPTS`` "
+"environment variable. It should contain the following values:"
+msgstr ""
+"There are some Java options that need to be configured before starting the "
+"Tomcat server. These options are configured using the ``JAVA_OPTS`` "
+"environment variable. It should contain the following values:"
+
+#: ../../source/installation.rst:118
+msgid "``-Xms1536m``"
+msgstr "``-Xms1536m``"
+
+#: ../../source/installation.rst:118
+msgid "minimum RAM, should be at least 1.5GB"
+msgstr "minimum RAM, should be at least 1.5GB"
+
+#: ../../source/installation.rst:120
+msgid "``-Xmx2048m``"
+msgstr "``-Xmx2048m``"
+
+#: ../../source/installation.rst:120
+msgid "maximum RAM, should be at least 2GB but more is recommended"
+msgstr "maximum RAM, should be at least 2GB but more is recommended"
+
+#: ../../source/installation.rst:122
+msgid "``-Dfile.encoding=UTF-8``"
+msgstr "``-Dfile.encoding=UTF-8``"
+
+#: ../../source/installation.rst:122
+msgid "sets UTF-8 as Apache Tomcats default encoding mechanism"
+msgstr "sets UTF-8 as Apache Tomcats default encoding mechanism"
+
+#: ../../source/installation.rst:124
+msgid "``-XXPermSize=128m``"
+msgstr "``-XXPermSize=128m``"
+
+#: ../../source/installation.rst:124
+msgid "initial permanent generation space in MB"
+msgstr "initial permanent generation space in MB"
+
+#: ../../source/installation.rst:126
+msgid "``-XXMaxPermSize=256m``"
+msgstr "``-XXMaxPermSize=256m``"
+
+#: ../../source/installation.rst:126
+msgid "maximum permanent generation space in MB"
+msgstr "maximum permanent generation space in MB"
+
+#: ../../source/installation.rst:129
+msgid ""
+"In order to allocate sufficient RAM to the Tomcat server you have to set the "
+"options Xms and Xmx followed by the number of MB allocated and a literal "
+"‘m’. ``Xms`` defines the initial / minimum amount of RAM that is used and "
+"``Xmx`` the allowed maximum. You are advised to allocate at least 2GB of RAM "
+"to the Tomcat. However, it is recommended to use more RAM. For example, if "
+"you want to assign 4GB of maximum RAM the option would be ``-Xmx4096m``\\ ."
+msgstr ""
+"In order to allocate sufficient RAM to the Tomcat server you have to set the "
+"options Xms and Xmx followed by the number of MB allocated and a literal "
+"‘m’. ``Xms`` defines the initial / minimum amount of RAM that is used and "
+"``Xmx`` the allowed maximum. You are advised to allocate at least 2GB of RAM "
+"to the Tomcat. However, it is recommended to use more RAM. For example, if "
+"you want to assign 4GB of maximum RAM the option would be ``-Xmx4096m``\\ ."
+
+#: ../../source/installation.rst:131
+msgid ""
+"The values for the permanent generation space have to be increased as well, "
+"these are defined by the values ``-XX:PermSize=128m`` and ``-XX:"
+"MaxPermSize=256m``\\ ."
+msgstr ""
+"The values for the permanent generation space have to be increased as well, "
+"these are defined by the values ``-XX:PermSize=128m`` and ``-XX:"
+"MaxPermSize=256m``\\ ."
+
+#: ../../source/installation.rst:135
+msgid ""
+"If you installed Tomcat using the Windows service installer, you can open "
+"the configuration dialog by opening the Windows start menu and selecting "
+"``Program Files\\Apache Tomcat\\Configure Tomcat``\\ ."
+msgstr ""
+"If you installed Tomcat using the Windows service installer, you can open "
+"the configuration dialog by opening the Windows start menu and selecting "
+"``Program Files\\Apache Tomcat\\Configure Tomcat``\\ ."
+
+#: ../../source/installation.rst:141
+msgid "This is the Tomcat configuration dialog."
+msgstr "This is the Tomcat configuration dialog."
+
+#: ../../source/installation.rst:143
+msgid ""
+"The tab Java offers the possibility to set the options and define the memory "
+"pool (minimum and maximum RAM usage). Fill in the values for Xms and Xmx "
+"into the fields for memory pool and add the other options to the text area "
+"labeled as Java Options."
+msgstr ""
+"The tab Java offers the possibility to set the options and define the memory "
+"pool (minimum and maximum RAM usage). Fill in the values for Xms and Xmx "
+"into the fields for memory pool and add the other options to the text area "
+"labeled as Java Options."
+
+#: ../../source/installation.rst:147
+msgid ""
+"One way to define the ``JAVA_OPTS`` under Debian and other Linux "
+"distributions is to create the file setenv.sh in the Tomcat 7 ``/bin/`` "
+"directory. This directory contains also other files like the ``catalina.sh``"
+"\\ , the ``startup.sh`` or the ``shutdown.sh`` und is for instance located "
+"in ``/usr/share/tomcat7`` or a similar directory. Simply create or extend "
+"any existing setenv.sh file and add the line for ``the JAVA_OPTS``\\ :"
+msgstr ""
+"One way to define the ``JAVA_OPTS`` under Debian and other Linux "
+"distributions is to create the file setenv.sh in the Tomcat 7 ``/bin/`` "
+"directory. This directory contains also other files like the ``catalina.sh``"
+"\\ , the ``startup.sh`` or the ``shutdown.sh`` und is for instance located "
+"in ``/usr/share/tomcat7`` or a similar directory. Simply create or extend "
+"any existing setenv.sh file and add the line for ``the JAVA_OPTS``\\ :"
+
+#: ../../source/installation.rst:150
+msgid "``export JAVA_OPTS=”$JAVA_OPTS -Xms1536m [... add the other options]``"
+msgstr "``export JAVA_OPTS=”$JAVA_OPTS -Xms1536m [... add the other options]``"

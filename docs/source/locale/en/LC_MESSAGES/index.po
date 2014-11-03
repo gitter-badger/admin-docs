@@ -1,4 +1,4 @@
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: Effektif adminstrators guide 2.11\n"
@@ -22,18 +22,14 @@ msgstr "Effektif adminstrators guide"
 msgid "Contents:"
 msgstr "Contents:"
 
-#: ../../source/index.rst:15
-msgid "Indices and tables"
-msgstr "Indices and tables"
+#~ msgid "Indices and tables"
+#~ msgstr "Indices and tables"
 
-#: ../../source/index.rst:17
-msgid ":ref:`genindex`"
-msgstr ":ref:`genindex`"
+#~ msgid ":ref:`genindex`"
+#~ msgstr ":ref:`genindex`"
 
-#: ../../source/index.rst:18
-msgid ":ref:`modindex`"
-msgstr ":ref:`modindex`"
+#~ msgid ":ref:`modindex`"
+#~ msgstr ":ref:`modindex`"
 
-#: ../../source/index.rst:19
-msgid ":ref:`search`"
-msgstr ":ref:`search`"
+#~ msgid ":ref:`search`"
+#~ msgstr ":ref:`search`"
