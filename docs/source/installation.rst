@@ -258,6 +258,8 @@ If you installed MongoDB under Linux using apt-get, e.g. by following the instru
 
 In any other case make sure the configuration file contains the following properties.
 
+.. tabularcolumns:: |p{4cm}|p{11cm}|
+
 +-------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
 | ``dbpath``        | Defines the directory where the database files are stored.                                                                                                | 
 +-------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -276,21 +278,11 @@ Add a database user for Effektif
 ````````````````````````````````
 Effektif requires a MongoDB user in the admin database that has the following roles:
 
-.. list-table:: 
-    :widths: 60 40
-
-    * - ``dbAdminAnyDatabase``
-      -
-    * - ``readWriteAnyDatabase``
-      - 
-    * - ``clusterAdmin``
-      - This role will allow you to list all databases. This becomes necessary if you plan on using the user credentials when editing any database content with a tool like Robomongo. Furthermore, it is necessary for creating backups.
-    * - ``userAdminAnyDatabase``
-      - This role is required for backups.
+.. tabularcolumns:: |p{5cm}|p{10cm}|
 
 ========================    ========================
-``dbAdminAnyDatabase`` 
-``readWriteAnyDatabase`` 
+``dbAdminAnyDatabase``
+``readWriteAnyDatabase``
 ``clusterAdmin``            This role will allow you to list all databases. This becomes necessary if you plan on using the user credentials when editing any database content with a tool like Robomongo. Furthermore, it is necessary for creating backups.
 ``userAdminAnyDatabase``    This role is required for backups.
 ========================    ========================
@@ -358,6 +350,8 @@ The configuration file is a property file that contains one configuration option
 
 In general, the configuration allows to configure the base URL of the Effektif system, the mail server, the database connection and integrations with third party systems (e.g. Signavio).
 
+.. tabularcolumns:: |p{6cm}|p{9cm}|
+
 =============================   =============================
 ``effektif.baseUrl``            (Required) The ip address or server name (incl. the port) of the server running the Effektif Tomcat application server. E.g. http://effektif.yourdomain.com:8080\ . If the server is running on port 80, the port can be omitted.
 ``effektif.smtp.host``          (Required) The ip address or server name of the outgoing email server.
@@ -373,13 +367,14 @@ In general, the configuration allows to configure the base URL of the Effektif s
 ``effektif.mongodb.database``   The name of the database Effektif should use. The default value effektif is ok.
 =============================   =============================
 
-The following properties are only relevant if your Effektif installation is connected to your Signavio installation.
+The following properties are only relevant if your Effektif installation is connected to your Signavio installation. ::
 
-.. list-table::
-    
-    * - ``effektif.com.effektif.model.service.signavio.SignavioAuthenticationProvider.serviceBaseUrl``
-    * - ``effektif.com.effektif.model.service.signavio.SignavioAuthenticationProvider.clientId``
-    * - ``effektif.com.effektif.model.service.signavio.SignavioAuthenticationProvider.clientSecret``
+    effektif.com.effektif.model.service.signavio.SignavioAuthenticationProvider.
+        serviceBaseUrl
+    effektif.com.effektif.model.service.signavio.SignavioAuthenticationProvider.
+        clientId
+    effektif.com.effektif.model.service.signavio.SignavioAuthenticationProvider.
+        clientSecret
 
 See section Signavio integration for more information on how to setup the integration.
 

@@ -32,8 +32,13 @@ Naming conventions
 ------------------
 Within this adminstrators guide several placeholders are used to increase the readability. 
 
-* ``$EFFEKTIF_HOME`` - Refers to the directory that contains the unzipped content of the downloaded effektif-{version}.zip.
-* ``$TOMCAT_HOME`` - Refers to the directory where your Apache Tomcat is installed.
-* ``$MONGO_HOME`` - Referes to the directory where your MongoDB is installed.
+
+.. tabularcolumns:: |p{4cm}|p{11cm}|
+
+==================  ==================
+``$EFFEKTIF_HOME``  Refers to the directory that contains the unzipped content of the downloaded effektif-{version}.zip.
+``$TOMCAT_HOME``    Refers to the directory where your Apache Tomcat is installed. This directory should contain the ``webapps`` and ``conf`` folders. On Linux the directory might be located for example in ``/var/lib/tomcat7``\ .
+``$MONGO_HOME``     Refers to the directory where your MongoDB is installed.
+==================  ==================
 
 Those placeholders are used within example command line code. You need to replace those placeholders with the appropriate paths on your system.
