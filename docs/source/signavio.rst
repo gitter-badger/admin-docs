@@ -13,17 +13,14 @@ Setup
       <effektifUserPw>yourpassword</effektifUserPw>
     </effektif>
 
+.. tabularcolumns:: |p{4cm}|p{11cm}|
 =====================   =====================
 ``effektifServerUrl``   Defines the URL under which your Effektif system is available.
 ``effektifUserName``    Defines the mail of the system user that will access the Signavio system. Make sure to use ``system@signavio.com`` to ensure the integration to work properly. The value is already preconfigured.
 ``effektifUserPw``      Defines the password of the system user. Remember this password, you will need to set the exact same password in the Effektif configuration file.
 =====================   =====================
 
-3. Edit the Effektif configuration file 
-.. raw:: latex
-
-    \linebreak 
-``$TOMCAT_HOME/webapps/ROOT/WEB-INF/classes/effektif-onpremise.properties`` and add / update the following entries. ::
+3. Edit the Effektif configuration file ``$TOMCAT_HOME/webapps/ROOT/WEB-INF/classes/effektif-onpremise.properties`` and add / update the following entries. ::
 
     effektif.com.effektif.model.service.signavio.SignavioAuthenticationProvider.
         serviceBaseUrl=http://your.signavio.domain:port
@@ -34,6 +31,7 @@ Setup
 
 If you add any of the following properties to the configuration file, make sure to add the required prefix ``effektif.com.effektif.model.service.signavio.SignavioAuthenticationProvider.`` in front of the property key:
 
+.. tabularcolumns:: |p{4cm}|p{11cm}|
 ==================  ==================
 ``serviceBaseUrl``  Defines the URL under which your Signavio system is available.
 ``clientId``        Defines ID the Effektif system uses to identify itself to the Signavio system. Make sure to use ``com.effektif.oem`` to ensure the integration to work properly. This value is already preconfigured.

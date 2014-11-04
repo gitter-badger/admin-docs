@@ -258,7 +258,7 @@ If you installed MongoDB under Linux using apt-get, e.g. by following the instru
 
 In any other case make sure the configuration file contains the following properties.
 
-.. tabularcolumns:: |p{4cm}|p{11cm}|
+.. tabularcolumns:: |p{3cm}|p{12cm}|
 
 +-------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
 | ``dbpath``        | Defines the directory where the database files are stored.                                                                                                | 
