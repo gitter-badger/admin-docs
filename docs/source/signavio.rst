@@ -1,3 +1,5 @@
+.. _signavio-integration:
+
 Signavio integration
 ====================
 The Signavio integration with Effektif enables Signavio users to execute approval workflows for their process models using Effektif. In order to setup the integration properly, both systems, Signavio and Effektif, have to be installed. For information about installing Signavio refer to Signavio's adminstration manual. In case both systems run on the same server, you need to set up two Tomcat instances.
@@ -20,7 +22,7 @@ Setup
 ``effektifUserPw``      Defines the password of the system user. Remember this password, you will need to set the exact same password in the Effektif configuration file.
 =====================   =====================
 
-3. Edit the Effektif configuration file ``$TOMCAT_HOME/webapps/ROOT/WEB-INF/classes/effektif-onpremise.properties`` and add / update the following entries. ::
+3. Edit the Effektif configuration file ``$TOMCAT_HOME/webapps/ROOT/WEB-INF/classes/ effektif-onpremise.properties`` and add / update the following entries. ::
 
     effektif.com.effektif.model.service.signavio.SignavioAuthenticationProvider.
         serviceBaseUrl=http://your.signavio.domain:port
@@ -40,6 +42,8 @@ If you add any of the following properties to the configuration file, make sure 
 
 4. Start both systems.
 5. Activate the approval workflow feature within your Signavio workspace. Your Effektif organization will be setup automatically. For more information on how to activate the approval workflow, refer to Signavio's user manual.
+
+.. _signavio-user-management:
 
 User management
 ---------------

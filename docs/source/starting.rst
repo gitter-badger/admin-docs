@@ -1,3 +1,5 @@
+.. _starting-effektif:
+
 Starting Effektif
 =================
 If you have finished the setup successfully, you can go on and start the Effektif application. You can use the checklist in the next subsection to verify you didn’t forget anything. The following subsection explains how to start Effektif on different operating systems.
@@ -97,7 +99,7 @@ When the Effektif system was started properly you can see the login screen by en
 
     The default Effektif login screen
 
-If you purchased Effektif along with Signavio, you will see a login screen with one button. You can login to Effektif using your Signavio account as soon as the Effektif users have been set up. Jump to section Signavio integration > user management for more information on how to set up the users. 
+If you purchased Effektif along with Signavio, you will see a login screen with one button. You can login to Effektif using your Signavio account as soon as the Effektif users have been set up. Jump to section :ref:`signavio-user-management` for more information on how to set up the users. 
 
 .. figure:: _static/signavio_login_en.png
     :align: center
@@ -115,7 +117,7 @@ Be aware, you have to be logged in to Signavio in order to see the authorization
 
 Create the initial user
 -----------------------
-In case you purchased Effektif along with Signavio and want to setup the integration, you don't have to create the initial Effektif user manually. Please jump to section Signavio integration > user management for more information.
+In case you purchased Effektif along with Signavio and want to setup the integration, you don't have to create the initial Effektif user manually. Please jump to section :ref:`signavio-user-management` for more information.
 
 Effektif users are organized in organisations. There is a maximum amount of organisations that can be registered on an on-premise system. You will find the maximum number of available organisations in your license file. When the initial user registers, he will automatically create the first organisation.
 
@@ -127,8 +129,8 @@ Every time a user registers using the register link on the login screen, a new o
 
 Invite other users
 ------------------
-In case this is an integrated installation with Signavio, please jump to section Signavio integration for setting up synchronization of users.
+In case this is an integrated installation with Signavio, please jump to section :ref:`signavio-integration` for setting up synchronization of users.
 
-To invite other users, go to the organization configuration panel. That's located in the dropdown under your name in the top right corner named *My organization* In section Invitations you can enter email addresses of users you want to invite. The amount of users that can be invited to your organisation depends on the number of user licenses you have acquired. All organisations on an on-premise system share the same license pool. This means the shown number of unused licenses is the same in every organisation. If one organisation invites another user the count of unused licenses in all organisations decreases.
+To invite other users, go to the organization configuration panel. That's located in the dropdown under your name in the top right corner named *My organization*\ . In section Invitations you can enter email addresses of users you want to invite. The amount of users that can be invited to your organisation depends on the number of user licenses you have acquired. All organisations on an on-premise system share the same license pool. This means the shown number of unused licenses is the same in every organisation. If one organisation invites another user the count of unused licenses in all organisations decreases.
 
 A user can be invited to multiple organisations. If a user is part of two organisations, he will require two user licenses, one for each organisation he is part of.

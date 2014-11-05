@@ -33,7 +33,17 @@ Problem:
     The Effektif site shows a HTTP Status 500 error including the message ``root cause java.lang.RuntimeException: Cannot find license.xml``\ . 
 
 Solution: 
-    You have not installed the Effektif license.xml at all or placed it in the wrong directory. Jump to section Configure Effektif > Install the license file to solve the issue.
+    You have not installed the Effektif license.xml at all or placed it in the wrong directory. Jump to section :ref:`install-license` to solve the issue.
+
+Problem:
+    The Effektif site shows a HTTP Status 500 error including the message ``com/effektif/EffektifServlet : Unsupported major.minor version 51.0 (unable to load class com.effektif.EffektifServlet)``\ .
+
+Solution:
+    The Tomcat server is using the wrong Java version. Effektif requires Java 7. Make sure you have installed the correct Java version. You can check your Java version by executing: ::
+
+        java -version
+
+    Section :ref:`install-java` explains how to install the correct Java version.
 
 Problem:
     Executing a MongoDB command yields the error message ``errmsg: “unauthorized”`` or  ``errmsg: “auth fails”``\ .
@@ -49,4 +59,6 @@ Solution:
     
     If this command fails with the error message ``exception: login failed`` you know that your username / password combination is wrong. Please, make sure you spelled the username and password correctly.
 
-    In order to check the second issue, jump to section Configure MongoDB > Add a database user for Effektif. This section lists all necessary roles and explains how to verify that the Effektif user has all the required roles. Especially the restore and backup commands require certain roles to work properly.
+    In order to check the second issue, jump to section :ref:`add-mongodb-user`\ . This section lists all necessary roles and explains how to verify that the Effektif user has all the required roles. Especially the restore and backup commands require certain roles to work properly.
+
+

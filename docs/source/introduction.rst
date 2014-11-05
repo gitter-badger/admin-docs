@@ -26,7 +26,7 @@ The mail server is necessary to send notifications and invitation requests to us
 
 Web browser
 ```````````
-Effektif runs as a web application. The user interface can be accessed using a modern web browser. More details about the supported browsers can be found in the system requirements section.
+Effektif runs as a web application. The user interface can be accessed using a modern web browser. More details about the supported browsers can be found in the section :ref:`supported-browsers`\ .
 
 Naming conventions
 ------------------

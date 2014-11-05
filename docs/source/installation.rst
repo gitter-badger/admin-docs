@@ -49,6 +49,8 @@ The database server requires the following additional software:
 
 Be aware, MongoDB version 2.6.x is not yet officially supported by Effektif. Please, make sure to install version 2.4.x.
 
+.. _supported-browsers:
+
 Web browser
 ```````````
 A current web browser is necessary on every client that shall display the Effektif user interface. The following list shows the supported web browsers and versions:
@@ -77,6 +79,8 @@ The directory will contain the following files:
 On Linux systems you need to make the scripts executable with the ``chmod`` command like this: ::
 
     chmod a+x $EFFEKTIF_HOME/*.sh
+
+.. _install-java:
 
 Install Java
 ------------
@@ -139,8 +143,8 @@ If you installed Tomcat using the Windows service installer, you can open the co
 .. figure:: _static/Configure_Tomcat_Windows_en.png
     :align: center
     :scale: 70%
-    
-    This is the Tomcat configuration dialog.
+
+    The Java tab of the Tomcat configuration dialog
 
 The tab Java offers the possibility to set the options and define the memory pool (minimum and maximum RAM usage). Fill in the values for Xms and Xmx into the fields for memory pool and add the other options to the text area labeled as Java Options.
 
@@ -178,13 +182,13 @@ The Effektif application needs to run as the ROOT application in the Tomcat. The
 
 Install MongoDB
 ---------------
-MongoDB is the only database system currently supported by Effektif. In case, you have already an infrastructure that can provide a MongoDB version 2.4.x instance, simply create a new instance for Effektif and skip to the configuration section. Otherwise go on with the installation instructions.
+MongoDB is the only database system currently supported by Effektif. In case, you have already an infrastructure that can provide a MongoDB version 2.4.x instance, simply create a new instance for Effektif and skip to the section :ref:`configure-mongodb`. Otherwise go on with the installation instructions.
 
 General information about installing MongoDB on different operating systems can be found on:
 
 http://docs.mongodb.org/v2.4/installation/
 
-In case you are using Linux, you have the possibilities to install MongoDB using either a package manager like apt-get or downloading the binaries directly. It is recommened to use the package manager because it will also setup respective scripts that allow you to start and stop the server easily. However, you have to make sure the correct version is installed. Subsection Debian explains in more details how to setup MongoDB on Debian and might work as an example for other Linux distributions.
+In case you are using Linux, you have the possibilities to install MongoDB using either a package manager like apt-get or downloading the binaries directly. It is recommened to use the package manager because it will also setup respective scripts that allow you to start and stop the server easily. However, you have to make sure the correct version is installed. Subsection :ref:`install-mongodb-debian` explains in more details how to setup MongoDB on Debian and might work as an example for other Linux distributions.
 
 Remarks for downloading the binaries
 ````````````````````````````````````
@@ -218,7 +222,7 @@ When you finished downloading MongoDB follow the next steps:
 
     * The dbpath needs to contain the absolute path to the data directory, e.g. ``C:\MongoDB\data``\ .
     * The logpath needs to contain the absolute path to the log file, e.g. ``C:\MongoDB\logs\mongodb.log``\ . The log file will be created once MongoDB is started.
-    * See section Configure MongoDB for more information about the other configuration values.
+    * See section :ref:`configure-mongodb` for more information about the other configuration values.
 
 #. Open the command line cmd with administrative privileges and execute the following command. Make sure to use absolute paths and replace them with the matching ones on your system.
 
@@ -232,6 +236,8 @@ When you finished downloading MongoDB follow the next steps:
     * If this command fails with the error 1053 or 2186, make sure that the configuration file contains absolute paths. Furthermore, the paths must not have any whitespaces and should not be located in any directory that requires admin privileges.
     * You can stop MongoDB by calling: ``net stop MongoDB``
     * The service is also listed in the services window that can be opened by running ``services.msc``\ .
+
+.. _install-mongodb-debian:
 
 Debian
 ``````
@@ -253,6 +259,8 @@ or ::
     sudo /etc/init.d/mongodb stop
 
 The server will use the default configuration file ``/etc/mongodb.conf``\ . See the next subsection for more information on how to configure MongoDB for Effektif and create the required user. Be aware, the installation probably started the MongoDB server already. You will need to restart the MongoDB server when you edit the configuration.
+
+.. _configure-mongodb:
 
 Configure MongoDB
 -----------------
@@ -279,6 +287,8 @@ In any other case make sure the configuration file contains the following proper
 +-------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 For more configuration options, see http://docs.mongodb.org/v2.4/reference/configuration-options/\ .
+
+.. _add-mongodb-user:
 
 Add a database user for Effektif
 ````````````````````````````````
@@ -339,14 +349,20 @@ If you have installed MongoDB using a package manager, the binaries should be av
     * ``mongo admin -u effektif -p <enterEffektifPasswordHere> --eval "db.system.users.find({ user: 'effektif'}).forEach(function(u) {printjson(u)});"``
     * On the command line you will see the user information including the four assigned roles.
 
-Once the Effektif user is created, its credentials have to be added to the Effektif configuration file to the properties ``effektif.mongodb.username`` and ``effektif.mongodb.password``\ . Section Configure Effektif explains how to update the configuration file.
+Once the Effektif user is created, its credentials have to be added to the Effektif configuration file to the properties ``effektif.mongodb.username`` and ``effektif.mongodb.password``\ . Section :ref:`update-effektif-configuration` explains how to update the configuration file.
+
+.. _configure-effektif:
 
 Configuring Effektif
 --------------------
 
+.. _install-license:
+
 Install the license file
 ````````````````````````
 Along with the Effektif application you have received the Effektif license file license.xml. Before you can start the Effektif system, you have to add the license file to the application. Therefore, copy the license file into the directory ``$TOMCAT_HOME/webapps/ROOT/WEB-INF/classes``\ . The Effektif system will check your license file on startup and setup the defined number of licenses.
+
+.. _update-effektif-configuration:
 
 Update the Effektif configuration file
 ``````````````````````````````````````
@@ -382,7 +398,7 @@ The following properties are only relevant if your Effektif installation is conn
     effektif.com.effektif.model.service.signavio.SignavioAuthenticationProvider.
         clientSecret
 
-See section Signavio integration for more information on how to setup the integration.
+See section :ref:`signavio-integration` for more information on how to set up the integration.
 
 Configure logging
 `````````````````
