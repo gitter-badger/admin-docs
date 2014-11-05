@@ -1,37 +1,52 @@
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Effektif adminstrators guide 2.11\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-10-31 11:18+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2014-11-05 20:05+0100\n"
+"Last-Translator: Christian Wiggert <christian.wiggert@signavio.com>\n"
+"Language-Team: Effektif <dev@effektif.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"X-Generator: Poedit 1.6.9\n"
+"X-Poedit-SourceCharset: UTF-8\n"
 
 #: ../../source/tooling.rst:2
 msgid "Tooling"
-msgstr ""
+msgstr "Tooling"
 
 #: ../../source/tooling.rst:3
 msgid ""
 "This section lists some tools that might help you to administrate and "
 "maintain your Effektif installation. Use them at your own discretion."
 msgstr ""
+"Dieses Kapitel listet einige Werkzeuge auf, die Ihnen dabei helfen können "
+"Ihre Effektif-Installation zu verwalten und zu warten. Nutzen Sie die "
+"entsprechenden Werkeuge auf Ihre eigene Verantwortung."
 
 #: ../../source/tooling.rst:6
 msgid "MongoDB"
-msgstr ""
-
-#: ../../source/tooling.rst:7
-msgid ""
-"A good tool to manage your MongoDB installation is Robomongo. It is free and"
-" available for different operating system. Use it at your own discretion. It"
-" can be downloaded from this site:"
-msgstr ""
+msgstr "MongoDB"
 
 #: ../../source/tooling.rst:9
 msgid "http://robomongo.org/"
+msgstr "http://robomongo.org/"
+
+#: ../../source/tooling.rst:7
+msgid ""
+"A good tool to manage your MongoDB installation is Robomongo. It is free and "
+"available for different operating system. Use it at your own discretion. "
+"Please, be careful when you use a tool to manipulate the database. Effektif "
+"does not guarantee that any manipulated data can be restored. The tool can "
+"be downloaded from this site:"
 msgstr ""
+"Ein gutes Tool zur Verwaltung Ihrer MongoDB Installation ist Robomongo. Es "
+"ist kostenfrei und für die gängigen Betriebssysteme verfügbar. Gehen Sie "
+"jedoch vorsichtig bei der Nutzung vor – beim eigenständigen Manipulieren der "
+"Datenbank kann es bei fahrlässiger Vorgehensweise natürlich vorkommen, dass "
+"Daten beschädigt werden, ohne dass das Effektif System eine "
+"Wiederherstellung garantieren kann. Das Tool kann unter dem folgenden Link "
+"heruntergeladen werden: "

@@ -1,19 +1,22 @@
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Effektif adminstrators guide 2.11\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-10-31 11:18+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2014-11-05 19:16+0100\n"
+"Last-Translator: Christian Wiggert <christian.wiggert@signavio.com>\n"
+"Language-Team: Effektif <dev@effektif.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"X-Generator: Poedit 1.6.9\n"
+"X-Poedit-SourceCharset: UTF-8\n"
 
 #: ../../source/restore.rst:2
 msgid "Restore"
-msgstr ""
+msgstr "Wiederherstellung"
 
 #: ../../source/restore.rst:3
 msgid ""
@@ -21,53 +24,73 @@ msgid ""
 "it is executed on the command line. For more detailed information on "
 "mongorestore see the official documentation:"
 msgstr ""
+"Backups können über den MongoDB-Befehl mongorestore wiederhergestellt werden."
+"mongorestore kann – vergleichbar zu mongodump – über die Kommandozeile "
+"ausgeführt werden. Weitere Informationen zu mongorestore können Sie der "
+"offiziellen Dokumentation entnehmen: "
 
 #: ../../source/restore.rst:5
 msgid "http://docs.mongodb.org/v2.4/reference/program/mongorestore/"
-msgstr ""
+msgstr "http://docs.mongodb.org/v2.4/reference/program/mongorestore/"
 
 #: ../../source/restore.rst:7
 msgid ""
 "You will need to use the Effektif MongoDB user credentials again to "
 "overwrite the contents of the Effektif databases."
 msgstr ""
+"Zum Überschreiben des Inhalts der Effektif-Datenbank benötigen Sie wieder "
+"die Nutzerdaten des Effektif MongoDB-Nutzers."
 
 #: ../../source/restore.rst:9
 msgid ""
 "We recommend running mongorestore with the parameter --drop which will "
 "remove every collection (table) from the database before it is restored."
 msgstr ""
+"Wir empfehlen mongorestore mit dem Paremeter --drop auszuführen, der alle "
+"Collections (Tabellen) aus der Datenbank entfernt, bevor die "
+"Wiederherstellung beginnt."
 
 #: ../../source/restore.rst:12
 msgid "Windows"
-msgstr ""
+msgstr "Windows"
 
 #: ../../source/restore.rst:13
 msgid ""
-"The mongorestore.exe can be found in your MongoDB installation directory: "
-"``$MONGO_HOME\\bin\\mongorestore.exe``\\ . If you followed the instructions "
-"in this guide to setup the database, you can execute the following command "
-"on the command line: ::"
+"The mongorestore.exe can be found in your MongoDB installation directory: ``"
+"$MONGO_HOME\\bin\\mongorestore.exe``\\ . If you followed the instructions in "
+"this guide to setup the database, you can execute the following command on "
+"the command line: ::"
 msgstr ""
+"Die Datei mongorestore.exe kann im MongoDB Installationsverzeichnis, also "
+"unter ``$MONGO_HOME\\bin\\mongorestore.exe`` gefunden werden. Falls Sie der "
+"Installationsbeschreibung in diesem Handbuch gefolgt sind, lässt sich das "
+"Backup wie folgt einspielen: ::"
 
 #: ../../source/restore.rst:17
 msgid ""
 "Replace the user credentials with the ones you have chosen during the setup "
 "and the directory with the one where you store your backups."
 msgstr ""
+"Der Ort der MongoDB-Installation muss gegebenenfalls angepasst werden. Der "
+"Parameter –u beschreibt den Nutzernamen, der Parameter –p das Passwort. "
+"Passen Sie zudem den Pfad zu Ihrem Backup an."
 
 #: ../../source/restore.rst:20
 msgid "Debian"
-msgstr ""
+msgstr "Debian"
 
 #: ../../source/restore.rst:21
 msgid ""
 "Using Debian, the command to restore a backup stored in /path/to/dump would "
 "look like this: ::"
 msgstr ""
+"Unter Debian kann das Wiederherstellungskommando, um ein Backup aus dem "
+"Pfad /path/to/dump wieder herzustellen, wie folgt ausgeführt werden: ::"
 
 #: ../../source/restore.rst:25
 msgid ""
 "As you can see, you have to fill in the credentials of the Effektif MongoDB "
 "user again. Furthermore, you need to specify where the backup is located."
 msgstr ""
+"Der Parameter –u beschreibt den Nutzernamen, der Parameter –p das Passwort. "
+"Passen Sie zudem den Pfad zu Ihrem Backup an."

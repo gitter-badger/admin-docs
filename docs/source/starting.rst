@@ -113,7 +113,7 @@ When you click *Log in with Signavio account*\ , you will be redirected to Signa
 
     The Signavio authorization dialog
 
-Be aware, you have to be logged in to Signavio in order to see the authorization dialog. Otherwise, you will be redirected to the Collaboration Portal. 
+*Important: You have to be logged in to Signavio in order to see the authorization dialog. Otherwise, you will be redirected to the Collaboration Portal.*
 
 Create the initial user
 -----------------------

@@ -1,10 +1,10 @@
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Effektif adminstrators guide 2.11\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-10-30 13:50+0100\n"
-"PO-Revision-Date: 2014-10-30 15:01+0100\n"
+"PO-Revision-Date: 2014-11-05 19:11+0100\n"
 "Last-Translator: Christian Wiggert <christian.wiggert@signavio.com>\n"
 "Language-Team: Effektif <dev@effektif.com>\n"
 "MIME-Version: 1.0\n"
@@ -50,18 +50,27 @@ msgid ""
 "Effektif officially supports Microsoft Windows Server 64Bit and Debian "
 "Stable 64Bit."
 msgstr ""
+"Dieses Dokument beinhaltet das Effektif Administratorenhandbuch. Es enthält "
+"detaillierte Informationen und Anweisungen für die Installation von Effektif "
+"auf Ihren hauseigenen Server (oder auf der Infrastruktur eines "
+"Cloudanbieters Ihrer Wahl). Effektif unterstützt offiziell die "
+"Betriebssysteme Windows Server 64 Bit und Debian Stable 64 Bit"
 
 #: ../../source/introduction.rst:5
 msgid ""
-"It is possible to setup Effektif also on other Linux distributions. However,"
-" the instructions in this manual are only tested for Debian. Probably, you "
+"It is possible to setup Effektif also on other Linux distributions. However, "
+"the instructions in this manual are only tested for Debian. Probably, you "
 "will have to adjust the instructions to your system, but the used software "
 "should work on most distributions."
 msgstr ""
+"Es ist jedoch möglich, Effektif auf weiteren Linux-Distributionen zu "
+"installieren. Die Linux-Beispiele in den Installationsanweisungen sind "
+"jedoch auf Debian zugeschnitten und können bei anderen Linux-Distributionen "
+"abweichen."
 
 #: ../../source/introduction.rst:16
 msgid "Apache Tomcat"
-msgstr ""
+msgstr "Apache Tomcat"
 
 #: ../../source/introduction.rst:17
 msgid ""
@@ -70,69 +79,90 @@ msgid ""
 "to the users’ browser and it also includes the backend of the Effektif "
 "system."
 msgstr ""
+"Apache Tomcat ist ein Applikationsserver, in dem die Effektif Webanwendung "
+"bereitgestellt wird. Durch die Effektif Webanwendung werden die Front End-"
+"Applikationsdateien für die Browser der Nutzer verfügbar gemacht und über "
+"Request Handler mit der im Tomcat ausgeführten Back End-Anwendung verbunden."
 
 #: ../../source/introduction.rst:20
 msgid "MongoDB"
-msgstr ""
+msgstr "MongoDB"
 
 #: ../../source/introduction.rst:21
 msgid ""
 "MongoDB is a document-oriented database system. It is the only database "
 "system that is supported by Effektif. More detailed information about "
-"MongoDB can be found in the MongoDB documentation: "
-"http://docs.mongodb.org/v2.4/"
+"MongoDB can be found in the MongoDB documentation: http://docs.mongodb.org/"
+"v2.4/"
 msgstr ""
+"MongoDB ist ein Dokument-basiertes Datenbanksystem, das notwendig ist um "
+"Effektif auf dem Server erfolgreich auszuführen. Detaillierte Information "
+"über MongoDB erhalten Sie hier: http://docs.mongodb.org/v2.4/"
 
 #: ../../source/introduction.rst:24
 msgid "Mail server (SMTP)"
-msgstr ""
+msgstr "Mail server (SMTP)"
 
 #: ../../source/introduction.rst:25
 msgid ""
 "The mail server is necessary to send notifications and invitation requests "
 "to users. Any server that is accessible via SMTP can be used."
 msgstr ""
+"Um Benachrichtungen und Einladungen zu versenden, muss Effektif mit einem "
+"Email-Server verbunden werden. Hierfür kann ein beliebiger Server verwendet "
+"werden, der SMTP unterstützt."
 
 #: ../../source/introduction.rst:28
 msgid "Web browser"
-msgstr ""
+msgstr "Webbrowser"
 
 #: ../../source/introduction.rst:32
 msgid "Naming conventions"
-msgstr ""
+msgstr "Platzhalter"
 
 #: ../../source/introduction.rst:33
 msgid ""
 "Within this adminstrators guide several placeholders are used to increase "
 "the readability."
 msgstr ""
+"Um die Verständlichkeit zu verbessern, werden in diesem "
+"Administratorenhandbuch die folgenden Platzhalter verwendet: "
 
 #: ../../source/introduction.rst:44
 msgid ""
 "Those placeholders are used within example command line code. You need to "
 "replace those placeholders with the appropriate paths on your system."
 msgstr ""
+"Diese Platzhalter werden in den Kommandozeilen-Beispielen verwendet. Um die "
+"Kommandos auszuführen, müssen die Platzhalter durch die entsprechenden "
+"Verzeichnispfade ersetzt werden."
 
 #: ../../source/introduction.rst:29
 msgid ""
-"Effektif runs as a web application. The user interface can be accessed using"
-" a modern web browser. More details about the supported browsers can be "
-"found in the section :ref:`supported-browsers`\\ ."
+"Effektif runs as a web application. The user interface can be accessed using "
+"a modern web browser. More details about the supported browsers can be found "
+"in the section :ref:`supported-browsers`\\ ."
 msgstr ""
+"Da es sich bei Effektif um eine Webanwendung handelt, wird die "
+"Nutzeroberfläche über einen Webbrowser aufgerufen. Hierfür können gängige "
+"moderne Webbrowser verwendet werden. Details zu den unterstützten Browsern "
+"finden Sie im Abschnitt :ref:`supported-browsers`\\ ."
 
 #: ../../source/introduction.rst:39
 msgid "``$EFFEKTIF_HOME``"
-msgstr ""
+msgstr "``$EFFEKTIF_HOME``"
 
 #: ../../source/introduction.rst:39
 msgid ""
-"Refers to the directory that contains the unzipped content of the downloaded"
-" effektif-{version}.zip."
+"Refers to the directory that contains the unzipped content of the downloaded "
+"effektif-{version}.zip."
 msgstr ""
+"Bezeichnet das Verzeichnis, das den entpackten Inhalt des bereitgestellten "
+"effektif-{version}.zip-Archives enthält."
 
 #: ../../source/introduction.rst:40
 msgid "``$TOMCAT_HOME``"
-msgstr ""
+msgstr "``$TOMCAT_HOME``"
 
 #: ../../source/introduction.rst:40
 msgid ""
@@ -140,41 +170,26 @@ msgid ""
 "directory contains the folders ``webapps`` and ``conf``\\ . On Linux for "
 "example the directory might be located in ``/var/lib/tomcat7``\\ ."
 msgstr ""
+" Bezeichnet das Verzeichnis, in dem Ihre Apache Tomcat Instanz installiert "
+"ist. Das Verzeichnis enthält die Ordner ``webapps`` und ``conf``\\ . Unter "
+"Linux findet man das Verzeichnis z.B. in ``/var/lib/tomcat7``\\ ."
 
 #: ../../source/introduction.rst:41
 msgid "``$MONGO_HOME``"
-msgstr ""
+msgstr "``$MONGO_HOME``"
 
 #: ../../source/introduction.rst:41
 msgid "Refers to the directory where your MongoDB is installed."
 msgstr ""
-
-#~ msgid ""
-#~ "Effektif runs as a web application. The user interface can be accessed using"
-#~ " a modern web browser. More details about the supported browsers can be "
-#~ "found in the system requirements section."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "``$EFFEKTIF_HOME`` - Refers to the directory that contains the unzipped "
-#~ "content of the downloaded effektif-{version}.zip."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "``$TOMCAT_HOME`` - Refers to the directory where your Apache Tomcat is "
-#~ "installed."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "``$MONGO_HOME`` - Referes to the directory where your MongoDB is installed."
-#~ msgstr ""
+"Bezeichnet das Verzeichnis, in dem Ihre MongoDB Instanz installiert ist."
 
 #~ msgid ""
 #~ "This is the Effektif administration manual. It will provide you with "
-#~ "information to setup the Effektif system on your own server infrastructure. "
-#~ "Effektif officially supports Microsoft Windows Server 64Bit and Debian "
-#~ "Stable 64Bit. It is possible to setup Effektif also on other Linux "
-#~ "distributions. However, the instructions in this manual are only tested for "
-#~ "Debian. Probably, you will have to adjust the instructions to your system, "
-#~ "but the used software should work on most distributions."
+#~ "information to setup the Effektif system on your own server "
+#~ "infrastructure. Effektif officially supports Microsoft Windows Server "
+#~ "64Bit and Debian Stable 64Bit. It is possible to setup Effektif also on "
+#~ "other Linux distributions. However, the instructions in this manual are "
+#~ "only tested for Debian. Probably, you will have to adjust the "
+#~ "instructions to your system, but the used software should work on most "
+#~ "distributions."
 #~ msgstr "Das ist das Effektif Administratorenhandbuch… bla bla bla..."

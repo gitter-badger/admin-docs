@@ -1,56 +1,71 @@
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Effektif adminstrators guide 2.11\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-10-31 11:18+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2014-11-05 20:22+0100\n"
+"Last-Translator: Christian Wiggert <christian.wiggert@signavio.com>\n"
+"Language-Team: Effektif <dev@effektif.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"X-Generator: Poedit 1.6.9\n"
+"X-Poedit-SourceCharset: UTF-8\n"
 
 #: ../../source/troubleshooting.rst:2
 msgid "Troubleshooting"
-msgstr ""
+msgstr "Troubleshooting"
 
 #: ../../source/troubleshooting.rst:5
 msgid "Where are the log files?"
-msgstr ""
+msgstr "Wo sind die Logdateien?"
 
 #: ../../source/troubleshooting.rst:6
 msgid ""
 "There are multiple different log files that yield information in case of an "
-"error scenario. The following subsections will assist you in finding the log"
-" files for every part of the Effektif application. The most important one, "
+"error scenario. The following subsections will assist you in finding the log "
+"files for every part of the Effektif application. The most important one, "
 "regarding the Effektif system is the ``effektif.log``\\ . It will contain "
 "any application related log entries."
 msgstr ""
+"In Fallen von technischen Problemen können Sie verschiedene Logdateien "
+"einsehen. Der folgende Abschnitt erkläutert, wo Sie die Logdateien finden. "
+"Die wichtigste Logdatei ist ``effektif.log``\\ . Sie enthält alle "
+"Anwendungsbezogenen Logeinträge."
 
 #: ../../source/troubleshooting.rst:9
 msgid "Effektif"
-msgstr ""
+msgstr "Effektif"
 
 #: ../../source/troubleshooting.rst:10
 msgid ""
 "The Effektif log file effektif.log can be found in the location you "
-"configured in the logging configuration file ``$TOMCAT_HOME/webapps/ROOT"
-"/WEB-INF/classes/logback.xml``\\ . This file contains the line: ::"
+"configured in the logging configuration file ``$TOMCAT_HOME/webapps/ROOT/WEB-"
+"INF/classes/logback.xml``\\ . This file contains the line: ::"
 msgstr ""
+"Die Effektif-Logdatei effektif.log kann in dem Verzeichnis gefunden werden, "
+"das Sie in der Konfigurationsdatei ``$TOMCAT_HOME/webapps/ROOT/WEB-INF/"
+"classes/logback.xml`` eingetragen haben. Die Konfigurationsdatei enthält den "
+"Eintrag: ::"
 
 #: ../../source/troubleshooting.rst:14
 msgid ""
-"The value contains the directory of the log file. Besides the "
-"``effektif.log`` the directory contains more log files for every day of the "
-"past 30 days the server was running. If you are looking for any information "
-"about incidents on a specific date, open the log file with the respective "
+"The value contains the directory of the log file. Besides the ``effektif."
+"log`` the directory contains more log files for every day of the past 30 "
+"days the server was running. If you are looking for any information about "
+"incidents on a specific date, open the log file with the respective "
 "timestamp."
 msgstr ""
+"Der Wert enthält das Logverzeichnis. Neben ``effektif.log`` enthält das "
+"Verzeichnis weitere Logfiles über die letzten 30 Tage, an denen der Server "
+"ausgeführt wurde. Sie können über die Zeitstempel der Logdateien bequem "
+"Informationen über einen bestimmten Tage einsehen."
 
 #: ../../source/troubleshooting.rst:17
 msgid "MongoDB"
-msgstr ""
+msgstr "MongoDB"
 
 #: ../../source/troubleshooting.rst:18
 msgid ""
@@ -59,15 +74,22 @@ msgid ""
 "MongoDB or directly as a start parameter of MongoDB. Anyway, the value of "
 "this parameter will tell you where to find the log file."
 msgstr ""
+"Der Pfad zur MongoDB-Logdatei ist über das Parameter logpath definiert. "
+"Diesen Parameter können Sie entweder beim Starten von MongoDB oder in der "
+"MongoDB-Konfigurationsdatei festlegen."
 
 #: ../../source/troubleshooting.rst:20
 msgid ""
-"On Linux, one default location where the log file can be found is "
-"``/var/log/mongodb/mongodb.log``\\ . Whereas a default location for the "
-"configuration file is ``/etc/mongodb.conf``\\ . Be aware, these locations "
-"can change depending on the distribution and depend on how you have "
-"installed MongoDB."
+"On Linux, one default location where the log file can be found is ``/var/log/"
+"mongodb/mongodb.log``\\ . Whereas a default location for the configuration "
+"file is ``/etc/mongodb.conf``\\ . Be aware, these locations can change "
+"depending on the distribution and depend on how you have installed MongoDB."
 msgstr ""
+"Unter Linux ist der standardmäßige Pfad der Logdatei ``/var/log/mongodb/"
+"mongodb.log``\\ . Hierbei ist der standardmäßige Pfad der "
+"Konfigurationsdatei ``/etc/mongodb.conf``\\ . Berücksichtigen Sie, dass "
+"diese Pfade abhängig von Ihrer Linux-Distribution und Ihrem "
+"Installationsvorgang von MongoDB variieren können."
 
 #: ../../source/troubleshooting.rst:22
 msgid ""
@@ -75,106 +97,142 @@ msgid ""
 "setup MongoDB, you should find the log file in your MongoDB installation "
 "directory ``$MONGO_HOME\\logs``\\ ."
 msgstr ""
+"Falls Sie Windows verwenden und den Anweisungen zur Installation von MongoDB "
+"in diesem Handbuch gefolgt sind, finden Sie die MongoDB-Logdateien im Ordner "
+"logs Ihres MongoDB-Installationsverzeichnisses, also unter ``$MONGO_HOME"
+"\\logs``\\ ."
 
 #: ../../source/troubleshooting.rst:25
 msgid "Tomcat"
-msgstr ""
+msgstr "Tomcat"
 
 #: ../../source/troubleshooting.rst:26
 msgid ""
 "If not configured otherwise, the log files of the Apache Tomcat application "
-"server can be found either in the installation directory of the Tomcat "
-"``$TOMCAT_HOME\\logs`` (Windows) or a common log directory e.g. "
-"``/var/log/tomcat7`` (Linux)."
+"server can be found either in the installation directory of the Tomcat ``"
+"$TOMCAT_HOME\\logs`` (Windows) or a common log directory e.g. ``/var/log/"
+"tomcat7`` (Linux)."
 msgstr ""
+"Falls nicht anders festgelegt, befinden sich die Logdateien des Tomcats "
+"unter Windows im Verzeichnis ``$TOMCAT_HOME\\logs`` und unter Linux im "
+"gewohnten Logverzeichnis, zum Beispiel ``/var/log/tomcat7``\\ ."
 
 #: ../../source/troubleshooting.rst:29
 msgid "Common problems"
-msgstr ""
+msgstr "Häufige Fehler"
 
 #: ../../source/troubleshooting.rst:30
 msgid ""
 "This section lists some common problems that can arise during the setup of "
 "the Effektif system and gives instructions on how to solve them."
 msgstr ""
+"In diesem Abschnitt sind häufige Fehler, die im Zuge der Betreibung von "
+"Effektif auftreten können, zusammen mit Lösungsansätzen aufgeführt:"
 
 #: ../../source/troubleshooting.rst:33 ../../source/troubleshooting.rst:39
 #: ../../source/troubleshooting.rst:49
 msgid "Problem:"
-msgstr ""
+msgstr "Problem:"
 
 #: ../../source/troubleshooting.rst:33
 msgid ""
-"The Effektif site shows a HTTP Status 500 error including the message ``root"
-" cause java.lang.RuntimeException: Cannot find license.xml``\\ ."
+"The Effektif site shows a HTTP Status 500 error including the message ``root "
+"cause java.lang.RuntimeException: Cannot find license.xml``\\ ."
 msgstr ""
+"Die Effektif-Seite zeigt einen HTTP Status 500 Error mit der folgenden "
+"Fehlermeldung an: ``root cause java.lang.RuntimeException: Cannot find "
+"license.xml``\\ . "
 
 #: ../../source/troubleshooting.rst:36 ../../source/troubleshooting.rst:46
 #: ../../source/troubleshooting.rst:63
 msgid "Solution:"
-msgstr ""
+msgstr "Lösung:"
 
 #: ../../source/troubleshooting.rst:36
 msgid ""
 "You have not installed the Effektif license.xml at all or placed it in the "
 "wrong directory. Jump to section :ref:`install-license` to solve the issue."
 msgstr ""
+"Sie haben die Effektif-Lizenzdatei nicht eingespielt. Lesen Sie den "
+"Abschnitt :ref:`install-license` um das Problem zu beheben."
 
 #: ../../source/troubleshooting.rst:39
 msgid ""
-"The Effektif site shows a HTTP Status 500 error including the message "
-"``com/effektif/EffektifServlet : Unsupported major.minor version 51.0 "
-"(unable to load class com.effektif.EffektifServlet)``\\ ."
+"The Effektif site shows a HTTP Status 500 error including the message ``com/"
+"effektif/EffektifServlet : Unsupported major.minor version 51.0 (unable to "
+"load class com.effektif.EffektifServlet)``\\ ."
 msgstr ""
+"Die Effektif-Seite zeigt einen HTTP Status 500 Error mit der folgenden "
+"Fehlermeldung an: ``com/effektif/EffektifServlet : Unsupported major.minor "
+"version 51.0 (unable to load class com.effektif.EffektifServlet)``\\ ."
 
 #: ../../source/troubleshooting.rst:42
 msgid ""
-"The Tomcat server is using the wrong Java version. Effektif requires Java 7."
-" Make sure you have installed the correct Java version. You can check your "
+"The Tomcat server is using the wrong Java version. Effektif requires Java 7. "
+"Make sure you have installed the correct Java version. You can check your "
 "Java version by executing: ::"
 msgstr ""
+"Der Tomcat Server verwendet die falsche Java-Version. Effektif benötigt Java "
+"7. Stellen Sie sicher, dass Sie die korrekte Java-Version installiert haben. "
+"Sie können Ihre Java-Version überprüfen, indem Sie den folgenden Befehl "
+"ausführen: ::"
 
 #: ../../source/troubleshooting.rst:46
 msgid ""
-"Section :ref:`install-java` explains how to install the correct Java "
-"version."
+"Section :ref:`install-java` explains how to install the correct Java version."
 msgstr ""
+"Abschnitt :ref:`install-java` gibt Ihnen genauere Hinweise, wie Sie die "
+"richtige Java-Version installieren."
 
 #: ../../source/troubleshooting.rst:49
 msgid ""
 "Executing a MongoDB command yields the error message ``errmsg: "
 "“unauthorized”`` or  ``errmsg: “auth fails”``\\ ."
 msgstr ""
+"Die Ausführung eines MongoDB-Befehls erzeugt den folgenden Fehler: ``errmsg: "
+"“unauthorized”`` or  ``errmsg: “auth fails”``\\ ."
 
 #: ../../source/troubleshooting.rst:52
 msgid ""
 "Either the username / password combination that is used to execute the "
 "command is wrong or the respective MongoDB user lacks some required roles."
 msgstr ""
+"Es ist  entweder die Nutzername/Passwort-Kombination des ausführenden "
+"MongoDB-Nutzers falsch, oder der ausführende Nutzer verfügt hat nicht die "
+"notwendigen Rollen inne."
 
 #: ../../source/troubleshooting.rst:54
 msgid "The first issue can be checked by executing:"
 msgstr ""
+"Die erste Fehlerursache kann durch den folgenden Befehl überprüft werden:"
 
 #: ../../source/troubleshooting.rst:56
 msgid "Windows: ``mongo.exe admin -u effektif -p <yourEffektifUserPassword>``"
-msgstr ""
+msgstr "Windows: ``mongo.exe admin -u effektif -p <yourEffektifUserPassword>``"
 
 #: ../../source/troubleshooting.rst:58
 msgid "Debian: ``mongo admin -u effektif -p <yourEffektifUserPassword>``"
-msgstr ""
+msgstr "Debian: ``mongo admin -u effektif -p <yourEffektifUserPassword>``"
 
 #: ../../source/troubleshooting.rst:60
 msgid ""
-"If this command fails with the error message ``exception: login failed`` you"
-" know that your username / password combination is wrong. Please, make sure "
+"If this command fails with the error message ``exception: login failed`` you "
+"know that your username / password combination is wrong. Please, make sure "
 "you spelled the username and password correctly."
 msgstr ""
+"Falls dieser Befehl mit der Meldung ``exception: login failed`` fehlschlägt, "
+"wissen Sie, dass Ihre Nutzername/Passwort-Kombination nicht korrekt ist. "
+"Überprüfen Sie in diesem Fall die entsprechenden Daten noch einmal."
 
 #: ../../source/troubleshooting.rst:62
 msgid ""
-"In order to check the second issue, jump to section :ref:`add-mongodb-"
-"user`\\ . This section lists all necessary roles and explains how to verify "
-"that the Effektif user has all the required roles. Especially the restore "
-"and backup commands require certain roles to work properly."
+"In order to check the second issue, jump to section :ref:`add-mongodb-user`"
+"\\ . This section lists all necessary roles and explains how to verify that "
+"the Effektif user has all the required roles. Especially the restore and "
+"backup commands require certain roles to work properly."
 msgstr ""
+"Die zweite Fehlerursache können Sie überprüfen, indem Sie zum :ref:`add-"
+"mongodb-user` wechseln. Dieser Abschnitt listet alle notwendigen Rollen auf "
+"und erläutert wie Sie überprüfen können, ob der Nutzer die notwendigen "
+"Rollen innehat. Vor allem setzen Backup und Wiederherstellung bestimmte "
+"Rollen voraus."
