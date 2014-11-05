@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: Effektif adminstrators guide 2.11\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-10-30 13:50+0100\n"
-"PO-Revision-Date: 2014-10-31 11:22+0100\n"
+"PO-Revision-Date: 2014-11-05 13:26+0100\n"
 "Last-Translator: Christian Wiggert <christian.wiggert@signavio.com>\n"
 "Language-Team: Effektif <dev@effektif.com>\n"
 "MIME-Version: 1.0\n"
@@ -116,16 +116,6 @@ msgstr ""
 msgid "Web browser"
 msgstr "Web browser"
 
-#: ../../source/introduction.rst:29
-msgid ""
-"Effektif runs as a web application. The user interface can be accessed using "
-"a modern web browser. More details about the supported browsers can be found "
-"in the system requirements section."
-msgstr ""
-"Effektif runs as a web application. The user interface can be accessed using "
-"a modern web browser. More details about the supported browsers can be found "
-"in the system requirements section."
-
 #: ../../source/introduction.rst:32
 msgid "Naming conventions"
 msgstr "Naming conventions"
@@ -138,51 +128,54 @@ msgstr ""
 "Within this adminstrators guide several placeholders are used to increase "
 "the readability."
 
-#: ../../source/introduction.rst:35
+#: ../../source/introduction.rst:44
 msgid ""
-"``$EFFEKTIF_HOME`` - Refers to the directory that contains the unzipped "
-"content of the downloaded effektif-{version}.zip."
+"Those placeholders are used within example command line code. You need to "
+"replace those placeholders with the appropriate paths on your system."
 msgstr ""
-"``$EFFEKTIF_HOME`` - Refers to the directory that contains the unzipped "
-"content of the downloaded effektif-{version}.zip."
+"Those placeholders are used within example command line code. You need to "
+"replace those placeholders with the appropriate paths on your system."
 
-#: ../../source/introduction.rst:36
+#: ../../source/introduction.rst:29
 msgid ""
-"``$TOMCAT_HOME`` - Refers to the directory where your Apache Tomcat is "
-"installed."
+"Effektif runs as a web application. The user interface can be accessed using "
+"a modern web browser. More details about the supported browsers can be found "
+"in the section :ref:`supported-browsers`\\ ."
 msgstr ""
-"``$TOMCAT_HOME`` - Refers to the directory where your Apache Tomcat is "
-"installed."
+"Effektif runs as a web application. The user interface can be accessed using "
+"a modern web browser. More details about the supported browsers can be found "
+"in the section :ref:`supported-browsers`\\ ."
 
-#: ../../source/introduction.rst:37
-msgid ""
-"``$MONGO_HOME`` - Referes to the directory where your MongoDB is installed."
-msgstr ""
-"``$MONGO_HOME`` - Referes to the directory where your MongoDB is installed."
+#: ../../source/introduction.rst:39
+msgid "``$EFFEKTIF_HOME``"
+msgstr "``$EFFEKTIF_HOME``"
 
 #: ../../source/introduction.rst:39
 msgid ""
-"Those placeholders are used within example command line code. You need to "
-"replace those placeholders with the appropriate paths on your system."
+"Refers to the directory that contains the unzipped content of the downloaded "
+"effektif-{version}.zip."
 msgstr ""
-"Those placeholders are used within example command line code. You need to "
-"replace those placeholders with the appropriate paths on your system."
+"Refers to the directory that contains the unzipped content of the downloaded "
+"effektif-{version}.zip."
 
-#~ msgid ""
-#~ "This is the Effektif administration manual. It will provide you with "
-#~ "information to setup the Effektif system on your own server "
-#~ "infrastructure. Effektif officially supports Microsoft Windows Server "
-#~ "64Bit and Debian Stable 64Bit. It is possible to setup Effektif also on "
-#~ "other Linux distributions. However, the instructions in this manual are "
-#~ "only tested for Debian. Probably, you will have to adjust the "
-#~ "instructions to your system, but the used software should work on most "
-#~ "distributions."
-#~ msgstr ""
-#~ "This is the Effektif administration manual. It will provide you with "
-#~ "information to setup the Effektif system on your own server "
-#~ "infrastructure. Effektif officially supports Microsoft Windows Server "
-#~ "64Bit and Debian Stable 64Bit. It is possible to setup Effektif also on "
-#~ "other Linux distributions. However, the instructions in this manual are "
-#~ "only tested for Debian. Probably, you will have to adjust the "
-#~ "instructions to your system, but the used software should work on most "
-#~ "distributions."
+#: ../../source/introduction.rst:40
+msgid "``$TOMCAT_HOME``"
+msgstr "``$TOMCAT_HOME``"
+
+#: ../../source/introduction.rst:40
+msgid ""
+"Refers to the directory where your Apache Tomcat is installed. This "
+"directory contains the folders ``webapps`` and ``conf``\\ . On Linux for "
+"example the directory might be located in ``/var/lib/tomcat7``\\ ."
+msgstr ""
+"Refers to the directory where your Apache Tomcat is installed. This "
+"directory contains the folders ``webapps`` and ``conf``\\ . On Linux for "
+"example the directory might be located in ``/var/lib/tomcat7``\\ ."
+
+#: ../../source/introduction.rst:41
+msgid "``$MONGO_HOME``"
+msgstr "``$MONGO_HOME``"
+
+#: ../../source/introduction.rst:41
+msgid "Refers to the directory where your MongoDB is installed."
+msgstr "Refers to the directory where your MongoDB is installed."

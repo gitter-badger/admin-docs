@@ -1,12 +1,45 @@
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Effektif adminstrators guide 2.11\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-10-31 11:18+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2014-11-05 13:32+0100\n"
+"Last-Translator: Christian Wiggert <christian.wiggert@signavio.com>\n"
+"Language-Team: Effektif <dev@effektif.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"X-Generator: Poedit 1.6.9\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+#: ../../source/tooling.rst:2
+msgid "Tooling"
+msgstr "Tooling"
+
+#: ../../source/tooling.rst:3
+msgid ""
+"This section lists some tools that might help you to administrate and "
+"maintain your Effektif installation. Use them at your own discretion."
+msgstr ""
+"This section lists some tools that might help you to administrate and "
+"maintain your Effektif installation. Use them at your own discretion."
+
+#: ../../source/tooling.rst:6
+msgid "MongoDB"
+msgstr "MongoDB"
+
+#: ../../source/tooling.rst:7
+msgid ""
+"A good tool to manage your MongoDB installation is Robomongo. It is free and "
+"available for different operating system. Use it at your own discretion. It "
+"can be downloaded from this site:"
+msgstr ""
+"A good tool to manage your MongoDB installation is Robomongo. It is free and "
+"available for different operating system. Use it at your own discretion. It "
+"can be downloaded from this site:"
+
+#: ../../source/tooling.rst:9
+msgid "http://robomongo.org/"
+msgstr "http://robomongo.org/"

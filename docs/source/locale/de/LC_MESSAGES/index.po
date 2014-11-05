@@ -14,22 +14,66 @@ msgstr ""
 "X-Generator: Poedit 1.6.9\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
-#: ../../source/index.rst:3
-msgid "Effektif adminstrators guide"
-msgstr "Effektif Administratorenhandbuch"
+#: ../../source/index.rst:2
+msgid "Effektif administrators documentation"
+msgstr "Effektif Adminstratorenhandbuch"
 
-#: ../../source/index.rst:5
-msgid "Contents:"
-msgstr "Inhalte:"
+#: ../../source/index.rst:19
+msgid "Contact and legal information"
+msgstr "Kontaktinformationen und rechtliche Angaben"
 
-#~ msgid "Indices and tables"
-#~ msgstr "Indizes und Tabellen"
+#: ../../source/index.rst:20
+msgid "Effektif GmbH"
+msgstr "Effektif GmbH"
 
-#~ msgid ":ref:`genindex`"
-#~ msgstr ":ref:`genindex`"
+#: ../../source/index.rst:22
+msgid "Registered office of the company"
+msgstr "Sitz der Gesellschaft"
 
-#~ msgid ":ref:`modindex`"
-#~ msgstr ":ref:`modindex`"
+#: ../../source/index.rst:23
+msgid "Nürnberger Straße 8"
+msgstr "Nürnberger Straße 8"
 
-#~ msgid ":ref:`search`"
-#~ msgstr ":ref:`search`"
+#: ../../source/index.rst:24
+msgid "10787 Berlin"
+msgstr "10787 Berlin"
+
+#: ../../source/index.rst:26
+msgid "Contact"
+msgstr "Kontakt"
+
+#: ../../source/index.rst:27
+msgid "Phone:            030 / 856 21 54 - 21"
+msgstr "Telefon:          030 / 856 21 54 - 21"
+
+#: ../../source/index.rst:28
+msgid "Fax:              030 / 856 21 54 - 19"
+msgstr "Fax:              030 / 856 21 54 - 19"
+
+#: ../../source/index.rst:30
+msgid "Website"
+msgstr "Internetauftritt"
+
+#: ../../source/index.rst:31
+msgid "http://www.effektif.com"
+msgstr "http://www.effektif.com"
+
+#: ../../source/index.rst:33
+msgid "Legal information"
+msgstr "Rechtliche Angaben"
+
+#: ../../source/index.rst:34
+msgid "CEO:              Tom Baeyens"
+msgstr "Geschäftsführer: Tom Baeyens"
+
+#: ../../source/index.rst:35
+msgid "VATIN:            DE290063301"
+msgstr "Umsatzsteuer-ID: DE290063301"
+
+#: ../../source/index.rst:36
+msgid "TIN:              27/048/09069"
+msgstr "Steuernummer: 27/048/09069"
+
+#: ../../source/index.rst:37
+msgid "Register court:   Amtsgericht Charlottenburg, HRB 150074 B"
+msgstr "Registergericht: Amtsgericht Charlottenburg, HRB 150074 B"

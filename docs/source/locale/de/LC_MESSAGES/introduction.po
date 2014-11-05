@@ -97,13 +97,6 @@ msgstr ""
 msgid "Web browser"
 msgstr ""
 
-#: ../../source/introduction.rst:29
-msgid ""
-"Effektif runs as a web application. The user interface can be accessed using"
-" a modern web browser. More details about the supported browsers can be "
-"found in the system requirements section."
-msgstr ""
-
 #: ../../source/introduction.rst:32
 msgid "Naming conventions"
 msgstr ""
@@ -114,28 +107,67 @@ msgid ""
 "the readability."
 msgstr ""
 
-#: ../../source/introduction.rst:35
-msgid ""
-"``$EFFEKTIF_HOME`` - Refers to the directory that contains the unzipped "
-"content of the downloaded effektif-{version}.zip."
-msgstr ""
-
-#: ../../source/introduction.rst:36
-msgid ""
-"``$TOMCAT_HOME`` - Refers to the directory where your Apache Tomcat is "
-"installed."
-msgstr ""
-
-#: ../../source/introduction.rst:37
-msgid ""
-"``$MONGO_HOME`` - Referes to the directory where your MongoDB is installed."
-msgstr ""
-
-#: ../../source/introduction.rst:39
+#: ../../source/introduction.rst:44
 msgid ""
 "Those placeholders are used within example command line code. You need to "
 "replace those placeholders with the appropriate paths on your system."
 msgstr ""
+
+#: ../../source/introduction.rst:29
+msgid ""
+"Effektif runs as a web application. The user interface can be accessed using"
+" a modern web browser. More details about the supported browsers can be "
+"found in the section :ref:`supported-browsers`\\ ."
+msgstr ""
+
+#: ../../source/introduction.rst:39
+msgid "``$EFFEKTIF_HOME``"
+msgstr ""
+
+#: ../../source/introduction.rst:39
+msgid ""
+"Refers to the directory that contains the unzipped content of the downloaded"
+" effektif-{version}.zip."
+msgstr ""
+
+#: ../../source/introduction.rst:40
+msgid "``$TOMCAT_HOME``"
+msgstr ""
+
+#: ../../source/introduction.rst:40
+msgid ""
+"Refers to the directory where your Apache Tomcat is installed. This "
+"directory contains the folders ``webapps`` and ``conf``\\ . On Linux for "
+"example the directory might be located in ``/var/lib/tomcat7``\\ ."
+msgstr ""
+
+#: ../../source/introduction.rst:41
+msgid "``$MONGO_HOME``"
+msgstr ""
+
+#: ../../source/introduction.rst:41
+msgid "Refers to the directory where your MongoDB is installed."
+msgstr ""
+
+#~ msgid ""
+#~ "Effektif runs as a web application. The user interface can be accessed using"
+#~ " a modern web browser. More details about the supported browsers can be "
+#~ "found in the system requirements section."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "``$EFFEKTIF_HOME`` - Refers to the directory that contains the unzipped "
+#~ "content of the downloaded effektif-{version}.zip."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "``$TOMCAT_HOME`` - Refers to the directory where your Apache Tomcat is "
+#~ "installed."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "``$MONGO_HOME`` - Referes to the directory where your MongoDB is installed."
+#~ msgstr ""
 
 #~ msgid ""
 #~ "This is the Effektif administration manual. It will provide you with "

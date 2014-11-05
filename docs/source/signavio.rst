@@ -16,6 +16,7 @@ Setup
     </effektif>
 
 .. tabularcolumns:: |p{4cm}|p{11cm}|
+
 =====================   =====================
 ``effektifServerUrl``   Defines the URL under which your Effektif system is available.
 ``effektifUserName``    Defines the mail of the system user that will access the Effektif system. Make sure to use ``system@signavio.com`` to ensure the integration to work properly. The value is already preconfigured. You do NOT have to create an account for this user in any of the systems.
@@ -34,6 +35,7 @@ Setup
 If you add any of the following properties to the configuration file, make sure to add the required prefix ``effektif.com.effektif.model.service.signavio.SignavioAuthenticationProvider.`` in front of the property key:
 
 .. tabularcolumns:: |p{4cm}|p{11cm}|
+
 ==================  ==================
 ``serviceBaseUrl``  Defines the URL under which your Signavio system is available.
 ``clientId``        Defines the ID the Effektif system uses to identify itself to the Signavio system. Make sure to use ``com.effektif.oem`` to ensure the integration to work properly. This value is already preconfigured.

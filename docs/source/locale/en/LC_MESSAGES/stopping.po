@@ -1,12 +1,95 @@
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Effektif adminstrators guide 2.11\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-10-31 11:18+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2014-11-05 13:31+0100\n"
+"Last-Translator: Christian Wiggert <christian.wiggert@signavio.com>\n"
+"Language-Team: Effektif <dev@effektif.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"X-Generator: Poedit 1.6.9\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+#: ../../source/stopping.rst:2
+msgid "Stopping Effektif"
+msgstr "Stopping Effektif"
+
+#: ../../source/stopping.rst:3
+msgid ""
+"In order to stop the Effektif system completely, you have to stop the Tomcat "
+"application server and the MongoDB database. However, if you need to restart "
+"the Effektif system, it is sufficient to restart only the Tomcat server."
+msgstr ""
+"In order to stop the Effektif system completely, you have to stop the Tomcat "
+"application server and the MongoDB database. However, if you need to restart "
+"the Effektif system, it is sufficient to restart only the Tomcat server."
+
+#: ../../source/stopping.rst:6
+msgid "Windows"
+msgstr "Windows"
+
+#: ../../source/stopping.rst:9 ../../source/stopping.rst:24
+msgid "Tomcat"
+msgstr "Tomcat"
+
+#: ../../source/stopping.rst:10
+msgid ""
+"As already mentioned in the section :ref:`starting-effektif`\\ , the Tomcat "
+"configuration dialog offers a simple way to stop the Tomcat server. Simply "
+"open the Windows start menu, select ``Program Files\\Apache Tomcat"
+"\\Configure Tomcat``\\ , open the tab *General* and click the button *Stop*"
+"\\ ."
+msgstr ""
+"As already mentioned in the section :ref:`starting-effektif`\\ , the Tomcat "
+"configuration dialog offers a simple way to stop the Tomcat server. Simply "
+"open the Windows start menu, select ``Program Files\\Apache Tomcat"
+"\\Configure Tomcat``\\ , open the tab *General* and click the button *Stop*"
+"\\ ."
+
+#: ../../source/stopping.rst:13 ../../source/stopping.rst:30
+msgid "MongoDB"
+msgstr "MongoDB"
+
+#: ../../source/stopping.rst:14
+msgid ""
+"If you have registered MongoDB as a Windows service, you can stop the "
+"database in two ways. Either you open the command line with adminstrator "
+"privileges and execute: ::"
+msgstr ""
+"If you have registered MongoDB as a Windows service, you can stop the "
+"database in two ways. Either you open the command line with adminstrator "
+"privileges and execute: ::"
+
+#: ../../source/stopping.rst:18
+msgid ""
+"Or you run ``services.msc``\\ , select MongoDB in the list of services and "
+"click on *Stop*\\ ."
+msgstr ""
+"Or you run ``services.msc``\\ , select MongoDB in the list of services and "
+"click on *Stop*\\ ."
+
+#: ../../source/stopping.rst:21
+msgid "Debian"
+msgstr "Debian"
+
+#: ../../source/stopping.rst:25
+msgid ""
+"If you installed Tomcat using a packet manager, you can simply run the "
+"following command. Be aware, the execution might require root privileges. ::"
+msgstr ""
+"If you installed Tomcat using a packet manager, you can simply run the "
+"following command. Be aware, the execution might require root privileges. ::"
+
+#: ../../source/stopping.rst:31
+msgid ""
+"If MongoDB was setup following the instructions in this guide, you can "
+"simply stop the MongoDB server by executing the following command. Be aware, "
+"the execution might require root privileges. ::"
+msgstr ""
+"If MongoDB was setup following the instructions in this guide, you can "
+"simply stop the MongoDB server by executing the following command. Be aware, "
+"the execution might require root privileges. ::"
