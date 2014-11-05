@@ -34,7 +34,9 @@ The Effektif system relies on a SMTP mail server to send notifications and invit
 
 Software requirements
 `````````````````````
-In order to run Effektif on your server, you will need to install some additional software. Depending on your deployment strategy (combined or separate system for application and database), you have to install the following software requirements either on the same server or the respective separate servers. The next sections will contain additional instructions on how to install and configure the additional software components.
+In order to run Effektif on your server, you will need to install some additional software. Depending on your deployment strategy (combined or separate system for application and database), you have to install the following software requirements either on the same server or the respective separate servers. 
+
+The following sections contain detailed instructions on how to install and configure the additional software components.
 
 The application server requires the following additional software:
 
@@ -72,7 +74,7 @@ The directory will contain the following files:
 
     * ROOT - this directory contains the web application
 
-On Linux systems you need to make the scripts executable with the chmod command like this: ::
+On Linux systems you need to make the scripts executable with the ``chmod`` command like this: ::
 
     chmod a+x $EFFEKTIF_HOME/*.sh
 
@@ -144,10 +146,14 @@ The tab Java offers the possibility to set the options and define the memory poo
 
 Debian
 ``````
-One way to define the ``JAVA_OPTS`` under Debian and other Linux distributions is to create the file setenv.sh in the Tomcat 7 ``/bin/`` directory. This directory contains also other files like the ``catalina.sh``\ , the ``startup.sh`` or the ``shutdown.sh`` und is for instance located in ``/usr/share/tomcat7`` or a similar directory.
-Simply create or extend any existing setenv.sh file and add the line for ``the JAVA_OPTS``\ :
+One way to define the ``JAVA_OPTS`` under Debian and other Linux distributions is to create the file ``setenv.sh`` in the Tomcat 7 ``/bin/`` directory. This directory contains also other files like the ``catalina.sh``\ , the ``startup.sh`` or the ``shutdown.sh`` und is for instance located in ``/usr/share/tomcat7`` or a similar directory.
+Simply create or extend any existing setenv.sh file and add the line for ``the JAVA_OPTS``\ : ::
 
-``export JAVA_OPTS="$JAVA_OPTS -Xms1536m [... add the other options]"``
+    export JAVA_OPTS="$JAVA_OPTS -Xms1536m [... add the other options]"
+
+In case you have created a new ``setenv.sh`` file, you have to make sure it is executable using the ``chmod`` command: ::
+
+    chmod a+x setenv.sh
 
 Setup the Tomcat connector
 ``````````````````````````
@@ -396,7 +402,7 @@ Change it to: ::
 
     <root level="DEBUG">
 
-You will need to restart the Tomcat server for the changes to take effect.
+You will need to restart the Tomcat server for the changes to take effect. You can find more detailed information on how to start the Tomcat server in the next section.
 
 The log file is configured to do a roll over. Every day, a new log file is created which contains a timestamp in the filename similar to ``effektif-2014-10-09.log``\ . The most recent log entries can still be found in the file effektif.log. After 30 days, the log files will be removed automatically. 
 

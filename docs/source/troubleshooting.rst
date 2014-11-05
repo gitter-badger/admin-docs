@@ -9,7 +9,7 @@ Effektif
 ````````
 The Effektif log file effektif.log can be found in the location you configured in the logging configuration file ``$TOMCAT_HOME/webapps/ROOT/WEB-INF/classes/logback.xml``\ . This file contains the line: ::
 
-    <property name="LOG_DIR" value="./log"/>
+    <property name="LOG_DIR" value="/path/to/log"/>
 
 The value contains the directory of the log file. Besides the ``effektif.log`` the directory contains more log files for every day of the past 30 days the server was running. If you are looking for any information about incidents on a specific date, open the log file with the respective timestamp.
 
@@ -17,7 +17,7 @@ MongoDB
 ```````
 The MongoDB log file is configured by the logpath option. This is either defined in the MongoDB configuration file that you reference when starting MongoDB or directly as a start parameter of MongoDB. Anyway, the value of this parameter will tell you where to find the log file.
 
-On Linux, one default location where the log file can be found is ``/var/log/mongodb/mongodb.log``\ . Whereas a default location for the configuration file is ``/etc/mongodb.conf``\ . Be aware, these locations can change dependent on the distribution and depend on how you have installed MongoDB.
+On Linux, one default location where the log file can be found is ``/var/log/mongodb/mongodb.log``\ . Whereas a default location for the configuration file is ``/etc/mongodb.conf``\ . Be aware, these locations can change depending on the distribution and depend on how you have installed MongoDB.
 
 If you are using Windows and followed the instructions in this guide to setup MongoDB, you should find the log file in your MongoDB installation directory ``$MONGO_HOME\logs``\ .
 

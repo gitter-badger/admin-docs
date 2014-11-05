@@ -18,7 +18,7 @@ Replace the user credentials with the ones you have chosen during the setup and 
 
 Debian
 ``````
-Using Debian the command to restore a backup stored in /path/to/dump would for example look like this: ::
+Using Debian, the command to restore a backup stored in /path/to/dump would look like this: ::
 
     mongorestore --drop -u effektif -p <EffektifUserPassword> /path/to/dump
 

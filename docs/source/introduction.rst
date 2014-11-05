@@ -37,7 +37,7 @@ Within this adminstrators guide several placeholders are used to increase the re
 
 ==================  ==================
 ``$EFFEKTIF_HOME``  Refers to the directory that contains the unzipped content of the downloaded effektif-{version}.zip.
-``$TOMCAT_HOME``    Refers to the directory where your Apache Tomcat is installed. This directory should contain the ``webapps`` and ``conf`` folders. On Linux the directory might be located for example in ``/var/lib/tomcat7``\ .
+``$TOMCAT_HOME``    Refers to the directory where your Apache Tomcat is installed. This directory contains the folders ``webapps`` and ``conf``\ . On Linux for example the directory might be located in ``/var/lib/tomcat7``\ .
 ``$MONGO_HOME``     Refers to the directory where your MongoDB is installed.
 ==================  ==================
 

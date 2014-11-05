@@ -1,6 +1,6 @@
 Backup
 ======
-In order to take a backup, it is sufficient to backup the content of MongoDB. All uploaded files are stored in the database and, therefore, covered by a database backup. MongoDB comes with some built-in solutions for backups. Effektif recommends to use mongodump. For more detailed information about backups of MongoDB see the official documentation:
+In order to take a backup, it is sufficient to backup the content of MongoDB. All uploaded files are stored in the database and, therefore, covered by a database backup. MongoDB comes with built-in solutions for backups. Effektif recommends to use mongodump. For more detailed information about backups of MongoDB see the official documentation:
 
 http://docs.mongodb.org/v2.4/core/backups/
 
@@ -15,7 +15,7 @@ You will need to use the Effektif MongoDB user credentials again to access the d
 
 You can specify the output folder where the content of the backup is stored. Be aware, if the directory contains already an older backup, the new backup will overwrite existing files. Alternatively, you could store several backups with a timestamp. 
 
-You should make sure the backup is stored in a safe location and cannot get lost if the server fails. Keep in mind the backups can consume a lot of space, therefore, you should add additional disk space to the server if you plan storing on multiple versions of the backup.
+You should make sure the backup is stored in a safe location and cannot get lost if the server fails. Keep in mind, the backups can consume a lot of space, therefore, you should add additional disk space to the server if you plan storing on multiple versions of the backup.
 
 The following lines will show an example on how to do a backup with mongodump on different operating systems.
 
@@ -29,17 +29,17 @@ In the example above, adjust the location of your MongoDB installation according
 
 Debian
 ``````
-We assume, you followed the instructions in this guide to setup MongoDB. For example, mongodump could then be executed like this: ::
+If you followed the instructions within this guide to setup MongoDB, then ``mongodump`` could be executed like this: ::
 
-    mongodump -u effektif -p <EffekifUserPassword> -o /path/to/dumps 
+    mongodump -u effektif -p <EffektifUserPassword> -o /path/to/dumps 
 
 As you can see the Effektif MongoDB user credentials are used and the output is stored in the folder folder /path/to/dumps. Make sure the executing user has the required privileges to write to the output folder.
 
 Another example will create a folder with a timestamp for every new dump: ::
 
-    mongodump -u effektif -p <EffekifUserPassword> -o /path/to/dumps/`date +"%Y-%m-%d-%H-%M-%S"`
+    mongodump -u effektif -p <EffektifUserPassword> -o /path/to/dumps/`date +"%Y-%m-%d-%H-%M-%S"`
 
 The folder dumps would then contain a subfolder for every backup with a name similar to “2014-10-07-17-49-07”. However, this method doesn’t remove old backups. 
 
-It's good practice to take backups regularly. We recommend using cron. You could for instance setup ``/etc/crontab`` that executes the mongodump command.
+It's good practice to take backups regularly. We recommend using cron to schedule backups. You could for instance setup ``/etc/crontab`` that executes the mongodump command.
 

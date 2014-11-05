@@ -28,6 +28,6 @@ If you installed Tomcat using a packet manager, you can simply run the following
 
 MongoDB
 ^^^^^^^
-If MongoDB was setup following the instructions in this guide, you can simply stop the MongoDB server by executing: ::
+If MongoDB was setup following the instructions in this guide, you can simply stop the MongoDB server by executing the following command. Be aware, the execution might require root privileges. ::
 
     /etc/init.d/mongodb stop
