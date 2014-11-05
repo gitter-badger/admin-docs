@@ -12,6 +12,8 @@ The Effektif system can be deployed on different operating systems. Officially s
 * Debian Stable Release 64Bit
 * Microsoft Windows Server 64Bit
 
+*Important: In general, it is possible to install Effektif on other Linux distributions. However, the installation process can differ from the following instructions.*
+
 You are advised to use a 64Bit operating system in order to be able to assign more than 1.5GB of heap space to the Java VM. Furthermore, MongoDB is limited to 2GB of content on 32Bit operating systems.
 
 Hardware requirements
@@ -47,7 +49,7 @@ The database server requires the following additional software:
 
 * MongoDB version 2.4.x
 
-Be aware, MongoDB version 2.6.x is not yet officially supported by Effektif. Please, make sure to install version 2.4.x.
+*Important: MongoDB version 2.6.x is not yet officially supported by Effektif. Please, make sure to install version 2.4.x.*
 
 .. _supported-browsers:
 
@@ -163,7 +165,7 @@ Setup the Tomcat connector
 ``````````````````````````
 By default the Tomcat server will start up using port 8080 and 8005. Port 8080 is used for serving the Effektif web application. Port 8005 is used to shutdown the Tomcat instance. You can change the port in the server.xml which is located in ``$TOMCAT_HOME/conf/server.xml``\ .
 
-Be aware, if the server is running on any other port than port 80, your users will have to enter the port in the address line of the web browser, e.g. http://effektif.yourdomain.com:8080/ .
+*Important: If the server is running on any other port than port 80, your users will have to enter the port in the address line of the web browser, e.g. http://effektif.yourdomain.com:8080/\ .*
 
 Locate the HTTP connector and change the value of port to your preferred port. Furthmore, make sure the connector contains the entry ``URIEnconding=”UTF-8”``\ . For example, the connector could look like this:
 
@@ -176,7 +178,7 @@ Locate the HTTP connector and change the value of port to your preferred port. F
 
 Copy the Effektif webapp
 ------------------------
-The Effektif webapp which can be found in the directory ``$EFFEKTIF_HOME/effektif/ROOT`` needs to be copied to the Tomcat’s webapps folder. Therefore remove any files and folders that are located in ``$TOMCAT_HOME/webapps`` and copy the ROOT folder to ``$TOMCAT_HOME/webapps/ROOT``\ .
+The Effektif webapp which can be found in the directory ``$EFFEKTIF_HOME/effektif/ROOT`` needs to be copied to the Tomcat’s webapps folder. Therefore remove any files and folders that are located in ``$TOMCAT_HOME/webapps`` and copy the ROOT folder to ``$TOMCAT_HOME/webapps/``\ .
 
 The Effektif application needs to run as the ROOT application in the Tomcat. Therefore, running it in parallel with another application that requires to run as the ROOT application in the same Tomcat is currently not possible.
 
@@ -231,7 +233,7 @@ When you finished downloading MongoDB follow the next steps:
     * You can unregister the service again by executing: ``C:\MongoDB\bin\mongod.exe --remove``
     * The registered service should start MongoDB automatically on startup of Windows.
 
-#. You can now start MongoDB by executing the following command: net start MongoDB
+#. You can now start MongoDB by executing the following command: ``net start MongoDB``
     
     * If this command fails with the error 1053 or 2186, make sure that the configuration file contains absolute paths. Furthermore, the paths must not have any whitespaces and should not be located in any directory that requires admin privileges.
     * You can stop MongoDB by calling: ``net stop MongoDB``
@@ -249,7 +251,7 @@ For convenience reasons the script ``$EFFEKTIF_HOME/mongodb.install.debian.sh`` 
 
     sudo ./mongodb.install.debian.sh
 
-This will add the MongoDB repositories to your package sources and install version 2.4.11 of MongoDB.
+This will add the MongoDB repositories to your package sources and install the version 2.4.x of MongoDB.
 You can now simply start and stop the MongoDB server by calling ::
 
     sudo /etc/init.d/mongodb start

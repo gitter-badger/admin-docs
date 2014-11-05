@@ -33,7 +33,7 @@ If you followed the instructions within this guide to setup MongoDB, then ``mong
 
     mongodump -u effektif -p <EffektifUserPassword> -o /path/to/dumps 
 
-As you can see the Effektif MongoDB user credentials are used and the output is stored in the folder folder /path/to/dumps. Make sure the executing user has the required privileges to write to the output folder.
+The parameter -u defines the username and -p the password of the Effektif MongoDB user, replace them with your chosen values. The parameter -o specifies the output directory, in this case /path/to/dumps. Make sure the executing user has the required privileges to write to the output folder.
 
 Another example will create a folder with a timestamp for every new dump: ::
 

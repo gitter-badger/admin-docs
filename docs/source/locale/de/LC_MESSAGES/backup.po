@@ -1,32 +1,40 @@
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Effektif adminstrators guide 2.11\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-10-31 11:18+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2014-11-05 14:24+0100\n"
+"Last-Translator: Christian Wiggert <christian.wiggert@signavio.com>\n"
+"Language-Team: Effektif <dev@effektif.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"X-Generator: Poedit 1.6.9\n"
+"X-Poedit-SourceCharset: UTF-8\n"
 
 #: ../../source/backup.rst:2
 msgid "Backup"
-msgstr ""
+msgstr "Backup"
 
 #: ../../source/backup.rst:3
 msgid ""
 "In order to take a backup, it is sufficient to backup the content of "
 "MongoDB. All uploaded files are stored in the database and, therefore, "
 "covered by a database backup. MongoDB comes with built-in solutions for "
-"backups. Effektif recommends to use mongodump. For more detailed information"
-" about backups of MongoDB see the official documentation:"
+"backups. Effektif recommends to use mongodump. For more detailed information "
+"about backups of MongoDB see the official documentation:"
 msgstr ""
+"Um ein Backup zu erstellen, genügt es den Speicherinhalt von MongoDB zu "
+"sichern. Alle hochgeladenen Dateien sind in der Datenbank gespeichert und so "
+"durch ein Datenbankbackup gedeckt. MongoDB verfügt über programmeigene "
+"Backup-Features. Wir empfehlen mongodump zu verwenden. Weitere Informationen "
+"bezüglich Backups in MongoDB finden Sie hier:"
 
 #: ../../source/backup.rst:5
 msgid "http://docs.mongodb.org/v2.4/core/backups/"
-msgstr ""
+msgstr "http://docs.mongodb.org/v2.4/core/backups/"
 
 #: ../../source/backup.rst:7
 msgid ""
@@ -34,6 +42,10 @@ msgid ""
 "If not stated otherwise via command line parameters, mongodump will try to "
 "backup data from the locally running mongod service."
 msgstr ""
+"Stellen Sie sicher, dass MongoDB ausgeführt wird wenn Sie mongodump "
+"ausführen. Falls nicht anders (über Kommandozeilenparameter) spezifiziert, "
+"versucht mongodump die Daten des lokal ausgeführten mongod Services zu "
+"sichern."
 
 #: ../../source/backup.rst:9
 msgid ""
@@ -43,30 +55,39 @@ msgid ""
 "the user needs to access all databases and the user data. The user should "
 "have the following roles:"
 msgstr ""
+"Um auf die Daten in der Effektif-Datenbank zuzugreifen, benötigen Sie die "
+"Nutzerdaten des entsprechenden Datenbanknutzers. Falls Sie nicht den "
+"„Effektif“-Datenbanknutzer zum ausführen des Backups verwenden, stellen Sie "
+"sicher, dass der ausführende Nutzer die notwendigen Rechte innehat. Der "
+"Nutzer muss die folgenden Rollen innehaben:"
 
 #: ../../source/backup.rst:11
 msgid "``clusterAdmin``"
-msgstr ""
+msgstr "``clusterAdmin``"
 
 #: ../../source/backup.rst:12
 msgid "``userAdminAnyDatabase``"
-msgstr ""
+msgstr "``userAdminAnyDatabase``"
 
 #: ../../source/backup.rst:13
 msgid "``readWriteAnyDatabase``"
-msgstr ""
+msgstr "``readWriteAnyDatabase``"
 
 #: ../../source/backup.rst:14
 msgid "``dbAdminAnyDatabase``"
-msgstr ""
+msgstr "``dbAdminAnyDatabase``"
 
 #: ../../source/backup.rst:16
 msgid ""
-"You can specify the output folder where the content of the backup is stored."
-" Be aware, if the directory contains already an older backup, the new backup"
-" will overwrite existing files. Alternatively, you could store several "
+"You can specify the output folder where the content of the backup is stored. "
+"Be aware, if the directory contains already an older backup, the new backup "
+"will overwrite existing files. Alternatively, you could store several "
 "backups with a timestamp."
 msgstr ""
+"Sie können den Output-Ordner des Backups festlegen. Seien Sie sich bewusst, "
+"dass ältere Backups überschrieben werden, wenn Sie einen Ordner auswählen, "
+"der bereits ein Backup enthält. Um dies zu verhindern können Sie jedes "
+"Backup mit einem Zeitstempel versehen."
 
 #: ../../source/backup.rst:18
 msgid ""
@@ -75,26 +96,38 @@ msgid ""
 "space, therefore, you should add additional disk space to the server if you "
 "plan storing on multiple versions of the backup."
 msgstr ""
+"Stellen Sie sicher, dass das Backup an einem sicheren Ort gespeichert wird "
+"und nicht verloren gehen kann, falls der Server ausfällt. Berücksichtigen "
+"Sie auch, dass Backups zusätzlichen Speicherplatz beanspruchen, der "
+"besonders bei der Erstellung von mehreren Backups schwer ins Gewicht fällt."
 
 #: ../../source/backup.rst:20
 msgid ""
 "The following lines will show an example on how to do a backup with "
 "mongodump on different operating systems."
 msgstr ""
+"Die folgenden Beispiele illustrieren, wie ein Backup mit mongodump "
+"ausgeführt werden kann."
 
 #: ../../source/backup.rst:23
 msgid "Windows"
-msgstr ""
+msgstr "Windows"
 
 #: ../../source/backup.rst:24
 msgid ""
-"The ``mongodump.exe`` can be found in the MongoDB installation directory, "
-"``$MONGO_HOME\\bin\\mongodump.exe``\\ . You just have to create a directory "
+"The ``mongodump.exe`` can be found in the MongoDB installation directory, ``"
+"$MONGO_HOME\\bin\\mongodump.exe``\\ . You just have to create a directory "
 "where the backups should be stored and make sure the user doing the backups "
-"has the necessary read / write permissions. If you followed the instructions"
-" within this guide to setup MongoDB, the command to execute mongodump would "
+"has the necessary read / write permissions. If you followed the instructions "
+"within this guide to setup MongoDB, the command to execute mongodump would "
 "look like this: ::"
 msgstr ""
+"Die Datei ``mongodump.exe`` kann im MongoDB Installationsverzeichnis, also "
+"unter ``$MONGO_HOME\\bin\\mongodump.exe`` gefunden werden. Erstellen Sie ein "
+"Zielverzeichnis für die Backups und stellen Sie sicher, dass der Backup-"
+"ausführende Nutzer Lese- und Schreibzugriff auf dieses Verzeichnis hat. "
+"Falls Sie den Installationsanweisungen in diesem Handbuch genau gefolgt "
+"sind, ist der Befehl zum erstellen des Backups wie folgt: ::"
 
 #: ../../source/backup.rst:28
 msgid ""
@@ -103,35 +136,38 @@ msgid ""
 "the Effektif MongoDB user, replace them with your chosen values. The "
 "parameter -o specifies the output directory."
 msgstr ""
+"Der Ort der MongoDB-Installation in dem aufgeführten Beispiel muss "
+"gegebenenfalls angepasst werden. Der Parameter –u beschreibt den "
+"Nutzernamen, der Parameter –p das Passwort. Über –o wird das Zielverzeichnis "
+"festgelegt."
 
 #: ../../source/backup.rst:31
 msgid "Debian"
-msgstr ""
+msgstr "Debian"
 
 #: ../../source/backup.rst:32
 msgid ""
 "If you followed the instructions within this guide to setup MongoDB, then "
 "``mongodump`` could be executed like this: ::"
 msgstr ""
-
-#: ../../source/backup.rst:36
-msgid ""
-"As you can see the Effektif MongoDB user credentials are used and the output"
-" is stored in the folder folder /path/to/dumps. Make sure the executing user"
-" has the required privileges to write to the output folder."
-msgstr ""
+"Im folgenden Beispiel gehen wir wieder davon aus, dass Sie den "
+"Installationsanweisungen in diesem Handbuch gefolgt sind. Der ``mongodump`` "
+"Befehl kann dann wie folgt ausgeführt werden: ::"
 
 #: ../../source/backup.rst:38
 msgid ""
 "Another example will create a folder with a timestamp for every new dump: ::"
-msgstr ""
+msgstr "Das nächste Beispiel erstellt das Backup mit Zeitstempel: ::"
 
 #: ../../source/backup.rst:42
 msgid ""
-"The folder dumps would then contain a subfolder for every backup with a name"
-" similar to “2014-10-07-17-49-07”. However, this method doesn’t remove old "
+"The folder dumps would then contain a subfolder for every backup with a name "
+"similar to “2014-10-07-17-49-07”. However, this method doesn’t remove old "
 "backups."
 msgstr ""
+"Der Ordner dumps würde also Unterordner mit den Zeitstempel als Namen "
+"enthalten (zum Beispiel: “2014-10-07-17-49-07”) und jeder Unterordner würde "
+"ein Backup enthalten. Ältere Backups würden bestehen bleiben."
 
 #: ../../source/backup.rst:44
 msgid ""
@@ -139,3 +175,26 @@ msgid ""
 "schedule backups. You could for instance setup ``/etc/crontab`` that "
 "executes the mongodump command."
 msgstr ""
+"Wir empfehlen, Backups regelmäßig durchzuführen, zum Beispiel unter "
+"Verwendung von cron. Unter ``/etc/crontab`` können Sie einen cronjob "
+"erstellen, der den entsprechenden mongodump Befehl regelmäßig ausführt."
+
+#: ../../source/backup.rst:36
+msgid ""
+"The parameter -u defines the username and -p the password of the Effektif "
+"MongoDB user, replace them with your chosen values. The parameter -o "
+"specifies the output directory, in this case /path/to/dumps. Make sure the "
+"executing user has the required privileges to write to the output folder."
+msgstr ""
+"Der Parameter –u beschreibt den Nutzernamen, der Parameter –p das Passwort. "
+"Über –o wird das Zielverzeichnis festgelegt, in diesem Fall /path/to/dumps. "
+"Stellen Sie sicher, dass der Backup-ausführende Nutzer Lese- und "
+"Schreibzugriff auf dieses Verzeichnis hat"
+
+#~ msgid ""
+#~ "As you can see the Effektif MongoDB user credentials are used and the "
+#~ "output is stored in the folder folder /path/to/dumps. Make sure the "
+#~ "executing user has the required privileges to write to the output folder."
+#~ msgstr ""
+#~ "Wie Sie sehen werden die Stellen Sie sicher, dass der Backup-ausführende "
+#~ "Nutzer Lese- und Schreibzugriff auf dieses Verzeichnis hat"
