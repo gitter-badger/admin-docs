@@ -30,6 +30,7 @@ import os
 # ones.
 extensions = [
     'sphinx.ext.todo',
+    'sphinx.ext.ifconfig'
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -198,10 +199,10 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-  # ('index', 'Effektifadminstratorsguide.tex', u'Effektif administrators guide',
-  #  u'Effektif GmbH', 'manual'),
-  ('index', 'Effektifadminstratorsguide.tex', u'Effektif Administratorenhandbuch',
+  ('index', 'Effektifadminstratorsguide.tex', u'Effektif administrators guide',
    u'Effektif GmbH', 'manual'),
+  # ('index', 'Effektifadminstratorsguide.tex', u'Effektif Administratorenhandbuch',
+  #  u'Effektif GmbH', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of

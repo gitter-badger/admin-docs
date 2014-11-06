@@ -1,4 +1,4 @@
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: Effektif adminstrators guide 2.11\n"
@@ -144,14 +144,14 @@ msgstr ""
 msgid ""
 "The registration also defined the startup type of the MongoDB service as "
 "“Automatic” which means it will start automatically if you restart the "
-"Windows system. Alternatively, you can manage the MongoDB service by opening "
-"the ``services.msc``\\ . There, MongoDB will be listed among the other "
+"Windows system. Alternatively, you can manage the MongoDB service by opening"
+" the ``services.msc``\\ . There, MongoDB will be listed among the other "
 "services and can be started and stopped."
 msgstr ""
 "The registration also defined the startup type of the MongoDB service as "
 "“Automatic” which means it will start automatically if you restart the "
-"Windows system. Alternatively, you can manage the MongoDB service by opening "
-"the ``services.msc``\\ . There, MongoDB will be listed among the other "
+"Windows system. Alternatively, you can manage the MongoDB service by opening"
+" the ``services.msc``\\ . There, MongoDB will be listed among the other "
 "services and can be started and stopped."
 
 #: ../../source/starting.rst:53 ../../source/starting.rst:80
@@ -161,26 +161,28 @@ msgstr "Tomcat"
 #: ../../source/starting.rst:54
 msgid ""
 "Assuming you installed Tomcat using the Windows service installer, you can "
-"open the Tomcat configuration dialog again by opening the Windows start menu "
-"and selecting ``Program Files\\Apache Tomcat\\Configure Tomcat``\\ . The tab "
-"General contains respective buttons to start and stop the Tomcat service."
+"open the Tomcat configuration dialog again by opening the Windows start menu"
+" and selecting ``Program Files\\Apache Tomcat\\Configure Tomcat``\\ . The "
+"tab General contains respective buttons to start and stop the Tomcat "
+"service."
 msgstr ""
 "Assuming you installed Tomcat using the Windows service installer, you can "
-"open the Tomcat configuration dialog again by opening the Windows start menu "
-"and selecting ``Program Files\\Apache Tomcat\\Configure Tomcat``\\ . The tab "
-"General contains respective buttons to start and stop the Tomcat service."
+"open the Tomcat configuration dialog again by opening the Windows start menu"
+" and selecting ``Program Files\\Apache Tomcat\\Configure Tomcat``\\ . The "
+"tab General contains respective buttons to start and stop the Tomcat "
+"service."
 
 #: ../../source/starting.rst:60
 msgid ""
 "Furthermore, you have the option to define the startup type of the service. "
-"By default, this should be “Manual” which means you have to start the Tomcat "
-"server manually each time the server restarts. You can change the type to "
+"By default, this should be “Manual” which means you have to start the Tomcat"
+" server manually each time the server restarts. You can change the type to "
 "“Automatic”. Then the Tomcat server will start automatically each time you "
 "restart your Windows server."
 msgstr ""
 "Furthermore, you have the option to define the startup type of the service. "
-"By default, this should be “Manual” which means you have to start the Tomcat "
-"server manually each time the server restarts. You can change the type to "
+"By default, this should be “Manual” which means you have to start the Tomcat"
+" server manually each time the server restarts. You can change the type to "
 "“Automatic”. Then the Tomcat server will start automatically each time you "
 "restart your Windows server."
 
@@ -192,13 +194,13 @@ msgstr "Debian"
 msgid ""
 "If you followed the instructions in this guide to setup MongoDB using a "
 "packet manager, some additional scripts have been installed that allow you "
-"to start, stop and restart the database very easily. Be aware, the execution "
-"of those scripts might require root privileges. ::"
+"to start, stop and restart the database very easily. Be aware, the execution"
+" of those scripts might require root privileges. ::"
 msgstr ""
 "If you followed the instructions in this guide to setup MongoDB using a "
 "packet manager, some additional scripts have been installed that allow you "
-"to start, stop and restart the database very easily. Be aware, the execution "
-"of those scripts might require root privileges. ::"
+"to start, stop and restart the database very easily. Be aware, the execution"
+" of those scripts might require root privileges. ::"
 
 #: ../../source/starting.rst:71
 msgid ""
@@ -216,14 +218,14 @@ msgstr ""
 
 #: ../../source/starting.rst:81
 msgid ""
-"The recommended way to install Tomcat is to use a packet manager. Installing "
-"Tomcat under Debian with APT will install additional scripts to start, stop "
-"and restart the server. Be aware, the execution of those scripts might "
+"The recommended way to install Tomcat is to use a packet manager. Installing"
+" Tomcat under Debian with APT will install additional scripts to start, stop"
+" and restart the server. Be aware, the execution of those scripts might "
 "require root privileges. ::"
 msgstr ""
-"The recommended way to install Tomcat is to use a packet manager. Installing "
-"Tomcat under Debian with APT will install additional scripts to start, stop "
-"and restart the server. Be aware, the execution of those scripts might "
+"The recommended way to install Tomcat is to use a packet manager. Installing"
+" Tomcat under Debian with APT will install additional scripts to start, stop"
+" and restart the server. Be aware, the execution of those scripts might "
 "require root privileges. ::"
 
 #: ../../source/starting.rst:85
@@ -247,22 +249,22 @@ msgstr "Login to Effektif"
 #: ../../source/starting.rst:95
 msgid ""
 "When the Effektif system was started properly you can see the login screen "
-"by entering the URL of your Effektif installation in your browser. There are "
-"different versions of the login screen. If you purchased an Effektif "
-"standalone version, you will see a form that requires an email address and a "
-"password to login."
+"by entering the URL of your Effektif installation in your browser. There are"
+" different versions of the login screen. If you purchased an Effektif "
+"standalone version, you will see a form that requires an email address and a"
+" password to login."
 msgstr ""
 "When the Effektif system was started properly you can see the login screen "
-"by entering the URL of your Effektif installation in your browser. There are "
-"different versions of the login screen. If you purchased an Effektif "
-"standalone version, you will see a form that requires an email address and a "
-"password to login."
+"by entering the URL of your Effektif installation in your browser. There are"
+" different versions of the login screen. If you purchased an Effektif "
+"standalone version, you will see a form that requires an email address and a"
+" password to login."
 
-#: ../../source/starting.rst:100
+#: ../../source/starting.rst:102
 msgid "The default Effektif login screen"
 msgstr "The default Effektif login screen"
 
-#: ../../source/starting.rst:102
+#: ../../source/starting.rst:111
 msgid ""
 "If you purchased Effektif along with Signavio, you will see a login screen "
 "with one button. You can login to Effektif using your Signavio account as "
@@ -274,33 +276,33 @@ msgstr ""
 "soon as the Effektif users have been set up. Jump to section :ref:`signavio-"
 "user-management` for more information on how to set up the users."
 
-#: ../../source/starting.rst:107
+#: ../../source/starting.rst:118
 msgid "The Signavio login screen"
 msgstr "The Signavio login screen"
 
-#: ../../source/starting.rst:109
+#: ../../source/starting.rst:127
 msgid ""
 "When you click *Log in with Signavio account*\\ , you will be redirected to "
 "Signavio and asked to authorize the access of Effektif. When you click on "
-"*Grant*\\ , you will be redirected back to Effektif and automatically logged "
-"in. The authorization dialog is only shown the first time you use this "
+"*Grant*\\ , you will be redirected back to Effektif and automatically logged"
+" in. The authorization dialog is only shown the first time you use this "
 "method to login."
 msgstr ""
 "When you click *Log in with Signavio account*\\ , you will be redirected to "
 "Signavio and asked to authorize the access of Effektif. When you click on "
-"*Grant*\\ , you will be redirected back to Effektif and automatically logged "
-"in. The authorization dialog is only shown the first time you use this "
+"*Grant*\\ , you will be redirected back to Effektif and automatically logged"
+" in. The authorization dialog is only shown the first time you use this "
 "method to login."
 
-#: ../../source/starting.rst:114
+#: ../../source/starting.rst:134
 msgid "The Signavio authorization dialog"
 msgstr "The Signavio authorization dialog"
 
-#: ../../source/starting.rst:119
+#: ../../source/starting.rst:146
 msgid "Create the initial user"
 msgstr "Create the initial user"
 
-#: ../../source/starting.rst:120
+#: ../../source/starting.rst:147
 msgid ""
 "In case you purchased Effektif along with Signavio and want to setup the "
 "integration, you don't have to create the initial Effektif user manually. "
@@ -310,19 +312,21 @@ msgstr ""
 "integration, you don't have to create the initial Effektif user manually. "
 "Please jump to section :ref:`signavio-user-management` for more information."
 
-#: ../../source/starting.rst:122
+#: ../../source/starting.rst:149
 msgid ""
 "Effektif users are organized in organisations. There is a maximum amount of "
 "organisations that can be registered on an on-premise system. You will find "
-"the maximum number of available organisations in your license file. When the "
-"initial user registers, he will automatically create the first organisation."
+"the maximum number of available organisations in your license file. When the"
+" initial user registers, he will automatically create the first "
+"organisation."
 msgstr ""
 "Effektif users are organized in organisations. There is a maximum amount of "
 "organisations that can be registered on an on-premise system. You will find "
-"the maximum number of available organisations in your license file. When the "
-"initial user registers, he will automatically create the first organisation."
+"the maximum number of available organisations in your license file. When the"
+" initial user registers, he will automatically create the first "
+"organisation."
 
-#: ../../source/starting.rst:124
+#: ../../source/starting.rst:151
 msgid ""
 "In order to register, enter the URL of your Effektif installation in your "
 "browser. You will see the login screen of Effektif."
@@ -330,7 +334,7 @@ msgstr ""
 "In order to register, enter the URL of your Effektif installation in your "
 "browser. You will see the login screen of Effektif."
 
-#: ../../source/starting.rst:126
+#: ../../source/starting.rst:153
 msgid ""
 "Click *register* in the lower right corner, fill in your email address and "
 "click *Register a new user*\\ . You will then receive an email with a link "
@@ -342,23 +346,23 @@ msgstr ""
 "to complete your registration. After you have done that, your Effektif "
 "organisation is set up and you can go ahead and invite more users."
 
-#: ../../source/starting.rst:128
+#: ../../source/starting.rst:155
 msgid ""
 "Every time a user registers using the register link on the login screen, a "
-"new organisation is created until the maximum amount is reached. In general, "
-"you will create one organisation and invite other users to join this "
+"new organisation is created until the maximum amount is reached. In general,"
+" you will create one organisation and invite other users to join this "
 "organisation. The next subsection explains how to invite users."
 msgstr ""
 "Every time a user registers using the register link on the login screen, a "
-"new organisation is created until the maximum amount is reached. In general, "
-"you will create one organisation and invite other users to join this "
+"new organisation is created until the maximum amount is reached. In general,"
+" you will create one organisation and invite other users to join this "
 "organisation. The next subsection explains how to invite users."
 
-#: ../../source/starting.rst:131
+#: ../../source/starting.rst:158
 msgid "Invite other users"
 msgstr "Invite other users"
 
-#: ../../source/starting.rst:132
+#: ../../source/starting.rst:159
 msgid ""
 "In case this is an integrated installation with Signavio, please jump to "
 "section :ref:`signavio-integration` for setting up synchronization of users."
@@ -366,7 +370,7 @@ msgstr ""
 "In case this is an integrated installation with Signavio, please jump to "
 "section :ref:`signavio-integration` for setting up synchronization of users."
 
-#: ../../source/starting.rst:134
+#: ../../source/starting.rst:161
 msgid ""
 "To invite other users, go to the organization configuration panel. That's "
 "located in the dropdown under your name in the top right corner named *My "
@@ -374,9 +378,9 @@ msgid ""
 "users you want to invite. The amount of users that can be invited to your "
 "organisation depends on the number of user licenses you have acquired. All "
 "organisations on an on-premise system share the same license pool. This "
-"means the shown number of unused licenses is the same in every organisation. "
-"If one organisation invites another user the count of unused licenses in all "
-"organisations decreases."
+"means the shown number of unused licenses is the same in every organisation."
+" If one organisation invites another user the count of unused licenses in "
+"all organisations decreases."
 msgstr ""
 "To invite other users, go to the organization configuration panel. That's "
 "located in the dropdown under your name in the top right corner named *My "
@@ -384,11 +388,11 @@ msgstr ""
 "users you want to invite. The amount of users that can be invited to your "
 "organisation depends on the number of user licenses you have acquired. All "
 "organisations on an on-premise system share the same license pool. This "
-"means the shown number of unused licenses is the same in every organisation. "
-"If one organisation invites another user the count of unused licenses in all "
-"organisations decreases."
+"means the shown number of unused licenses is the same in every organisation."
+" If one organisation invites another user the count of unused licenses in "
+"all organisations decreases."
 
-#: ../../source/starting.rst:136
+#: ../../source/starting.rst:163
 msgid ""
 "A user can be invited to multiple organisations. If a user is part of two "
 "organisations, he will require two user licenses, one for each organisation "
@@ -398,21 +402,21 @@ msgstr ""
 "organisations, he will require two user licenses, one for each organisation "
 "he is part of."
 
-#: ../../source/starting.rst:116
+#: ../../source/starting.rst:143
 msgid ""
 "*Important: You have to be logged in to Signavio in order to see the "
-"authorization dialog. Otherwise, you will be redirected to the Collaboration "
-"Portal.*"
+"authorization dialog. Otherwise, you will be redirected to the Collaboration"
+" Portal.*"
 msgstr ""
 "*Important: You have to be logged in to Signavio in order to see the "
-"authorization dialog. Otherwise, you will be redirected to the Collaboration "
-"Portal.*"
+"authorization dialog. Otherwise, you will be redirected to the Collaboration"
+" Portal.*"
 
 #~ msgid ""
 #~ "Be aware, you have to be logged in to Signavio in order to see the "
-#~ "authorization dialog. Otherwise, you will be redirected to the "
-#~ "Collaboration Portal."
+#~ "authorization dialog. Otherwise, you will be redirected to the Collaboration"
+#~ " Portal."
 #~ msgstr ""
 #~ "Be aware, you have to be logged in to Signavio in order to see the "
-#~ "authorization dialog. Otherwise, you will be redirected to the "
-#~ "Collaboration Portal."
+#~ "authorization dialog. Otherwise, you will be redirected to the Collaboration"
+#~ " Portal."
