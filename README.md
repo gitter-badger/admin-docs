@@ -3,6 +3,14 @@ Effektif adminstrators guide
 
 The Effektif administrators guide uses [Sphinx](http://sphinx-doc.org/) to create the documentation as HTML and PDF. Sphinx is a Python library. The documentation itself is written using reStructuredText with some Sphinx flavor and is available in english and german.
 
+### Prerequisites
+* [Python](https://www.python.org/downloads/)
+    * you can go with version 2.7.x, but 3.x should work as well
+* [PIP](https://pypi.python.org/pypi/pip)
+* sphinx >= 1.2.3
+* sphinx-autobuild >= 0.3.0
+* sphinx-intl >= 0.9.5
+
 ### Setup 
 In order to edit the documentation, you will want to install Sphinx on your local machine. Therefore, make sure you have Python and [PIP](https://pypi.python.org/pypi/pip) installed.
 
@@ -18,6 +26,10 @@ The source files are located in `docs/source`. The file `index.rst` is the main 
 The directory `_static` contains static files like images that are referenced in the documentation and are included during the build process.
 
 The directory `locale` contains the translation files (\*.po) that have be adjusted after changing the source files.
+
+Some helpful resources regarding Sphinx and reST:
+* http://rest-sphinx-memo.readthedocs.org/en/latest/ReST.html
+* http://sphinx-doc.org/
 
 ### Translations
 When you edited the documentation, you have to update the translations as well.
