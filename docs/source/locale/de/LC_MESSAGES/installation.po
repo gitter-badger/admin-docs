@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: Effektif adminstrators guide 2.11\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-10-31 11:18+0100\n"
-"PO-Revision-Date: 2014-11-05 20:38+0100\n"
+"PO-Revision-Date: 2014-11-06 14:39+0100\n"
 "Last-Translator: Christian Wiggert <christian.wiggert@signavio.com>\n"
 "Language-Team: Effektif <dev@effektif.com>\n"
 "MIME-Version: 1.0\n"
@@ -88,10 +88,6 @@ msgstr ""
 "Die minimalen Hardwareanforderungen für Webanwendung und Datenbank zusammen "
 "sind wie folgt:"
 
-#: ../../source/installation.rst:25
-msgid "4 GB RAM"
-msgstr "4 GB RAM"
-
 #: ../../source/installation.rst:26
 msgid "4 core CPU"
 msgstr "4-Kern CPU"
@@ -101,17 +97,6 @@ msgid "50 GB disk space"
 msgstr "50 GB Festplattenspeicherplatz"
 
 #: ../../source/installation.rst:29
-msgid ""
-"The mentioned amount of RAM will be sufficient to execute the Effektif "
-"system. Nevertheless, if you can provide the system with more memory, you "
-"are advised to do so. Especially MongoDB will benefit from additional system "
-"memory."
-msgstr ""
-"Obwohl 4GB RAM ausreichen, ist es empfehlenswert, weiteren RAM zur Verfügung "
-"zu stellen, da insbesondere MongoDB zusätzlichen RAM zur "
-"Performanceverbesserung nutzen wird."
-
-#: ../../source/installation.rst:31
 msgid ""
 "The required disk space depends on how you will use Effektif. 50 GB should "
 "be sufficient disk space for most scenarios. However, if you plan on using a "
@@ -127,11 +112,11 @@ msgstr ""
 "überschreitet. Berücksichtigen Sie zudem Backup-Kapazität, insbesondere wenn "
 "Sie ein Backup auf dem selben Server speichern möchten."
 
-#: ../../source/installation.rst:34
+#: ../../source/installation.rst:32
 msgid "Other systems"
 msgstr "Weitere Systeme"
 
-#: ../../source/installation.rst:35
+#: ../../source/installation.rst:33
 msgid ""
 "The Effektif system relies on a SMTP mail server to send notifications and "
 "invite users. You can simply reuse any existing mail server in your "
@@ -142,35 +127,31 @@ msgstr ""
 "können Sie einen bereits existierenden Mailserver Ihrer Organisation "
 "verwenden. "
 
-#: ../../source/installation.rst:38
+#: ../../source/installation.rst:36
 msgid "Software requirements"
 msgstr "Softwareanforderungen"
 
-#: ../../source/installation.rst:43
+#: ../../source/installation.rst:41
 msgid "The application server requires the following additional software:"
 msgstr "Der Anwendungsserver benötigt die folgende Software:"
 
-#: ../../source/installation.rst:45
+#: ../../source/installation.rst:43
 msgid "Java: Oracle JSE version 7 (1.7.0_67+)"
 msgstr "Java: Oracle JSE, Version 7 (1.7.0_67+)"
 
 #: ../../source/installation.rst:46
-msgid "Apache Tomcat 7"
-msgstr "Apache Tomcat 7"
-
-#: ../../source/installation.rst:48
 msgid "The database server requires the following additional software:"
 msgstr "Der Datenbankserver benötigt die folgende Software:"
 
-#: ../../source/installation.rst:50
+#: ../../source/installation.rst:48
 msgid "MongoDB version 2.4.x"
 msgstr "MongoDB, Version 2.4.x"
 
-#: ../../source/installation.rst:57
+#: ../../source/installation.rst:55
 msgid "Web browser"
 msgstr "Webbrowser"
 
-#: ../../source/installation.rst:58
+#: ../../source/installation.rst:56
 msgid ""
 "A current web browser is necessary on every client that shall display the "
 "Effektif user interface. The following list shows the supported web browsers "
@@ -179,27 +160,27 @@ msgstr ""
 "Ein relative aktueller Webbrowser auf den Nutzer-PCs ist notwendig, um "
 "Effektif aufrufen zu können. Die folgenden Browser werden unterstützt:"
 
-#: ../../source/installation.rst:60
+#: ../../source/installation.rst:58
 msgid "Google Chrome 23 or newer"
 msgstr "Google Chrome 23 der neuer"
 
-#: ../../source/installation.rst:61
+#: ../../source/installation.rst:59
 msgid "Mozilla Firefox 10 or newer"
 msgstr "Mozilla Firefox 10 oder neuer"
 
-#: ../../source/installation.rst:62
+#: ../../source/installation.rst:60
 msgid "Microsoft Internet Explorer 9 or newer"
 msgstr "Microsoft Internet Explorer 9 oder neuer"
 
-#: ../../source/installation.rst:63
+#: ../../source/installation.rst:61
 msgid "Apple Safari 5 or newer"
 msgstr "Apple Safari 5 oder neuer"
 
-#: ../../source/installation.rst:66
+#: ../../source/installation.rst:64
 msgid "Unpack Effektif"
 msgstr "Effektif entpacken"
 
-#: ../../source/installation.rst:67
+#: ../../source/installation.rst:65
 msgid ""
 "Unzip the effektif-{version}.zip to a directory of your choice, e.g. ``/"
 "yourlocation/effektif-{version}`` In the rest of this guide, we'll refer to "
@@ -211,35 +192,35 @@ msgstr ""
 "wird im weiteren Text als ``$EFFEKTIF_HOME`` bezeichnet. Das Verzeichnis "
 "enthält die folgenden Dateien:"
 
-#: ../../source/installation.rst:71
+#: ../../source/installation.rst:69
 msgid "\\*.sh - Linux shell scripts"
 msgstr "\\*.sh - Linux Shellskripte "
 
-#: ../../source/installation.rst:72
+#: ../../source/installation.rst:70
 msgid "db - directory that contains MongoDB configuration files"
 msgstr "db – Verzeichnis, das die MongoDB Konfigurationsdateien enthält"
 
-#: ../../source/installation.rst:74
+#: ../../source/installation.rst:72
 msgid "mongodb.conf - configuration file for Linux"
 msgstr "mongodb.conf – Konfigurationsdateien für Linux"
 
-#: ../../source/installation.rst:75
+#: ../../source/installation.rst:73
 msgid "mongod.cfg - configuration file for Windows"
 msgstr "mongod.cfg - Konfigurationsdateien für Windows"
 
-#: ../../source/installation.rst:77
+#: ../../source/installation.rst:75
 msgid "effektif - directory"
 msgstr "effektif - Verzeichnis "
 
-#: ../../source/installation.rst:79
+#: ../../source/installation.rst:77
 msgid "ROOT - this directory contains the web application"
 msgstr "ROOT - Verzeichnis, das die Webanwendung enthält"
 
-#: ../../source/installation.rst:88
+#: ../../source/installation.rst:86
 msgid "Install Java"
 msgstr "Java installieren"
 
-#: ../../source/installation.rst:89
+#: ../../source/installation.rst:87
 msgid ""
 "The application server requires a Java runtime environment in order to "
 "execute the Java backend of Effektif. Therefore, you have to install Java 7 "
@@ -250,24 +231,15 @@ msgstr ""
 "Back End von Effektif auszuführen. Installieren Sie daher Java 7 64Bit für "
 "Ihr Betriebssystem. Die entsprechenden Dateien erhalten Sie hier:"
 
-#: ../../source/installation.rst:91
+#: ../../source/installation.rst:89
 msgid "https://www.java.com/en/download/manual.jsp"
 msgstr "https://www.java.com/en/download/manual.jsp"
 
-#: ../../source/installation.rst:94
+#: ../../source/installation.rst:92
 msgid "Install Tomcat"
 msgstr "Tomcat installieren"
 
 #: ../../source/installation.rst:95
-msgid ""
-"The Java backend of the Effektif system is executed using Apache Tomcat 7. "
-"Effektif does not support any older or younger versions of Tomcat than "
-"version 7."
-msgstr ""
-"Das Java Back End von Effektif wird im Apache Tomcat 7 Webserver ausgeführt. "
-"Ältere oder neuere Tomcat-Versionen als Version 7 werden nicht unterstützt."
-
-#: ../../source/installation.rst:97
 msgid ""
 "You can download the latest installation files for different operating "
 "systems from the following site:"
@@ -275,11 +247,11 @@ msgstr ""
 "Die Tomcat-Installationsdateien erhalten Sie für verschiedene "
 "Betriebssysteme hier:"
 
-#: ../../source/installation.rst:99
+#: ../../source/installation.rst:97
 msgid "http://tomcat.apache.org/download-70.cgi"
 msgstr "http://tomcat.apache.org/download-70.cgi"
 
-#: ../../source/installation.rst:101
+#: ../../source/installation.rst:99
 msgid ""
 "In general, please make sure the user executing the Tomcat has read / write "
 "permissions for the folder ``$TOMCAT_HOME/webapps`` and the containing "
@@ -288,12 +260,12 @@ msgstr ""
 "Stellen Sie bitte sicher, dass Tomcat Lese- und Schreibrechte im Verzeichnis "
 "``$TOMCAT_HOME/webapps`` und den enthaltenen Ordnern hat."
 
-#: ../../source/installation.rst:104 ../../source/installation.rst:142
-#: ../../source/installation.rst:204 ../../source/installation.rst:315
+#: ../../source/installation.rst:102 ../../source/installation.rst:140
+#: ../../source/installation.rst:202 ../../source/installation.rst:313
 msgid "Windows"
 msgstr "Windows"
 
-#: ../../source/installation.rst:105
+#: ../../source/installation.rst:103
 msgid ""
 "If you are using a Windows system, the download site offers a Windows "
 "Service Installer (“32-bit/64-bit Windows Service Installer”). This "
@@ -309,7 +281,7 @@ msgstr ""
 "Desktopanwendung gestartet, gestoppt und weitgehend konfiguriert werden "
 "kann. Führen Sie den Installer mit Administratorrechten aus."
 
-#: ../../source/installation.rst:107
+#: ../../source/installation.rst:105
 msgid ""
 "Furthermore, it is recommended to install the Apache Tomcat into a root "
 "folder on ``C:\\``\\ ."
@@ -317,16 +289,16 @@ msgstr ""
 "Es wird empfohlen, Apache Tomcat in einem root-Ordner unter ``C:\\`` zu "
 "installieren."
 
-#: ../../source/installation.rst:110 ../../source/installation.rst:154
-#: ../../source/installation.rst:245 ../../source/installation.rst:335
+#: ../../source/installation.rst:108 ../../source/installation.rst:152
+#: ../../source/installation.rst:243 ../../source/installation.rst:333
 msgid "Debian"
 msgstr "Debian"
 
-#: ../../source/installation.rst:116
+#: ../../source/installation.rst:114
 msgid "Configure Tomcat"
 msgstr "Tomcat konfigurieren"
 
-#: ../../source/installation.rst:117
+#: ../../source/installation.rst:115
 msgid ""
 "This section will point the configuration options that are required to run "
 "Effektif. However, Tomcat offers more configuration options that can be "
@@ -336,15 +308,15 @@ msgstr ""
 "sind, um Effektif auszuführen. Weitere Einstellungen, die Sie eventuell "
 "vornehmen möchten, finden Sie hier:"
 
-#: ../../source/installation.rst:119
+#: ../../source/installation.rst:117
 msgid "http://tomcat.apache.org/tomcat-7.0-doc/"
 msgstr "http://tomcat.apache.org/tomcat-7.0-doc/"
 
-#: ../../source/installation.rst:122
+#: ../../source/installation.rst:120
 msgid "Java options"
 msgstr "Java-Optionen"
 
-#: ../../source/installation.rst:123
+#: ../../source/installation.rst:121
 msgid ""
 "There are some Java options that need to be configured before starting the "
 "Tomcat server. These options are configured using the ``JAVA_OPTS`` "
@@ -353,48 +325,48 @@ msgstr ""
 "Die folgenden Java-Optionen müssen über die ``JAVA_OPTS`` Umgebungsvariable "
 "gesetzt werden, bevor Tomcat gestartet wird:"
 
-#: ../../source/installation.rst:126
+#: ../../source/installation.rst:124
 msgid "``-Xms1536m``"
 msgstr "``-Xms1536m``"
 
-#: ../../source/installation.rst:126
+#: ../../source/installation.rst:124
 msgid "minimum RAM, should be at least 1.5GB"
 msgstr "minimaler RAM, sollte mindestens 1.5GB betragen"
 
-#: ../../source/installation.rst:128
+#: ../../source/installation.rst:126
 msgid "``-Xmx2048m``"
 msgstr "``-Xmx2048m``"
 
-#: ../../source/installation.rst:128
+#: ../../source/installation.rst:126
 msgid "maximum RAM, should be at least 2GB but more is recommended"
 msgstr ""
 "maximaler RAM, sollte mindestens 2GB betragen, mehr ist jedoch empfehlenswert"
 
-#: ../../source/installation.rst:130
+#: ../../source/installation.rst:128
 msgid "``-Dfile.encoding=UTF-8``"
 msgstr "``-Dfile.encoding=UTF-8``"
 
-#: ../../source/installation.rst:130
+#: ../../source/installation.rst:128
 msgid "sets UTF-8 as Apache Tomcats default encoding mechanism"
 msgstr "setzt UTF-8 als den Standard-Encodingsmechanismus des Apache Tomcats"
 
-#: ../../source/installation.rst:132
+#: ../../source/installation.rst:130
 msgid "``-XXPermSize=128m``"
 msgstr "``-XXPermSize=128m``"
 
-#: ../../source/installation.rst:132
+#: ../../source/installation.rst:130
 msgid "initial permanent generation space in MB"
 msgstr "initialer “Permantent Generation Space” in MB"
 
-#: ../../source/installation.rst:134
+#: ../../source/installation.rst:132
 msgid "``-XXMaxPermSize=256m``"
 msgstr "``-XXMaxPermSize=256m``"
 
-#: ../../source/installation.rst:134
+#: ../../source/installation.rst:132
 msgid "maximum permanent generation space in MB"
 msgstr "maximaler “Permantent Generation Space” in MB"
 
-#: ../../source/installation.rst:137
+#: ../../source/installation.rst:135
 msgid ""
 "In order to allocate sufficient RAM to the Tomcat server you have to set the "
 "options Xms and Xmx followed by the number of MB allocated and a literal "
@@ -410,7 +382,7 @@ msgstr ""
 "empfehlenswert. Wenn Sie z.B. 4GB maximalen RAM zuweisen möchten, würde die "
 "Option wie folgt aussehen: ``-Xmx4096m``"
 
-#: ../../source/installation.rst:139
+#: ../../source/installation.rst:137
 msgid ""
 "The values for the permanent generation space have to be increased as well, "
 "these are defined by the values ``-XX:PermSize=128m`` and ``-XX:"
@@ -420,7 +392,7 @@ msgstr ""
 "Hierfür sind die Variablen ``-XX:PermSize=128m`` und ``-XX:"
 "MaxPermSize=256m`` zu setzen."
 
-#: ../../source/installation.rst:143
+#: ../../source/installation.rst:141
 msgid ""
 "If you installed Tomcat using the Windows service installer, you can open "
 "the configuration dialog by opening the Windows start menu and selecting "
@@ -430,7 +402,7 @@ msgstr ""
 "den Konfigurationsdialog über das ``Startmenü und Programme\\Apache Tomcat"
 "\\Configure Tomcat``\\ . "
 
-#: ../../source/installation.rst:151
+#: ../../source/installation.rst:149
 msgid ""
 "The tab Java offers the possibility to set the options and define the memory "
 "pool (minimum and maximum RAM usage). Fill in the values for Xms and Xmx "
@@ -442,7 +414,7 @@ msgstr ""
 "“Maximum memory pool” definiert. Fügen Sie die verbleibenden Option in das "
 "Textfeld \"Java Options\" ein."
 
-#: ../../source/installation.rst:39
+#: ../../source/installation.rst:37
 msgid ""
 "In order to run Effektif on your server, you will need to install some "
 "additional software. Depending on your deployment strategy (combined or "
@@ -455,7 +427,7 @@ msgstr ""
 "von Ihrem Installationsvorhaben ist es notwendig die unten aufgeführte "
 "Software auf dem Server, beziehungsweise den Servern, zu installieren."
 
-#: ../../source/installation.rst:41
+#: ../../source/installation.rst:39
 msgid ""
 "The following sections contain detailed instructions on how to install and "
 "configure the additional software components."
@@ -463,7 +435,7 @@ msgstr ""
 "Die nachfolgenden Kapitel enthalten detaillierte Installations- und "
 "Konfigurationsanweisungen für die zusätzliche Software."
 
-#: ../../source/installation.rst:81
+#: ../../source/installation.rst:79
 msgid ""
 "On Linux systems you need to make the scripts executable with the ``chmod`` "
 "command like this: ::"
@@ -471,7 +443,7 @@ msgstr ""
 "Auf Linuxsystemen ist es notwendig, die Shellskripte ausführbar zu machen. "
 "Verwenden Sie hierfür den ``chmod``\\ -Befehl, wie zum Beispiel: ::"
 
-#: ../../source/installation.rst:111
+#: ../../source/installation.rst:109
 msgid ""
 "If you are using Linux, you might consider installing Apache Tomcat using a "
 "packet manager. In case of Debian, you can use the Advanced Packaging Tool "
@@ -481,11 +453,11 @@ msgstr ""
 "installieren. Unter Debian bietet sich das Advanced Packaging Tool (APT) "
 "an: ::"
 
-#: ../../source/installation.rst:149
+#: ../../source/installation.rst:147
 msgid "The Java tab of the Tomcat configuration dialog"
 msgstr "Das Java-Tab in Tomcats Konfigurationsdialog"
 
-#: ../../source/installation.rst:155
+#: ../../source/installation.rst:153
 msgid ""
 "One way to define the ``JAVA_OPTS`` under Debian and other Linux "
 "distributions is to create the file ``setenv.sh`` in the Tomcat 7 ``/bin/`` "
@@ -501,7 +473,7 @@ msgstr ""
 "vergleichbar.Erstellen Sie einfach die Datei setenv.sh (oder öffen Sie die "
 "bestehende Datei) und fügen Sie eine Zeile für die JAVA_OPTS hinzu:"
 
-#: ../../source/installation.rst:160
+#: ../../source/installation.rst:158
 msgid ""
 "In case you have created a new ``setenv.sh`` file, you have to make sure it "
 "is executable using the ``chmod`` command: ::"
@@ -509,11 +481,11 @@ msgstr ""
 "Wenn Sie eine neue ``setenv.sh``-Datei erstellt haben, müssen Sie diese noch "
 "ausführbar machen. Verwenden Sie hierfür den ``chmod``\\-Befehl: ::"
 
-#: ../../source/installation.rst:165
+#: ../../source/installation.rst:163
 msgid "Setup the Tomcat connector"
 msgstr "Erstellen des Tomcat Connectors"
 
-#: ../../source/installation.rst:166
+#: ../../source/installation.rst:164
 msgid ""
 "By default the Tomcat server will start up using port 8080 and 8005. Port "
 "8080 is used for serving the Effektif web application. Port 8005 is used to "
@@ -526,7 +498,7 @@ msgstr ""
 "geändert werden, die im Verzeichnis ``$TOMCAT_HOME/conf/server.xml`` zu "
 "finden ist."
 
-#: ../../source/installation.rst:170
+#: ../../source/installation.rst:168
 msgid ""
 "Locate the HTTP connector and change the value of port to your preferred "
 "port. Furthmore, make sure the connector contains the entry "
@@ -537,11 +509,11 @@ msgstr ""
 "dass der Connector den Eintrag ``URIEnconding=”UTF-8“``\\ . Der Connector "
 "könnte z.B. so aussehen:"
 
-#: ../../source/installation.rst:180
+#: ../../source/installation.rst:178
 msgid "Copy the Effektif webapp"
 msgstr "Kopieren der Effektif Webanwendung"
 
-#: ../../source/installation.rst:183
+#: ../../source/installation.rst:181
 msgid ""
 "The Effektif application needs to run as the ROOT application in the Tomcat. "
 "Therefore, running it in parallel with another application that requires to "
@@ -551,11 +523,11 @@ msgstr ""
 "momentan nicht möglich, eine andere Anwendung, die ebenfalls als ROOT-"
 "Anwendung ausgeführt werden muss, im selben Tomcat auszuführen."
 
-#: ../../source/installation.rst:186
+#: ../../source/installation.rst:184
 msgid "Install MongoDB"
 msgstr "MongoDB installieren"
 
-#: ../../source/installation.rst:187
+#: ../../source/installation.rst:185
 msgid ""
 "MongoDB is the only database system currently supported by Effektif. In "
 "case, you have already an infrastructure that can provide a MongoDB version "
@@ -569,7 +541,7 @@ msgstr ""
 "und zum Abschnitt :ref:`configure-mongodb` springen. Folgen Sie andernfalls "
 "den folgenden Anweisungen."
 
-#: ../../source/installation.rst:189
+#: ../../source/installation.rst:187
 msgid ""
 "General information about installing MongoDB on different operating systems "
 "can be found on:"
@@ -577,11 +549,11 @@ msgstr ""
 "Allgemeine Informationen zur Installation von MongoDB 2.4.x erhalten Sie "
 "hier:"
 
-#: ../../source/installation.rst:191
+#: ../../source/installation.rst:189
 msgid "http://docs.mongodb.org/v2.4/installation/"
 msgstr "http://docs.mongodb.org/v2.4/installation/"
 
-#: ../../source/installation.rst:193
+#: ../../source/installation.rst:191
 msgid ""
 "In case you are using Linux, you have the possibilities to install MongoDB "
 "using either a package manager like apt-get or downloading the binaries "
@@ -601,11 +573,11 @@ msgstr ""
 "installiert werden kann und kann als Beispiel für andere Linux-"
 "Distributionen dienen."
 
-#: ../../source/installation.rst:196
+#: ../../source/installation.rst:194
 msgid "Remarks for downloading the binaries"
 msgstr "Anmerkungen zum Download der Binary-Dateien"
 
-#: ../../source/installation.rst:197
+#: ../../source/installation.rst:195
 msgid ""
 "Effektif does not yet support MongoDB 2.6.x. Therefore, you have to download "
 "the latest MongoDB 2.4.x release, which will be listed under previous "
@@ -615,11 +587,11 @@ msgstr ""
 "MongoDB 2.4.x Release herunter. Dieses finden Sie unter „previous releases“ "
 "auf der MongoDB Downloadseite: "
 
-#: ../../source/installation.rst:199
+#: ../../source/installation.rst:197
 msgid "http://www.mongodb.org/downloads"
 msgstr "http://www.mongodb.org/downloads"
 
-#: ../../source/installation.rst:201
+#: ../../source/installation.rst:199
 msgid ""
 "Please, make sure to download the 64Bit version of MongoDB. The 32Bit "
 "version has a limited size of 2GB for stored content and, therefore, cannot "
@@ -629,7 +601,7 @@ msgstr ""
 "der 32Bit-Version ist die Speicherkapazität auf 2GB begrenzt, sodass eine "
 "Verwendung für Produktivsysteme nicht sinnvoll ist."
 
-#: ../../source/installation.rst:205
+#: ../../source/installation.rst:203
 msgid ""
 "Windows requires you to download the binaries. Consider the remarks of the "
 "last subsection when doing so. If you are using any version older than "
@@ -641,7 +613,7 @@ msgstr ""
 "Windows Server 2008 R2 verwenden, laden Sie das 64Bit Legacy Release "
 "herunter."
 
-#: ../../source/installation.rst:207
+#: ../../source/installation.rst:205
 msgid ""
 "You can find more details about installing MongoDB on Windows in the "
 "documentation:"
@@ -649,16 +621,16 @@ msgstr ""
 "Weitere Details zur Installation von MongoDB unter Windows finden Sie hier "
 "in der MongoDB Dokumenation:"
 
-#: ../../source/installation.rst:209
+#: ../../source/installation.rst:207
 msgid "http://docs.mongodb.org/v2.4/tutorial/install-mongodb-on-windows/"
 msgstr "http://docs.mongodb.org/v2.4/tutorial/install-mongodb-on-windows/"
 
-#: ../../source/installation.rst:211
+#: ../../source/installation.rst:209
 msgid "When you finished downloading MongoDB follow the next steps:"
 msgstr ""
 "Folgen Sie diesen Schritten, nachdem Sie MongoDB heruntergeladen haben:"
 
-#: ../../source/installation.rst:213
+#: ../../source/installation.rst:211
 msgid ""
 "Extract the content of the downloaded archive into ``C:\\MongoDB`` or any "
 "directory of your choice."
@@ -666,14 +638,14 @@ msgstr ""
 "Entpacken Sie den Inhalt des heruntergeladenen Archivs in ``C:\\MongoDB`` "
 "oder einem anderen Verzeichnis Ihrer Wahl."
 
-#: ../../source/installation.rst:215
+#: ../../source/installation.rst:213
 msgid ""
 "The MongoDB directory should contain directly the extracted bin directory."
 msgstr ""
 "Das MongoDB Verzeichnis sollte dabei direkt das entpackte bin-Verzeichnis "
 "enthalten."
 
-#: ../../source/installation.rst:216
+#: ../../source/installation.rst:214
 msgid ""
 "Important: The whole path shouldn’t contain any whitespaces. Otherwise the "
 "service configuration will not work."
@@ -681,14 +653,14 @@ msgstr ""
 "Wichtig: Der gesamte Pfad sollte keine Leerzeichen enthalten. Ansonsten wird "
 "die Servicekonfiguration nicht funktionieren."
 
-#: ../../source/installation.rst:218
+#: ../../source/installation.rst:216
 msgid ""
 "Create a data directory for the MongoDB files, e.g. ``C:\\MongoDB\\data``\\ ."
 msgstr ""
 "Erstellen Sie ein Datenverzeichnis für die MongoDB-Dateien, zum Beispiel: "
 "``C:\\MongoDB\\data``\\ . "
 
-#: ../../source/installation.rst:220
+#: ../../source/installation.rst:218
 msgid ""
 "This directory will need the most disk space. Make sure the drive has "
 "sufficient disk space."
@@ -697,7 +669,7 @@ msgstr ""
 "verwenden. Stellen Sie daher sicher, dass das Laufwerk genügend "
 "Speicehrplatz zur Verfügung stellt."
 
-#: ../../source/installation.rst:222
+#: ../../source/installation.rst:220
 msgid ""
 "Create a logs directory for the MongoDB log files, e.g. ``C:\\MongoDB\\logs``"
 "\\ ."
@@ -705,7 +677,7 @@ msgstr ""
 "Erstellen Sie ein Verzeichnis für die MongoDB Log-Dateien, zum Beispiel ``C:"
 "\\MongoDB\\logs``\\ ."
 
-#: ../../source/installation.rst:223
+#: ../../source/installation.rst:221
 msgid ""
 "Copy the file ``$EFFEKTIF_HOME\\db\\mongod.cfg`` to your MongoDB directory "
 "``C:\\MongoDB\\mongod.cfg`` and edit the file."
@@ -714,7 +686,7 @@ msgstr ""
 "in das MongoDB-Verzeichnis ``C:\\MongoDB\\mongod.cfg`` und bearbeiten Sie "
 "die Datei."
 
-#: ../../source/installation.rst:225
+#: ../../source/installation.rst:223
 msgid ""
 "The dbpath needs to contain the absolute path to the data directory, e.g. "
 "``C:\\MongoDB\\data``\\ ."
@@ -722,7 +694,7 @@ msgstr ""
 "Die Variable dbpath muss den absoluten Pfad zum Datenverzeichnis enthalten, "
 "zum Beispiel ``C:\\MongoDB\\data``\\ ."
 
-#: ../../source/installation.rst:226
+#: ../../source/installation.rst:224
 msgid ""
 "The logpath needs to contain the absolute path to the log file, e.g. ``C:"
 "\\MongoDB\\logs\\mongodb.log``\\ . The log file will be created once MongoDB "
@@ -732,7 +704,7 @@ msgstr ""
 "zum Beispiel ``C:\\MongoDB\\logs\\mongodb.log``\\ . Die Logdatei wird beim "
 "Starten von MongoDB erstellt (beziehungsweise, falls vorhanden, ergänzt)."
 
-#: ../../source/installation.rst:227
+#: ../../source/installation.rst:225
 msgid ""
 "See section :ref:`configure-mongodb` for more information about the other "
 "configuration values."
@@ -740,7 +712,7 @@ msgstr ""
 "Im Abschnitt :ref:`configure-mongodb` werden weitere Konfigurationsoptionen "
 "beschrieben."
 
-#: ../../source/installation.rst:229
+#: ../../source/installation.rst:227
 msgid ""
 "Open the command line cmd with administrative privileges and execute the "
 "following command. Make sure to use absolute paths and replace them with the "
@@ -750,13 +722,13 @@ msgstr ""
 "und führen Sie das folgende Kommando aus. Stellen Sie dabei sicher, dass die "
 "Pfade den von Ihnen konfigurierten absoluten Pfaden entsprechen."
 
-#: ../../source/installation.rst:231
+#: ../../source/installation.rst:229
 msgid ""
 "``C:\\MongoDB\\bin\\mongod.exe --config C:\\MongoDB\\mongod.cfg --install``"
 msgstr ""
 "``C:\\MongoDB\\bin\\mongod.exe --config C:\\MongoDB\\mongod.cfg --install``"
 
-#: ../../source/installation.rst:232
+#: ../../source/installation.rst:230
 msgid ""
 "The command line should tell you that the service MongoDB was properly "
 "created."
@@ -764,7 +736,7 @@ msgstr ""
 "Das Kommandozeilentool sollte Ihnen bestätigen, dass der MongoDB Service "
 "erfolgreich registriert wurde."
 
-#: ../../source/installation.rst:233
+#: ../../source/installation.rst:231
 msgid ""
 "You can unregister the service again by executing: ``C:\\MongoDB\\bin"
 "\\mongod.exe --remove``"
@@ -772,14 +744,14 @@ msgstr ""
 "Mit dem folgenden Befehl können Sie den Service wieder entfernen:`` C:"
 "\\MongoDB\\bin\\mongod.exe --remove``"
 
-#: ../../source/installation.rst:234
+#: ../../source/installation.rst:232
 msgid ""
 "The registered service should start MongoDB automatically on startup of "
 "Windows."
 msgstr ""
 "Der Service wird MongoDB nach dem Starten von Windows automatisch ausführen."
 
-#: ../../source/installation.rst:238
+#: ../../source/installation.rst:236
 msgid ""
 "If this command fails with the error 1053 or 2186, make sure that the "
 "configuration file contains absolute paths. Furthermore, the paths must not "
@@ -791,11 +763,11 @@ msgstr ""
 "enthält und ob die Pfade keine Leerzeichen enthalten. Korrigieren Sie "
 "gegebenenfalls die Konfiguration."
 
-#: ../../source/installation.rst:239
+#: ../../source/installation.rst:237
 msgid "You can stop MongoDB by calling: ``net stop MongoDB``"
 msgstr "Der folgende Befehl stoppt MongoDB: ``net stop MongoDB``"
 
-#: ../../source/installation.rst:240
+#: ../../source/installation.rst:238
 msgid ""
 "The service is also listed in the services window that can be opened by "
 "running ``services.msc``\\ ."
@@ -803,7 +775,7 @@ msgstr ""
 "Der MongoDB Service ist nun auch unter der Serviceverwaltung gelistet, die "
 "über ``services.msc`` aufgerufen werden kann."
 
-#: ../../source/installation.rst:246
+#: ../../source/installation.rst:244
 msgid ""
 "If you are installing MongoDB on a Debian system, you are advised to use the "
 "method described in the MongoDB configuration:"
@@ -811,11 +783,11 @@ msgstr ""
 "Falls Sie MongoDB unter Debian installieren, halten Sie sich bitte an die "
 "folgenden Anweisungen: "
 
-#: ../../source/installation.rst:248
+#: ../../source/installation.rst:246
 msgid "http://docs.mongodb.org/v2.4/tutorial/install-mongodb-on-debian/"
 msgstr "http://docs.mongodb.org/v2.4/tutorial/install-mongodb-on-debian/"
 
-#: ../../source/installation.rst:250
+#: ../../source/installation.rst:248
 msgid ""
 "For convenience reasons the script ``$EFFEKTIF_HOME/mongodb.install.debian."
 "sh`` already wraps all necessary commands to install the correct version of "
@@ -827,11 +799,11 @@ msgstr ""
 "installieren. Führen Sie das Skript aus, indem Sie in das Verzeichnis ``"
 "$EFFEKTIF_HOME`` wechseln und den folgenden Befehl ausführen: ::"
 
-#: ../../source/installation.rst:259
+#: ../../source/installation.rst:257
 msgid "or ::"
 msgstr "oder ::"
 
-#: ../../source/installation.rst:263
+#: ../../source/installation.rst:261
 msgid ""
 "The server will use the default configuration file ``/etc/mongodb.conf``\\ . "
 "See the next subsection for more information on how to configure MongoDB for "
@@ -846,11 +818,11 @@ msgstr ""
 "wurde. Stellen Sie sicher, dass Sie MongoDB nach Änderungen in der "
 "Konfiguration neu starten."
 
-#: ../../source/installation.rst:268
+#: ../../source/installation.rst:266
 msgid "Configure MongoDB"
 msgstr "MongoDB konfigurieren"
 
-#: ../../source/installation.rst:269
+#: ../../source/installation.rst:267
 msgid ""
 "In order to run MongoDB properly, some configuration options have to be "
 "defined. The easiest solution is to create a configuration file and link "
@@ -862,7 +834,7 @@ msgstr ""
 "Konfiguration vorzunehmen, ist eine Konfigurationsdatei zu erstellen und "
 "diese beim Starten von MongoDB über die ``--config`` Option zu verlinken."
 
-#: ../../source/installation.rst:271
+#: ../../source/installation.rst:269
 msgid ""
 "If you installed MongoDB under Windows using the method in the last section, "
 "you have already copied the predefined configuration file and adjusted the "
@@ -873,7 +845,7 @@ msgstr ""
 "haben Sie bereits eine Konfigurationsdatei erstellt und angepasst, sodass es "
 "die richtigen Werte enthält."
 
-#: ../../source/installation.rst:273
+#: ../../source/installation.rst:271
 msgid ""
 "If you installed MongoDB under Linux using apt-get, e.g. by following the "
 "instructions in the last section, there should be a respective configuration "
@@ -889,7 +861,7 @@ msgstr ""
 "„true“ zu setzen. Zudem sollte der folgende Eintrag erstellt werden: "
 "``setParameter=textSearchEnabled=true``\\ ."
 
-#: ../../source/installation.rst:275
+#: ../../source/installation.rst:273
 msgid ""
 "In any other case make sure the configuration file contains the following "
 "properties."
@@ -897,27 +869,27 @@ msgstr ""
 "Stellen Sie im Falle einer abweichenden Installationsprozedur sicher, dass "
 "die folgenden Einträge korrekt gesetzt sind:"
 
-#: ../../source/installation.rst:280
+#: ../../source/installation.rst:278
 msgid "``dbpath``"
 msgstr "``dbpath``"
 
-#: ../../source/installation.rst:280
+#: ../../source/installation.rst:278
 msgid "Defines the directory where the database files are stored."
 msgstr "Definiert das Verzeichnis, in dem die Daten gespeichert werden."
 
-#: ../../source/installation.rst:282
+#: ../../source/installation.rst:280
 msgid "``logpath``"
 msgstr "``logpath``"
 
-#: ../../source/installation.rst:282
+#: ../../source/installation.rst:280
 msgid "Defines the file that will contain the logging output."
 msgstr "Definiert das Logverzeichnis."
 
-#: ../../source/installation.rst:284
+#: ../../source/installation.rst:282
 msgid "``logappend``"
 msgstr "``logappend``"
 
-#: ../../source/installation.rst:284
+#: ../../source/installation.rst:282
 msgid ""
 "Indicates that new logs will be appended to an existing log file after "
 "restarting the server, if set to true."
@@ -925,21 +897,21 @@ msgstr ""
 "Falls auf “true” gesetzt, werden nach einem Neustart von MongoDB die neuen "
 "Logeinträge falls möglich an ein bereits bestehendes Logfile angefügt."
 
-#: ../../source/installation.rst:286
+#: ../../source/installation.rst:284
 msgid "``setParameter``"
 msgstr "``setParameter``"
 
-#: ../../source/installation.rst:286
+#: ../../source/installation.rst:284
 msgid "set the value to ``textSearchEnabled=true``"
 msgstr ""
 "Setzen Sie den Wert von ``textSearchEnabled=true``\\ , umTextsuche in den "
 "gespeicherten Dokumenten zu ermöglichen"
 
-#: ../../source/installation.rst:288
+#: ../../source/installation.rst:286
 msgid "``auth``"
 msgstr "``auth``"
 
-#: ../../source/installation.rst:288
+#: ../../source/installation.rst:286
 msgid ""
 "(optional) Turns authentication on, if set to true. It is advised to turn "
 "authentication on in case the MongoDB instance can be accessed over the "
@@ -950,7 +922,7 @@ msgstr ""
 "Netzwerk zuzugreifen. Dies hängt von Ihren Administrationseinstellungen/"
 "Firewalleinstellungen ab."
 
-#: ../../source/installation.rst:291
+#: ../../source/installation.rst:289
 msgid ""
 "For more configuration options, see http://docs.mongodb.org/v2.4/reference/"
 "configuration-options/\\ ."
@@ -959,11 +931,11 @@ msgstr ""
 "Dokumentation setzen: http://docs.mongodb.org/v2.4/reference/configuration-"
 "options/\\ ."
 
-#: ../../source/installation.rst:296
+#: ../../source/installation.rst:294
 msgid "Add a database user for Effektif"
 msgstr "Einen Datenbanknutzer für Effektif hinzufügen"
 
-#: ../../source/installation.rst:297
+#: ../../source/installation.rst:295
 msgid ""
 "Effektif requires a MongoDB user in the admin database that has the "
 "following roles:"
@@ -971,19 +943,19 @@ msgstr ""
 "Effektif benötigt einen MongoDB-Nutzer, der in der Administrationsdatenbank "
 "die folgenden Rollen innehat:  "
 
-#: ../../source/installation.rst:302
+#: ../../source/installation.rst:300
 msgid "``dbAdminAnyDatabase``"
 msgstr "``dbAdminAnyDatabase``"
 
-#: ../../source/installation.rst:303
+#: ../../source/installation.rst:301
 msgid "``readWriteAnyDatabase``"
 msgstr "``readWriteAnyDatabase``"
 
-#: ../../source/installation.rst:304
+#: ../../source/installation.rst:302
 msgid "``clusterAdmin``"
 msgstr "``clusterAdmin``"
 
-#: ../../source/installation.rst:304
+#: ../../source/installation.rst:302
 msgid ""
 "This role will allow you to list all databases. This becomes necessary if "
 "you plan on using the user credentials when editing any database content "
@@ -994,15 +966,15 @@ msgstr ""
 "Backups und falls ein Tool wie Robomongo für den Zugriff auf mehrere "
 "Datenbanken genutzt werden soll."
 
-#: ../../source/installation.rst:305
+#: ../../source/installation.rst:303
 msgid "``userAdminAnyDatabase``"
 msgstr "``userAdminAnyDatabase``"
 
-#: ../../source/installation.rst:305
+#: ../../source/installation.rst:303
 msgid "This role is required for backups."
 msgstr "Diese Rolle wird für Backups benötigt."
 
-#: ../../source/installation.rst:308
+#: ../../source/installation.rst:306
 msgid ""
 "The user will access the databases for Effektif. Effektif will create two "
 "databases, one for the user and workflow data, and one for uploaded files. "
@@ -1019,7 +991,7 @@ msgstr ""
 "Namen abgeleitet, indem die Endung „-files“ ergänzt wird. Nennen Sie Ihre "
 "erste Datenbank „effektif“, so heißt die zweite Datenbank „effektif-files“."
 
-#: ../../source/installation.rst:310
+#: ../../source/installation.rst:308
 msgid ""
 "In general, if you want to create a new user in MongoDB you will need to "
 "authenticate with an existing user that has the role userAdmin or "
@@ -1037,13 +1009,13 @@ msgstr ""
 "sowohl über einen Administratorennutzer als auch als Teil einer neuen "
 "MongoDB-Installation erstellt."
 
-#: ../../source/installation.rst:312
+#: ../../source/installation.rst:310
 msgid ""
 "In order to add a new user to MongoDB, the MongoDB server has to be running."
 msgstr ""
 "Um einen MongoDB-Nutzer zu erstellen, muss MongoDB gestarted worden sein."
 
-#: ../../source/installation.rst:317
+#: ../../source/installation.rst:315
 msgid ""
 "Open the command cmd and go to your MongoDB\\bin directory, e.g. by "
 "executing: ``cd C:\\MongoDB\\bin``"
@@ -1051,13 +1023,13 @@ msgstr ""
 "Öffnen Sie im im Kommandozeilentool (“cmd”) dasVerzeichnis MongoDB\\bin, z."
 "B. in dem Sie das folgende Kommando ausführen: ``cd C:\\MongoDB\\bin``"
 
-#: ../../source/installation.rst:318 ../../source/installation.rst:338
+#: ../../source/installation.rst:316 ../../source/installation.rst:336
 msgid "If you have an admin user, create the Effektif user by executing:"
 msgstr ""
 "Falls Sie einen Administratorennutzer angelegt haben, erstellen Sie den "
 "neuen Nutzer wie folgt: "
 
-#: ../../source/installation.rst:320
+#: ../../source/installation.rst:318
 msgid ""
 "``mongo.exe admin -u admin -p <enterYourAdminPasswordHere> --eval \"db."
 "addUser( { user: 'effektif', pwd: '<enterEffektifPasswordHere>', roles: "
@@ -1069,14 +1041,14 @@ msgstr ""
 "['dbAdminAnyDatabase', 'readWriteAnyDatabase', 'clusterAdmin', "
 "'userAdminAnyDatabase'] } )\"``"
 
-#: ../../source/installation.rst:321 ../../source/installation.rst:341
+#: ../../source/installation.rst:319 ../../source/installation.rst:339
 msgid ""
 "Replace <enterAdminPasswordHere> with the password, you have defined for the "
 "admin user."
 msgstr "Ersetzen Sie <enterAdminPasswordHere> mit dem Administratorenpasswort."
 
-#: ../../source/installation.rst:322 ../../source/installation.rst:327
-#: ../../source/installation.rst:342 ../../source/installation.rst:347
+#: ../../source/installation.rst:320 ../../source/installation.rst:325
+#: ../../source/installation.rst:340 ../../source/installation.rst:345
 msgid ""
 "Replace <enterEffektifPasswordHere> with the password for the new Effektif "
 "user. As you can see the user name is effektif."
@@ -1084,7 +1056,7 @@ msgstr ""
 "Ersetzen Sie <enterEffektifPasswordHere> mit dem Passwort des neuen Nutzers. "
 "Der Nutzername ist effektif."
 
-#: ../../source/installation.rst:324 ../../source/installation.rst:344
+#: ../../source/installation.rst:322 ../../source/installation.rst:342
 msgid ""
 "If you have a new MongoDB and no admin user, create the Effektif user by "
 "executing:"
@@ -1092,7 +1064,7 @@ msgstr ""
 "Falls Sie ein neues MongoDB System ohne Administratorennutzer aufgesetzt "
 "haben, führen Sie den folgenden Befehl aus:"
 
-#: ../../source/installation.rst:326
+#: ../../source/installation.rst:324
 msgid ""
 "``mongo.exe admin --eval \"db.addUser( { user: 'effektif', pwd: "
 "'<enterEffektifPasswordHere>', roles: ['dbAdminAnyDatabase', "
@@ -1102,13 +1074,13 @@ msgstr ""
 "'<enterEffektifPasswordHere>', roles: ['dbAdminAnyDatabase', "
 "'readWriteAnyDatabase', 'clusterAdmin', 'userAdminAnyDatabase'] } )\"``"
 
-#: ../../source/installation.rst:329 ../../source/installation.rst:349
+#: ../../source/installation.rst:327 ../../source/installation.rst:347
 msgid "You can verify the creation of the new Effektif user by executing:"
 msgstr ""
 "Um die Erstellung des Nutzers zu verifizieren, führen Sie den folgenden "
 "Befehl aus:"
 
-#: ../../source/installation.rst:331
+#: ../../source/installation.rst:329
 msgid ""
 "``mongo.exe admin -u effektif -p <enterEffektifPasswordHere> --eval \"db."
 "system.users.find({ user: 'effektif'}).forEach(function(u) {printjson(u)});"
@@ -1118,14 +1090,14 @@ msgstr ""
 "system.users.find({ user: 'effektif'}).forEach(function(u) {printjson(u)});"
 "\"``"
 
-#: ../../source/installation.rst:332 ../../source/installation.rst:352
+#: ../../source/installation.rst:330 ../../source/installation.rst:350
 msgid ""
 "On the command line you will see the user information including the four "
 "assigned roles."
 msgstr ""
 "Die Kommandozeile wird den Nutzer und die vier assoziierten Rollen anzeigen."
 
-#: ../../source/installation.rst:336
+#: ../../source/installation.rst:334
 msgid ""
 "If you have installed MongoDB using a package manager, the binaries should "
 "be available on the path. Otherwise, open the directory with the MongoDB "
@@ -1137,7 +1109,7 @@ msgstr ""
 "einfach das Verzeichnis mit den Binaries, um dort die unten aufgeführten "
 "Befehle auszuführen."
 
-#: ../../source/installation.rst:340
+#: ../../source/installation.rst:338
 msgid ""
 "``mongo admin -u admin -p <enterYourAdminPasswordHere> --eval \"db."
 "addUser( { user: 'effektif', pwd: '<enterEffektifPasswordHere>', roles: "
@@ -1149,7 +1121,7 @@ msgstr ""
 "['dbAdminAnyDatabase', 'readWriteAnyDatabase', 'clusterAdmin', "
 "'userAdminAnyDatabase'] } )\"``"
 
-#: ../../source/installation.rst:346
+#: ../../source/installation.rst:344
 msgid ""
 "``mongo admin --eval \"db.addUser( { user: 'effektif', pwd: "
 "'<enterEffektifPasswordHere>', roles: ['dbAdminAnyDatabase', "
@@ -1159,7 +1131,7 @@ msgstr ""
 "'<enterEffektifPasswordHere>', roles: ['dbAdminAnyDatabase', "
 "'readWriteAnyDatabase', 'clusterAdmin', 'userAdminAnyDatabase'] } )\"``"
 
-#: ../../source/installation.rst:351
+#: ../../source/installation.rst:349
 msgid ""
 "``mongo admin -u effektif -p <enterEffektifPasswordHere> --eval \"db.system."
 "users.find({ user: 'effektif'}).forEach(function(u) {printjson(u)});\"``"
@@ -1167,7 +1139,7 @@ msgstr ""
 "``mongo admin -u effektif -p <enterEffektifPasswordHere> --eval \"db.system."
 "users.find({ user: 'effektif'}).forEach(function(u) {printjson(u)});\"``"
 
-#: ../../source/installation.rst:354
+#: ../../source/installation.rst:352
 msgid ""
 "Once the Effektif user is created, its credentials have to be added to the "
 "Effektif configuration file to the properties ``effektif.mongodb.username`` "
@@ -1180,15 +1152,15 @@ msgstr ""
 "ref:`update-effektif-configuration` beschreibt die Anpassung der "
 "Konfigurationsdatei."
 
-#: ../../source/installation.rst:359
+#: ../../source/installation.rst:361
 msgid "Configuring Effektif"
 msgstr "Effektif konfigurieren"
 
-#: ../../source/installation.rst:364
+#: ../../source/installation.rst:366
 msgid "Install the license file"
 msgstr "Lizenzinstallation"
 
-#: ../../source/installation.rst:365
+#: ../../source/installation.rst:367
 msgid ""
 "Along with the Effektif application you have received the Effektif license "
 "file license.xml. Before you can start the Effektif system, you have to add "
@@ -1203,11 +1175,11 @@ msgstr ""
 "überprüft die Datei wenn das System startet und stellt die entsprechenden "
 "Lizenzen zur Verfügung."
 
-#: ../../source/installation.rst:370
+#: ../../source/installation.rst:372
 msgid "Update the Effektif configuration file"
 msgstr "Die Effektif Konfigurationsdatei aktualisieren"
 
-#: ../../source/installation.rst:371
+#: ../../source/installation.rst:373
 msgid ""
 "Before you can start Effektif for the first time, you need to configure some "
 "mandatory properties in the Effektif configuration file. Make sure you have "
@@ -1221,7 +1193,7 @@ msgstr ""
 "haben. Die Konfigurationsdatei befindet sich nun unter ``$TOMCAT_HOME/"
 "webapps/ROOT/WEB-INF/classes/effektif-onpremise.properties``\\ . "
 
-#: ../../source/installation.rst:373
+#: ../../source/installation.rst:375
 msgid ""
 "The configuration file is a property file that contains one configuration "
 "option per line and key and value are separated by a “=”. Every line that "
@@ -1232,7 +1204,7 @@ msgstr ""
 "Jede Zeile die mit einer Raute „#“ beginnt, ist auskommentiert und wird "
 "nicht berücksichtigt."
 
-#: ../../source/installation.rst:375
+#: ../../source/installation.rst:377
 msgid ""
 "In general, the configuration allows to configure the base URL of the "
 "Effektif system, the mail server, the database connection and integrations "
@@ -1242,11 +1214,11 @@ msgstr ""
 "Mailservers, der Datenbankverbindung und der Integration von Drittsystemen, "
 "zum Beispiel von Signavio."
 
-#: ../../source/installation.rst:380
+#: ../../source/installation.rst:382
 msgid "``effektif.baseUrl``"
 msgstr "``effektif.baseUrl``"
 
-#: ../../source/installation.rst:380
+#: ../../source/installation.rst:382
 msgid ""
 "(Required) The ip address or server name (incl. the port) of the server "
 "running the Effektif Tomcat application server. E.g. http://effektif."
@@ -1258,70 +1230,70 @@ msgstr ""
 "Falls der Server auf Port 80 läuft, kann auf die Angabe des Ports verzichtet "
 "werden."
 
-#: ../../source/installation.rst:381
+#: ../../source/installation.rst:383
 msgid "``effektif.smtp.host``"
 msgstr "``effektif.smtp.host``"
 
-#: ../../source/installation.rst:381
+#: ../../source/installation.rst:383
 msgid "(Required) The ip address or server name of the outgoing email server."
 msgstr "(Pflichtvariable) Die IP-Addresse oder der Servername des Emailservers"
 
-#: ../../source/installation.rst:382
+#: ../../source/installation.rst:384
 msgid "``effektif.smtp.port``"
 msgstr "``effektif.smtp.port``"
 
-#: ../../source/installation.rst:382
+#: ../../source/installation.rst:384
 msgid "The port on which the outgoing SMTP server listens"
 msgstr "Der Port des Emailservers"
 
-#: ../../source/installation.rst:383
+#: ../../source/installation.rst:385
 msgid "``effektif.smtp.ssl``"
 msgstr "``effektif.smtp.ssl``"
 
-#: ../../source/installation.rst:383
+#: ../../source/installation.rst:385
 msgid "If SSL should be used ( true or false )"
 msgstr "Ob SSL verwendet werden soll ( true oder false )"
 
-#: ../../source/installation.rst:384
+#: ../../source/installation.rst:386
 msgid "``effektif.smtp.tls``"
 msgstr "``effektif.smtp.tls``"
 
-#: ../../source/installation.rst:384
+#: ../../source/installation.rst:386
 msgid "If TLS should be used ( true or false )"
 msgstr "Ob TLS verwendet werden soll ( true or false )"
 
-#: ../../source/installation.rst:385
+#: ../../source/installation.rst:387
 msgid "``effektif.smtp.user``"
 msgstr "``effektif.smtp.user``"
 
-#: ../../source/installation.rst:385
+#: ../../source/installation.rst:387
 msgid "The username for authentication"
 msgstr "Der Nutzername zur Authentifizierung am Emailserver"
 
-#: ../../source/installation.rst:386
+#: ../../source/installation.rst:388
 msgid "``effektif.smtp.password``"
 msgstr "``effektif.smtp.password``"
 
-#: ../../source/installation.rst:386
+#: ../../source/installation.rst:388
 msgid "The password for authentication"
 msgstr "Das Passwort zur Authentifizierung am Emailserver"
 
-#: ../../source/installation.rst:387
+#: ../../source/installation.rst:389
 msgid "``effektif.mail.from``"
 msgstr "``effektif.mail.from``"
 
-#: ../../source/installation.rst:387
+#: ../../source/installation.rst:389
 msgid ""
 "This email address is used as the sender when the Effektif system sends out "
 "notifications."
 msgstr ""
 "Die Sender-Emailadresse von Effektif-Benachrichtigungen und Einladungen."
 
-#: ../../source/installation.rst:388
+#: ../../source/installation.rst:390
 msgid "``effektif.mongodb.servers``"
 msgstr "``effektif.mongodb.servers``"
 
-#: ../../source/installation.rst:388
+#: ../../source/installation.rst:390
 msgid ""
 "A comma separated list of mongodb servers (hostnames). If you have MongodDB "
 "running on the same server as Tomcat, the default value of localhost is ok."
@@ -1330,11 +1302,11 @@ msgstr ""
 "der Maschine läuft, auf der Tomcat die Effektif-Webanwendung zur Verfügung "
 "stellt, kann der Standardwert localhost beibehalten werden."
 
-#: ../../source/installation.rst:389
+#: ../../source/installation.rst:391
 msgid "``effektif.mongodb.username``"
 msgstr "``effektif.mongodb.username``"
 
-#: ../../source/installation.rst:389
+#: ../../source/installation.rst:391
 msgid ""
 "The Effektif MongoDB user name. If you created the user following the "
 "instructions in this guide, the name is effektif ."
@@ -1342,11 +1314,11 @@ msgstr ""
 "Der Effektif MongoDB Nutzername. Falls Sie den Nutzer entsprechend der "
 "Anweisungen erstellt haben, ist der name effektif ."
 
-#: ../../source/installation.rst:390
+#: ../../source/installation.rst:392
 msgid "``effektif.mongodb.password``"
 msgstr "``effektif.mongodb.password``"
 
-#: ../../source/installation.rst:390
+#: ../../source/installation.rst:392
 msgid ""
 "The password of the Effektif MongoDB user. This is the password you have "
 "defined during the user creation."
@@ -1354,11 +1326,11 @@ msgstr ""
 "Das Passwort des MongoDB Nutzers, das bei der Erstellung des Nutzers "
 "definiert wurde."
 
-#: ../../source/installation.rst:391
+#: ../../source/installation.rst:393
 msgid "``effektif.mongodb.database``"
 msgstr "``effektif.mongodb.database``"
 
-#: ../../source/installation.rst:391
+#: ../../source/installation.rst:393
 msgid ""
 "The name of the database Effektif should use. The default value effektif is "
 "ok."
@@ -1366,7 +1338,7 @@ msgstr ""
 "Der Name der Datenbank, die von Effektif verwendet werden soll. Der "
 "Standardwert effektif kann beibehalten werden."
 
-#: ../../source/installation.rst:394
+#: ../../source/installation.rst:396
 msgid ""
 "The following properties are only relevant if your Effektif installation is "
 "connected to your Signavio installation. ::"
@@ -1374,7 +1346,7 @@ msgstr ""
 "Die folgenden Eigenschaften sind nur relevant, falls Effektif mit Ihrer "
 "Signavio-Installation verbunden werden soll: ::"
 
-#: ../../source/installation.rst:403
+#: ../../source/installation.rst:405
 msgid ""
 "See section :ref:`signavio-integration` for more information on how to set "
 "up the integration."
@@ -1382,11 +1354,11 @@ msgstr ""
 "Weitere Details zur Signavio-Integration erhalten Sie im Kapitel :ref:"
 "`signavio-integration`\\ ."
 
-#: ../../source/installation.rst:406
+#: ../../source/installation.rst:408
 msgid "Configure logging"
 msgstr "Logging konfigurieren"
 
-#: ../../source/installation.rst:407
+#: ../../source/installation.rst:409
 msgid ""
 "The Effektif system has its own application log file ``effektif.log``\\ . "
 "You need to define the directory where this log file is stored. The "
@@ -1399,7 +1371,7 @@ msgstr ""
 "logback.xml``\\ . Öffnen Sie die datei und passen Sie die folgende Zeile "
 "an: ::"
 
-#: ../../source/installation.rst:411
+#: ../../source/installation.rst:413
 msgid ""
 "The value should contain an absolute path. Make sure the user executing "
 "Tomcat has the required read / write permissions for the directory."
@@ -1408,7 +1380,7 @@ msgstr ""
 "der Nutzer, der Tomcat ausführt Lese- und Schreibzugriff auf das "
 "entsprechende Verzeichnis hat."
 
-#: ../../source/installation.rst:413
+#: ../../source/installation.rst:415
 msgid ""
 "On Windows it necessary to escape all \"\\\\\". An example value could like "
 "this: ``\"C:\\\\Logs\\\\Effektif\"``\\ ."
@@ -1416,7 +1388,7 @@ msgstr ""
 "Unter Windows ist es notwendig, alle \"\\\\\" zu escapen, sodass sich zum "
 "Beispiel der folgende Wert ergibt: ``\"C:\\\\Logs\\\\Effektif\"``\\ ."
 
-#: ../../source/installation.rst:415
+#: ../../source/installation.rst:417
 msgid ""
 "This configuration file also enables you to change the log level in this "
 "file. By default, the log level is INFO. However, in a scenario where you "
@@ -1428,11 +1400,11 @@ msgstr ""
 "Troubleshooting Support benötigen, ist es sinnvoll, das Loglevel auf DEBUG "
 "zu erhöhen. Hierfür muss die folgende Zeile angepasst werden: ::"
 
-#: ../../source/installation.rst:419
+#: ../../source/installation.rst:421
 msgid "Change it to: ::"
 msgstr "Der geänderte Eintrag sollte wie folgt aussehen: ::"
 
-#: ../../source/installation.rst:423
+#: ../../source/installation.rst:425
 msgid ""
 "You will need to restart the Tomcat server for the changes to take effect. "
 "You can find more detailed information on how to start the Tomcat server in "
@@ -1442,7 +1414,7 @@ msgstr ""
 "nächste Abschnitt gibt Ihnen detailliertere Hinweise, wie sie den Tomcat "
 "server starten können."
 
-#: ../../source/installation.rst:425
+#: ../../source/installation.rst:427
 msgid ""
 "The log file is configured to do a roll over. Every day, a new log file is "
 "created which contains a timestamp in the filename similar to "
@@ -1466,7 +1438,7 @@ msgstr ""
 "Linux-Distributionen als Debian auszuführen. Der Installationsvorgang kann "
 "jedoch von den unten stehenden Anweisungen abweichen.*"
 
-#: ../../source/installation.rst:52
+#: ../../source/installation.rst:50
 msgid ""
 "*Important: MongoDB version 2.6.x is not yet officially supported by "
 "Effektif. Please, make sure to install version 2.4.x.*"
@@ -1475,7 +1447,7 @@ msgstr ""
 "unterstüzt. Stellen Sie daher sicher, dass Sie MongoDB version 2.4.x "
 "installieren.*"
 
-#: ../../source/installation.rst:168
+#: ../../source/installation.rst:166
 msgid ""
 "*Important: If the server is running on any other port than port 80, your "
 "users will have to enter the port in the address line of the web browser, e."
@@ -1485,7 +1457,7 @@ msgstr ""
 "der Port in der Adressleiste des Browsers referenziert werden, zum Beispiel "
 "wie in: http://effektif.yourdomain.com:8080/*"
 
-#: ../../source/installation.rst:181
+#: ../../source/installation.rst:179
 msgid ""
 "The Effektif webapp which can be found in the directory ``$EFFEKTIF_HOME/"
 "effektif/ROOT`` needs to be copied to the Tomcat’s webapps folder. Therefore "
@@ -1497,7 +1469,7 @@ msgstr ""
 "Entfernen Sie daher alle Dateien aus dem Verzeichnis ``$TOMCAT_HOME/"
 "webapps`` kopieren Sie den Ordner „ROOT“ nach ``$TOMCAT_HOME/webapps/``\\ ."
 
-#: ../../source/installation.rst:236
+#: ../../source/installation.rst:234
 msgid ""
 "You can now start MongoDB by executing the following command: ``net start "
 "MongoDB``"
@@ -1505,7 +1477,7 @@ msgstr ""
 "Mit dem folgenden Befehl können Sie MongoDB nun direkt ausführen: ``net "
 "start MongoDB``"
 
-#: ../../source/installation.rst:254
+#: ../../source/installation.rst:252
 msgid ""
 "This will add the MongoDB repositories to your package sources and install "
 "the version 2.4.x of MongoDB. You can now simply start and stop the MongoDB "
@@ -1514,3 +1486,42 @@ msgstr ""
 "Hierdurch werden die MongoDB Repositories zu Ihren Package Sources "
 "hinzugefügt und Version 2.4.x von MongoDB installiert. Nun können Sie "
 "MongoDB mit den folgenden Befehlen stoppen und starten: ::"
+
+#: ../../source/installation.rst:25
+msgid "8 GB RAM"
+msgstr "8 GB RAM"
+
+#: ../../source/installation.rst:44
+msgid "Apache Tomcat 7 64 Bit"
+msgstr "Apache Tomcat 7 64 Bit"
+
+#: ../../source/installation.rst:93
+msgid ""
+"The Java backend of the Effektif system is executed using Apache Tomcat 7. "
+"Effektif does not support any older or younger versions of Tomcat than "
+"version 7. Furthermore, you have to use a 64 Bit version of Apache Tomcat 7."
+msgstr ""
+"Das Java Back End von Effektif wird im Apache Tomcat 7 Webserver ausgeführt. "
+"Ältere oder neuere Tomcat-Versionen als Version 7 werden nicht unterstützt. "
+"Weiterhin ist es erforderlich, dass Sie eine 64 Bit Version von Apache "
+"Tomcat 7 verwenden."
+
+#: ../../source/installation.rst:355
+msgid "Backup and restore"
+msgstr "Backup und Wiederherstellung"
+
+#: ../../source/installation.rst:356
+msgid ""
+"You are advised to do regular backups of the MongoDB database to prevent a "
+"complete data loss in case of a system failure. The Effektif system will NOT "
+"backup the user data on its own. Section :ref:`backup` explains in details "
+"how to set up backups for MongoDB properly. Furthermore, section :ref:"
+"`restore` explains how you can restore an older version of the user data "
+"using one of the backups."
+msgstr ""
+"Es wird Ihnen angeraten regelmäßige Backups der MongoDB Datenbank anzulegen "
+"um einen kompletten Datenverlust im Falle es Systemfehlers zu vermeiden. Das "
+"Effektif System legt allein KEINE Backups der Nutzerdaten an. Kapitel :ref:"
+"`backup` beschreibt detailliert wie Sie Backups mit MongoDB anlegen können. "
+"In Kapitel :ref:`restore` wird Ihnen zusätzlich erklärt, wie Sie Backups "
+"verwenden um ältere Versionen der Nutzerdaten wieder herzustellen."

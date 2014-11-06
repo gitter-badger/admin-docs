@@ -1,4 +1,4 @@
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: Effektif adminstrators guide 2.11\n"
@@ -14,26 +14,26 @@ msgstr ""
 "X-Generator: Poedit 1.6.9\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
-#: ../../source/restore.rst:2
+#: ../../source/restore.rst:4
 msgid "Restore"
 msgstr "Wiederherstellung"
 
-#: ../../source/restore.rst:3
+#: ../../source/restore.rst:5
 msgid ""
 "Backups can be restored using MongoDB’s mongorestore. Similar to mongodump "
 "it is executed on the command line. For more detailed information on "
 "mongorestore see the official documentation:"
 msgstr ""
-"Backups können über den MongoDB-Befehl mongorestore wiederhergestellt werden."
-"mongorestore kann – vergleichbar zu mongodump – über die Kommandozeile "
-"ausgeführt werden. Weitere Informationen zu mongorestore können Sie der "
-"offiziellen Dokumentation entnehmen: "
+"Backups können über den MongoDB-Befehl mongorestore wiederhergestellt "
+"werden.mongorestore kann – vergleichbar zu mongodump – über die "
+"Kommandozeile ausgeführt werden. Weitere Informationen zu mongorestore "
+"können Sie der offiziellen Dokumentation entnehmen: "
 
-#: ../../source/restore.rst:5
+#: ../../source/restore.rst:7
 msgid "http://docs.mongodb.org/v2.4/reference/program/mongorestore/"
 msgstr "http://docs.mongodb.org/v2.4/reference/program/mongorestore/"
 
-#: ../../source/restore.rst:7
+#: ../../source/restore.rst:9
 msgid ""
 "You will need to use the Effektif MongoDB user credentials again to "
 "overwrite the contents of the Effektif databases."
@@ -41,7 +41,7 @@ msgstr ""
 "Zum Überschreiben des Inhalts der Effektif-Datenbank benötigen Sie wieder "
 "die Nutzerdaten des Effektif MongoDB-Nutzers."
 
-#: ../../source/restore.rst:9
+#: ../../source/restore.rst:11
 msgid ""
 "We recommend running mongorestore with the parameter --drop which will "
 "remove every collection (table) from the database before it is restored."
@@ -50,23 +50,23 @@ msgstr ""
 "Collections (Tabellen) aus der Datenbank entfernt, bevor die "
 "Wiederherstellung beginnt."
 
-#: ../../source/restore.rst:12
+#: ../../source/restore.rst:14
 msgid "Windows"
 msgstr "Windows"
 
-#: ../../source/restore.rst:13
+#: ../../source/restore.rst:15
 msgid ""
-"The mongorestore.exe can be found in your MongoDB installation directory: ``"
-"$MONGO_HOME\\bin\\mongorestore.exe``\\ . If you followed the instructions in "
-"this guide to setup the database, you can execute the following command on "
-"the command line: ::"
+"The mongorestore.exe can be found in your MongoDB installation directory: "
+"``$MONGO_HOME\\bin\\mongorestore.exe``\\ . If you followed the instructions "
+"in this guide to setup the database, you can execute the following command "
+"on the command line: ::"
 msgstr ""
 "Die Datei mongorestore.exe kann im MongoDB Installationsverzeichnis, also "
 "unter ``$MONGO_HOME\\bin\\mongorestore.exe`` gefunden werden. Falls Sie der "
 "Installationsbeschreibung in diesem Handbuch gefolgt sind, lässt sich das "
 "Backup wie folgt einspielen: ::"
 
-#: ../../source/restore.rst:17
+#: ../../source/restore.rst:19
 msgid ""
 "Replace the user credentials with the ones you have chosen during the setup "
 "and the directory with the one where you store your backups."
@@ -75,19 +75,19 @@ msgstr ""
 "Parameter –u beschreibt den Nutzernamen, der Parameter –p das Passwort. "
 "Passen Sie zudem den Pfad zu Ihrem Backup an."
 
-#: ../../source/restore.rst:20
+#: ../../source/restore.rst:22
 msgid "Debian"
 msgstr "Debian"
 
-#: ../../source/restore.rst:21
+#: ../../source/restore.rst:23
 msgid ""
 "Using Debian, the command to restore a backup stored in /path/to/dump would "
 "look like this: ::"
 msgstr ""
-"Unter Debian kann das Wiederherstellungskommando, um ein Backup aus dem "
-"Pfad /path/to/dump wieder herzustellen, wie folgt ausgeführt werden: ::"
+"Unter Debian kann das Wiederherstellungskommando, um ein Backup aus dem Pfad"
+" /path/to/dump wieder herzustellen, wie folgt ausgeführt werden: ::"
 
-#: ../../source/restore.rst:25
+#: ../../source/restore.rst:27
 msgid ""
 "As you can see, you have to fill in the credentials of the Effektif MongoDB "
 "user again. Furthermore, you need to specify where the backup is located."

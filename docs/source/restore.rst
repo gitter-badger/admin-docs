@@ -1,3 +1,5 @@
+.. _restore:
+
 Restore
 =======
 Backups can be restored using MongoDB’s mongorestore. Similar to mongodump it is executed on the command line. For more detailed information on mongorestore see the official documentation:

@@ -22,11 +22,9 @@ The described installation in this adminstration guide will setup the database a
 
 The minimal hardware requirements for the combined system of application and database server are:
 
-* 4 GB RAM
+* 8 GB RAM
 * 4 core CPU
 * 50 GB disk space
-
-The mentioned amount of RAM will be sufficient to execute the Effektif system. Nevertheless, if you can provide the system with more memory, you are advised to do so. Especially MongoDB will benefit from additional system memory.
 
 The required disk space depends on how you will use Effektif. 50 GB should be sufficient disk space for most scenarios. However, if you plan on using a lot of file uploads in your processes the required disk space depends largely on the number and size of the uploaded files. Be aware, the required disk space does not include the space necessary for backups. If you plan on storing the backups on the same server, you should add more.
 
@@ -43,7 +41,7 @@ The following sections contain detailed instructions on how to install and confi
 The application server requires the following additional software:
 
 * Java: Oracle JSE version 7 (1.7.0_67+)
-* Apache Tomcat 7
+* Apache Tomcat 7 64 Bit
 
 The database server requires the following additional software:
 
@@ -92,7 +90,7 @@ https://www.java.com/en/download/manual.jsp
 
 Install Tomcat
 --------------
-The Java backend of the Effektif system is executed using Apache Tomcat 7. Effektif does not support any older or younger versions of Tomcat than version 7. 
+The Java backend of the Effektif system is executed using Apache Tomcat 7. Effektif does not support any older or younger versions of Tomcat than version 7. Furthermore, you have to use a 64 Bit version of Apache Tomcat 7.
 
 You can download the latest installation files for different operating systems from the following site:
 
@@ -312,7 +310,7 @@ In general, if you want to create a new user in MongoDB you will need to authent
 In order to add a new user to MongoDB, the MongoDB server has to be running.
 
 Windows
-```````
+^^^^^^^
 
 #. Open the command cmd and go to your MongoDB\bin directory, e.g. by executing: ``cd C:\MongoDB\bin``
 #. If you have an admin user, create the Effektif user by executing: 
@@ -332,7 +330,7 @@ Windows
     * On the command line you will see the user information including the four assigned roles.
 
 Debian
-``````
+^^^^^^
 If you have installed MongoDB using a package manager, the binaries should be available on the path. Otherwise, open the directory with the MongoDB binary files and  follow the instructions.
 
 #. If you have an admin user, create the Effektif user by executing: 
@@ -352,6 +350,10 @@ If you have installed MongoDB using a package manager, the binaries should be av
     * On the command line you will see the user information including the four assigned roles.
 
 Once the Effektif user is created, its credentials have to be added to the Effektif configuration file to the properties ``effektif.mongodb.username`` and ``effektif.mongodb.password``\ . Section :ref:`update-effektif-configuration` explains how to update the configuration file.
+
+Backup and restore
+``````````````````
+You are advised to do regular backups of the MongoDB database to prevent a complete data loss in case of a system failure. The Effektif system will NOT backup the user data on its own. Section :ref:`backup` explains in details how to set up backups for MongoDB properly. Furthermore, section :ref:`restore` explains how you can restore an older version of the user data using one of the backups.
 
 .. _configure-effektif:
 
