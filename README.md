@@ -1,7 +1,7 @@
 Effektif adminstrators guide
 ============================
 
-The Effektif administrators guide uses [Sphinx](http://sphinx-doc.org/) to create the documentation as HTML and PDF. Sphinx is a Python library. The documentation itself is written using reStructuredText with some Sphinx flavor. The documentation is available in english and german.
+The Effektif administrators guide uses [Sphinx](http://sphinx-doc.org/) to create the documentation as HTML and PDF. Sphinx is a Python library. The documentation itself is written using reStructuredText with some Sphinx flavor and is available in english and german.
 
 ### Setup 
 In order to edit the documentation, you will want to install Sphinx on your local machine. Therefore, make sure you have Python and [PIP](https://pypi.python.org/pypi/pip) installed.
@@ -34,6 +34,20 @@ Before you can create PDF files locally you need to set up an appropriate latex 
 
 The HTML generation works out of the box with Sphinx.
 
+By default the english versions of the artifact will be created. In order to generate the artifacts for another language, use the following parameter:
+`-e SPHINXOPTS="-D language='de'"`
+
+Create HTML (en):
 `make html`
 
-`make latexpdf
+Create HTML (de):
+`make -e SPHINXOPTS="-D language='de'" html`
+
+Create PDF from Latex (en):
+`make latexpdf`
+
+Create PDF from Latex (de): 
+`make -e SPHINXOPTS="-D language='de'" latexpdf`
+
+If you try to create artifacts in both languages right after each other, the PDF creation might fail. Then simply clean up the build directory and run the creation command again.
+`make clean`
