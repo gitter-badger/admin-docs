@@ -130,6 +130,11 @@ latexpdfja:
 	$(MAKE) -C $(BUILDDIR)/latex all-pdf-ja
 	@echo "pdflatex finished; the PDF files are in $(BUILDDIR)/latex."
 
+pdfen: clean latexpdf
+
+pdfde: clean
+	$(MAKE) -e SPHINXOPTS="-D language='de'" latexpdf
+
 text:
 	$(SPHINXBUILD) -b text $(ALLSPHINXOPTS) $(BUILDDIR)/text
 	@echo

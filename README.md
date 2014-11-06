@@ -56,9 +56,9 @@ Create HTML (de):
 `make -e SPHINXOPTS="-D language='de'" html`
 
 Create PDF from Latex (en):
-`make latexpdf`
+`make pdfen`
 
 Create PDF from Latex (de): 
-`make -e SPHINXOPTS="-D language='de'" latexpdf`
+`make pdfde`
 
 If you try to create artifacts in both languages right after each other, the PDF creation might fail. Then simply clean up the build directory (`make clean`) and run the creation command again.
