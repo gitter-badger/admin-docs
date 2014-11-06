@@ -24,7 +24,7 @@ When you edited the documentation, you have to update the translations as well.
 
 1. Open the `docs` directory in your local copy. 
 2. Run `make i18nextract`
-3. Update the \*.po files in `locale`.
+3. Update the \*.po files in `source/locale`.
 4. Run `make i18nmerge`
 
 Always commit the \*.mo files as well, because they are required by readthedocs to create the german translation.
@@ -49,5 +49,4 @@ Create PDF from Latex (en):
 Create PDF from Latex (de): 
 `make -e SPHINXOPTS="-D language='de'" latexpdf`
 
-If you try to create artifacts in both languages right after each other, the PDF creation might fail. Then simply clean up the build directory and run the creation command again.
-`make clean`
+If you try to create artifacts in both languages right after each other, the PDF creation might fail. Then simply clean up the build directory (`make clean`) and run the creation command again.
