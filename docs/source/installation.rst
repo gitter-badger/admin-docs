@@ -12,7 +12,7 @@ The Effektif system can be deployed on different operating systems. Officially s
 * Debian Stable Release 64Bit
 * Microsoft Windows Server 64Bit
 
-*Important: In general, it is possible to install Effektif on other Linux distributions. However, the installation process can differ from the following instructions.*
+*Important: In general, it is possible to install Effektif on other Linux distributions. However, the installation process can differ from the following instructions and the Effektif team cannot offer official support in case of an installation problem.*
 
 You are advised to use a 64Bit operating system in order to be able to assign more than 1.5GB of heap space to the Java VM. Furthermore, MongoDB is limited to 2GB of content on 32Bit operating systems.
 
