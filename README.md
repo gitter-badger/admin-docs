@@ -7,15 +7,17 @@ The Effektif administrators guide uses [Sphinx](http://sphinx-doc.org/) to creat
 * [Python](https://www.python.org/downloads/)
     * you can go with version 2.7.x, but 3.x should work as well
 * [PIP](https://pypi.python.org/pypi/pip)
-* sphinx >= 1.2.3
-* sphinx-autobuild >= 0.3.0
-* sphinx-intl >= 0.9.5
+    * whenever you are using pip it is highly recommended to use [virtualenv](http://virtualenv.readthedocs.org/en/latest/)
+    * [virtualenv](http://virtualenv.readthedocs.org/en/latest/) gets even better with [virtualenvwrapper](http://virtualenvwrapper.readthedocs.org/en/latest/)
 
-### Setup 
+Install all dependencies via
+`pip install -r requirements.txt`
+
+### Setup
 In order to edit the documentation, you will want to install Sphinx on your local machine. Therefore, make sure you have Python and [PIP](https://pypi.python.org/pypi/pip) installed.
 
 1. Clone the repository to your system.
-2. Open the `docs` directory in your local copy. 
+2. Open the `docs` directory in your local copy.
 3. Run `make install`
 
 This will install all necessary modules including Sphinx.
@@ -34,7 +36,7 @@ Some helpful resources regarding Sphinx and reST:
 ### Translations
 When you edited the documentation, you have to update the translations as well.
 
-1. Open the `docs` directory in your local copy. 
+1. Open the `docs` directory in your local copy.
 2. Run `make i18nextract`
 3. Update the \*.po files in `source/locale`.
 4. Run `make i18nmerge`
@@ -58,7 +60,7 @@ Create HTML (de):
 Create PDF from Latex (en):
 `make pdfen`
 
-Create PDF from Latex (de): 
+Create PDF from Latex (de):
 `make pdfde`
 
 If you try to create artifacts in both languages right after each other, the PDF creation might fail. Then simply clean up the build directory (`make clean`) and run the creation command again.
