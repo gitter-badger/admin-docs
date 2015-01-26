@@ -1,3 +1,5 @@
+.. _stopping:
+
 Stopping Effektif
 =================
 In order to stop the Effektif system completely, you have to stop the Tomcat application server and the MongoDB database. However, if you need to restart the Effektif system, it is sufficient to restart only the Tomcat server.
