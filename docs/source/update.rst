@@ -2,6 +2,8 @@ Update
 ======
 This section will guide you through an update of your Effektif system. It assumes you have successfully installed an early version of Effektif. If you are installing Effektif for the first time, you can skip this chapter.
 
+.. _update-unpack-effektif:
+
 Unpack Effektif
 ---------------
 Unzip the effektif-{version}.zip to a directory of your choice, e.g. ``/yourlocation/effektif-{version}``
@@ -18,6 +20,8 @@ The directory will contain the following files:
 
     * ROOT - this directory contains the web application
 
+.. _update-stop-effektif:
+
 Stop Effektif
 -------------
 Before you can start with the update process you have to shutdown the Effektif system. It is sufficient when you shutdown the Tomcat server Effektif is running on. You don't have to shutdown the MongoDB server. Refer to chapter :ref:`stopping` for information on how to stop Effektif.
@@ -26,7 +30,7 @@ Backup MongoDB
 --------------
 Updating Effektif to a newer version might involve changes in the database schema. Therefore, you are requested to backup the database before you go on. See chapter :ref:`backup` for more information on how to create a backup.
 
-.. _backup-configuration:
+.. _update-backup-configuration:
 
 Backup the configuration files
 ------------------------------
@@ -40,14 +44,18 @@ license.xml                     Effektif license file
 
 Simply copy the files mentioned above to another location, e.g. ``$TOMCAT_HOME/webapps``\ .
 
+.. _update-install-version:
+
 Install a new version
 ---------------------
 In order to update the Effektif, system you have to replace the ``ROOT`` folder in ``$TOMCAT_HOME/webapps`` with the newer version you can find in the extracted directory ``$EFFEKTIF_HOME/effektif``\ . 
 
 #. Delete the folder ``$TOMCAT_HOME/webapps/ROOT`` completely. 
 #. Copy the folder ``$EFFEKTIF_HOME/effektif/ROOT`` to ``$TOMCAT_HOME/webapps``\ .
-#. Copy the configuration files you have backed up in subsection :ref:`backup-configuration` back into the directory ``$TOMCAT_HOME/webapps/ROOT/WEB-INF/classes``\ .
+#. Copy the configuration files you have backed up in subsection :ref:`update-backup-configuration` back into the directory ``$TOMCAT_HOME/webapps/ROOT/WEB-INF/classes``\ .
 #. If you have been provided with a new ``license.xml``\ , copy the file into ``$TOMCAT_HOME/webapps/ROOT/WEB-INF/classes`` and replace the existing file. Otherwise, you can keep on using the old ``license.xml``\ .
+
+.. _update-revisit-configuration:
 
 Revisit the configuration files
 -------------------------------
@@ -59,3 +67,16 @@ When you have successfully installed the new Effektif version and verified that 
 
 Restore an older version
 ------------------------
+In case of exceptional problems you might want to restore an older version of Effektif. Be aware, if you revert Effektif to an older version, it is not guaranteed that you can keep on using your current database. The upgrade to a newer version can involve schema changes that render the database incompatible with older versions of Effektif. In this situation, the Effektif system will not start if it detects a newer version of the database schema which it doesn't support. This is the reason why you should create a backup before updating the system. 
+
+In order to restore an older version, you can follow the instructions in this chapter again. However, instead of creating a backup you should restore an older backup.
+
+#. Unpack the older version of Effektif, see :ref:`update-unpack-effektif`
+#. Stop the Effektif system, see :ref:`update-stop-effektif`
+#. Restore an earlier back up that was taken while the old Effektif version was deployed. See chapter :ref:`restore` for more information on how to restore a backup.
+#. Backup the configuration files, see :ref:`update-backup-configuration`
+#. Install the older version in ``$TOMCAT_HOME/webapps``\ , see :ref:`update-install-version`
+#. Check the configuration files again, see :ref:`update-revisit-configuration`
+#. Start the Effektif system, see :ref:`starting-effektif`
+
+Now, the Effektif system should be running with the older version again.
