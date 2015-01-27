@@ -14,6 +14,7 @@ Effektif administrators documentation
     tooling
     signavio
     troubleshooting
+    appendix
 
 
 Contact and legal information
