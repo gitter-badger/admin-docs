@@ -28,7 +28,7 @@ Before you can start with the update process you have to shutdown the Effektif s
 
 Backup MongoDB
 --------------
-Updating Effektif to a newer version might involve changes in the database schema. Therefore, you are requested to backup the database before you go on. See chapter :ref:`backup` for more information on how to create a backup.
+Updating Effektif to a newer version might involve changes in the database schema. Therefore, you are requested to backup the database before you go on. See chapter :ref:`backup` for more information on how to create a backup. Furthermore, the backup is necessary in case you have to revert Effektif to an older version, because changes of the database schema are in general not backward compatible. This means you cannot run an older version of Effektif with a database that was already migrated to a newer version.
 
 .. _update-backup-configuration:
 
@@ -36,11 +36,11 @@ Backup the configuration files
 ------------------------------
 During the first setup you have modified some configuration files and added the Effektif license file. In order to preserve those changes, you have to copy those files to another location before updating the Effektif system. You can find those files in the directory ``$TOMCAT_HOME/webapps/ROOT/WEB-INF/classes``\ .
 
-=============================   ====================================
-effektif-onpremise.properties   Effektif configuration file
-logback.xml                     configuration file for Effektif logs
-license.xml                     Effektif license file
-=============================   ====================================
+=================================   ====================================
+``effektif-onpremise.properties``   Effektif configuration file
+``logback.xml``                     configuration file for Effektif logs
+``license.xml``                     Effektif license file
+=================================   ====================================
 
 Simply copy the files mentioned above to another location, e.g. ``$TOMCAT_HOME/webapps``\ .
 
@@ -63,7 +63,9 @@ Upon upgrading to a newer version, it might be necessary to update existing conf
 
 Start Effektif
 --------------
-When you have successfully installed the new Effektif version and verified that the configuration files are up-to-date, you can restart the Effektif system. Refer to chapter :ref:`starting-effektif` for more information on how to start Effektif.
+When you have successfully installed the new Effektif version and verified that the configuration files are up-to-date, you can restart the Effektif system. Refer to chapter :ref:`starting-effektif` for more information on how to start Effektif. 
+
+During the first startup the Effektif system will migrate the database if there are any outstanding schema changes. Therefore, the startup might take a short while depending on the size of your database. If the system doesn't become available again within minutes, please check the Effektif log file for any new error reports.
 
 Restore an older version
 ------------------------

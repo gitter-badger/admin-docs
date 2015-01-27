@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: Effektif adminstrators guide 2.16\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-01-27 11:13+0100\n"
-"PO-Revision-Date: 2015-01-27 15:11+0100\n"
+"PO-Revision-Date: 2015-01-27 16:16+0100\n"
 "Last-Translator: Christian Wiggert <christian.wiggert@signavio.com>\n"
 "Language-Team: Effektif <dev@effektif.com>\n"
 "MIME-Version: 1.0\n"
@@ -91,18 +91,6 @@ msgstr ""
 msgid "Backup MongoDB"
 msgstr "Backup MongoDB"
 
-#: ../../source/update.rst:31
-msgid ""
-"Updating Effektif to a newer version might involve changes in the database "
-"schema. Therefore, you are requested to backup the database before you go "
-"on. See chapter :ref:`backup` for more information on how to create a backup."
-msgstr ""
-"Während der Aktualisierung von Effektif auf eine neuere Version kann es "
-"vorkommen, dass das Datenbankschema angepasst werden muss. Dementsprechend "
-"sollten Sie ein Backup der Datenbank anlegen, bevor Sie mit der "
-"Aktualisierung fortfahren. In Kapitel :ref:`backup` finden Sie mehr "
-"Informationen, wie Sie ein Backup mit MongoDB anlegen."
-
 #: ../../source/update.rst:36
 msgid "Backup the configuration files"
 msgstr "Sichern der Konfigurationsdateien"
@@ -123,24 +111,12 @@ msgstr ""
 "$TOMCAT_HOME/webapps/ROOT/WEB-INF/classes``\\ ."
 
 #: ../../source/update.rst:40
-msgid "effektif-onpremise.properties"
-msgstr "effektif-onpremise.properties"
-
-#: ../../source/update.rst:40
 msgid "Effektif configuration file"
 msgstr "Effektif Konfigurationsdatei"
 
 #: ../../source/update.rst:41
-msgid "logback.xml"
-msgstr "logback.xml"
-
-#: ../../source/update.rst:41
 msgid "configuration file for Effektif logs"
 msgstr "Konfiguration der Effektif Logs"
-
-#: ../../source/update.rst:42
-msgid "license.xml"
-msgstr "license.xml"
 
 #: ../../source/update.rst:42
 msgid "Effektif license file"
@@ -227,11 +203,11 @@ msgstr ""
 "können Sie das Effektif-System wieder starten. Kapitel :ref:`starting-"
 "effektif` gibt Ihnen weitere Information, wie Sie Effektif starten."
 
-#: ../../source/update.rst:69
+#: ../../source/update.rst:71
 msgid "Restore an older version"
 msgstr "Eine ältere Version wieder herstellen"
 
-#: ../../source/update.rst:70
+#: ../../source/update.rst:72
 msgid ""
 "In case of exceptional problems you might want to restore an older version "
 "of Effektif. Be aware, if you revert Effektif to an older version, it is not "
@@ -253,7 +229,7 @@ msgstr ""
 "unterstützte Version erkennt. Aus diesem Grund sollten Sie vor jeder "
 "Aktualisierung ein Backup der Datenbank anlegen."
 
-#: ../../source/update.rst:72
+#: ../../source/update.rst:74
 msgid ""
 "In order to restore an older version, you can follow the instructions in "
 "this chapter again. However, instead of creating a backup you should restore "
@@ -263,17 +239,17 @@ msgstr ""
 "Anweisungen in diesem Kapitel folgen. Jedoch statt ein Backup anzulegen, "
 "müssen Sie nun ein zuvor erstelltes Backup wieder herstellen."
 
-#: ../../source/update.rst:74
+#: ../../source/update.rst:76
 msgid "Unpack the older version of Effektif, see :ref:`update-unpack-effektif`"
 msgstr ""
 "Entpacken Sie die ältere Version von Effektif, vgl. :ref:`update-unpack-"
 "effektif`"
 
-#: ../../source/update.rst:75
+#: ../../source/update.rst:77
 msgid "Stop the Effektif system, see :ref:`update-stop-effektif`"
 msgstr "Stoppen Sie das Effektif-System, vgl. :ref:`update-stop-effektif`"
 
-#: ../../source/update.rst:76
+#: ../../source/update.rst:78
 msgid ""
 "Restore an earlier back up that was taken while the old Effektif version was "
 "deployed. See chapter :ref:`restore` for more information on how to restore "
@@ -283,13 +259,13 @@ msgstr ""
 "während die alte Effektif Version installiert war. Im Kapitel :ref:`restore` "
 "finden Sie weitere Hinweise, wie Sie ein Backup wieder herstellen können."
 
-#: ../../source/update.rst:77
+#: ../../source/update.rst:79
 msgid "Backup the configuration files, see :ref:`update-backup-configuration`"
 msgstr ""
 "Sichern Sie die Konfigurationsdateien, vgl. :ref:`update-backup-"
 "configuration`"
 
-#: ../../source/update.rst:78
+#: ../../source/update.rst:80
 msgid ""
 "Install the older version in ``$TOMCAT_HOME/webapps``\\ , see :ref:`update-"
 "install-version`"
@@ -297,18 +273,18 @@ msgstr ""
 "Installieren Sie die ältere Version von Effektif in ``$TOMCAT_HOME/webapps``"
 "\\ , vgl. :ref:`update-install-version`"
 
-#: ../../source/update.rst:79
+#: ../../source/update.rst:81
 msgid ""
 "Check the configuration files again, see :ref:`update-revisit-configuration`"
 msgstr ""
 "Überprüfen Sie die Konfigurationsdateien erneut, vgl. :ref:`update-revisit-"
 "configuration`"
 
-#: ../../source/update.rst:80
+#: ../../source/update.rst:82
 msgid "Start the Effektif system, see :ref:`starting-effektif`"
 msgstr "Starten Sie das Effektif-System, vgl. :ref:`starting-effektif`"
 
-#: ../../source/update.rst:82
+#: ../../source/update.rst:84
 msgid ""
 "Now, the Effektif system should be running with the older version again."
 msgstr "Jetzt sollte das Effektif-System wieder mit der alten Version laufen."
@@ -323,3 +299,71 @@ msgstr ""
 "Verzeichnis ``$TOMCAT_HOME/webapps`` durch die neuere Version ersetzen, "
 "welche sich in dem entpackten Verzeichnis ``$EFFEKTIF_HOME/effektif`` "
 "befindet."
+
+#: ../../source/update.rst:31
+msgid ""
+"Updating Effektif to a newer version might involve changes in the database "
+"schema. Therefore, you are requested to backup the database before you go "
+"on. See chapter :ref:`backup` for more information on how to create a "
+"backup. Furthermore, the backup is necessary in case you have to revert "
+"Effektif to an older version, because changes of the database schema are in "
+"general not backward compatible. This means you cannot run an older version "
+"of Effektif with a database that was already migrated to a newer version."
+msgstr ""
+"Während der Aktualisierung von Effektif auf eine neuere Version kann es "
+"vorkommen, dass das Datenbankschema angepasst werden muss. Dementsprechend "
+"sollten Sie ein Backup der Datenbank anlegen, bevor Sie mit der "
+"Aktualisierung fortfahren. In Kapitel :ref:`backup` finden Sie mehr "
+"Informationen, wie Sie ein Backup mit MongoDB anlegen. Weiterhin ist das "
+"Backup notwendig für den Fall, dass Sie eine ältere Version von Effektif "
+"wieder herstellen müssen, denn ein verändertes Datenbankschema ist im "
+"Allgemeinen nicht abwärtskompatibel. Das bedeutet, dass Sie keine ältere "
+"Version von Effektif mit einer Datenbank betreiben können, die bereits auf "
+"ein neueres Schema migriert wurde."
+
+#: ../../source/update.rst:40
+msgid "``effektif-onpremise.properties``"
+msgstr "``effektif-onpremise.properties``"
+
+#: ../../source/update.rst:41
+msgid "``logback.xml``"
+msgstr "``logback.xml``"
+
+#: ../../source/update.rst:42
+msgid "``license.xml``"
+msgstr "``license.xml``"
+
+#: ../../source/update.rst:68
+msgid ""
+"During the first startup the Effektif system will migrate the database if "
+"there are any outstanding schema changes. Therefore, the startup might take "
+"a short while depending on the size of your database. If the system doesn't "
+"become available again within minutes, please check the Effektif log file "
+"for any new error reports."
+msgstr ""
+"Während des ersten Starts von Effektif wird die Datenbank migriert, insofern "
+"es Änderungen im Datenbankschema gibt. Deswegen kann der Start etwas länger "
+"dauern, abhängig von der Größe Ihrer Datenbank. Wenn das System jedoch nicht "
+"innerhalb von Minuten wieder verfügbar wird, überprüfen Sie bitte die "
+"Effektif-Logdateien auf neue Fehlermeldungen."
+
+#~ msgid ""
+#~ "Updating Effektif to a newer version might involve changes in the "
+#~ "database schema. Therefore, you are requested to backup the database "
+#~ "before you go on. See chapter :ref:`backup` for more information on how "
+#~ "to create a backup."
+#~ msgstr ""
+#~ "Während der Aktualisierung von Effektif auf eine neuere Version kann es "
+#~ "vorkommen, dass das Datenbankschema angepasst werden muss. "
+#~ "Dementsprechend sollten Sie ein Backup der Datenbank anlegen, bevor Sie "
+#~ "mit der Aktualisierung fortfahren. In Kapitel :ref:`backup` finden Sie "
+#~ "mehr Informationen, wie Sie ein Backup mit MongoDB anlegen."
+
+#~ msgid "effektif-onpremise.properties"
+#~ msgstr "effektif-onpremise.properties"
+
+#~ msgid "logback.xml"
+#~ msgstr "logback.xml"
+
+#~ msgid "license.xml"
+#~ msgstr "license.xml"
