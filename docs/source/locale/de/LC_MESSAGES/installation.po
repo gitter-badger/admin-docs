@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: Effektif adminstrators guide 2.11\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-10-31 11:18+0100\n"
-"PO-Revision-Date: 2015-01-27 11:09+0100\n"
+"PO-Revision-Date: 2015-01-27 16:27+0100\n"
 "Last-Translator: Christian Wiggert <christian.wiggert@signavio.com>\n"
 "Language-Team: Effektif <dev@effektif.com>\n"
 "MIME-Version: 1.0\n"
@@ -17,14 +17,6 @@ msgstr ""
 #: ../../source/installation.rst:2
 msgid "Installation"
 msgstr "Installation"
-
-#: ../../source/installation.rst:3
-msgid ""
-"This section will guide you through the setup of Effektif. Simply follow the "
-"subsections step by step."
-msgstr ""
-"Dieses Kapitel behandelt die Installation von Effektif. Folgen Sie den "
-"detaillierten Beschreibungen und Anweisungen einfach Schritt für Schritt."
 
 #: ../../source/installation.rst:6
 msgid "System requirements"
@@ -1528,3 +1520,14 @@ msgstr ""
 "jedoch von den unten stehenden Anweisungen abweichen und das Effektif Team "
 "kann im Falle eines Installationsproblems keinen offiziellen Support "
 "bereitstellen.*"
+
+#: ../../source/installation.rst:3
+msgid ""
+"This section will guide you through the setup of Effektif. Simply follow the "
+"subsections step by step. If you have already installed Effektif and want to "
+"update the system to a newer version, you can skip this chapter."
+msgstr ""
+"Dieses Kapitel behandelt die Installation von Effektif. Folgen Sie den "
+"detaillierten Beschreibungen und Anweisungen einfach Schritt für Schritt. "
+"Wenn Sie Effektif bereits installiert haben und das System auf eine neuere "
+"Version aktualisieren möchten, dann können Sie dieses Kapitel überspringen."

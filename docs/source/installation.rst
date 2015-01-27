@@ -1,6 +1,6 @@
 Installation
 ============
-This section will guide you through the setup of Effektif. Simply follow the subsections step by step.
+This section will guide you through the setup of Effektif. Simply follow the subsections step by step. If you have already installed Effektif and want to update the system to a newer version, you can skip this chapter.
 
 System requirements
 -------------------

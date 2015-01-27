@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: Effektif adminstrators guide 2.11\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-10-31 11:18+0100\n"
-"PO-Revision-Date: 2014-11-06 15:16+0100\n"
+"PO-Revision-Date: 2015-01-27 16:25+0100\n"
 "Last-Translator: Christian Wiggert <christian.wiggert@signavio.com>\n"
 "Language-Team: Effektif <dev@effektif.com>\n"
 "MIME-Version: 1.0\n"
@@ -17,14 +17,6 @@ msgstr ""
 #: ../../source/installation.rst:2
 msgid "Installation"
 msgstr "Installation"
-
-#: ../../source/installation.rst:3
-msgid ""
-"This section will guide you through the setup of Effektif. Simply follow the "
-"subsections step by step."
-msgstr ""
-"This section will guide you through the setup of Effektif. Simply follow the "
-"subsections step by step."
 
 #: ../../source/installation.rst:6
 msgid "System requirements"
@@ -1512,6 +1504,23 @@ msgstr ""
 "distributions. However, the installation process can differ from the "
 "following instructions and the Effektif team cannot offer official support "
 "in case of an installation problem.*"
+
+#: ../../source/installation.rst:3
+msgid ""
+"This section will guide you through the setup of Effektif. Simply follow the "
+"subsections step by step. If you have already installed Effektif and want to "
+"update the system to a newer version, you can skip this chapter."
+msgstr ""
+"This section will guide you through the setup of Effektif. Simply follow the "
+"subsections step by step. If you have already installed Effektif and want to "
+"update the system to a newer version, you can skip this chapter."
+
+#~ msgid ""
+#~ "This section will guide you through the setup of Effektif. Simply follow "
+#~ "the subsections step by step."
+#~ msgstr ""
+#~ "This section will guide you through the setup of Effektif. Simply follow "
+#~ "the subsections step by step."
 
 #~ msgid ""
 #~ "*Important: In general, it is possible to install Effektif on other Linux "
