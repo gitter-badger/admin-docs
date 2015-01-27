@@ -48,7 +48,7 @@ Simply copy the files mentioned above to another location, e.g. ``$TOMCAT_HOME/w
 
 Install a new version
 ---------------------
-In order to update the Effektif, system you have to replace the ``ROOT`` folder in ``$TOMCAT_HOME/webapps`` with the newer version you can find in the extracted directory ``$EFFEKTIF_HOME/effektif``\ . 
+In order to update the Effektif system, you have to replace the ``ROOT`` folder in ``$TOMCAT_HOME/webapps`` with the newer version you can find in the extracted directory ``$EFFEKTIF_HOME/effektif``\ . 
 
 #. Delete the folder ``$TOMCAT_HOME/webapps/ROOT`` completely. 
 #. Copy the folder ``$EFFEKTIF_HOME/effektif/ROOT`` to ``$TOMCAT_HOME/webapps``\ .
