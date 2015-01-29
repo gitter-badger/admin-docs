@@ -1,4 +1,4 @@
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: Effektif adminstrators guide 2.11\n"
@@ -26,33 +26,33 @@ msgstr ""
 "This section lists some tools that might help you to administrate and "
 "maintain your Effektif installation. Use them at your own discretion."
 
-#: ../../source/tooling.rst:6
+#: ../../source/tooling.rst:8
 msgid "MongoDB"
 msgstr "MongoDB"
 
-#: ../../source/tooling.rst:9
+#: ../../source/tooling.rst:11
 msgid "http://robomongo.org/"
 msgstr "http://robomongo.org/"
 
-#: ../../source/tooling.rst:7
+#: ../../source/tooling.rst:9
 msgid ""
-"A good tool to manage your MongoDB installation is Robomongo. It is free and "
-"available for different operating system. Use it at your own discretion. "
+"A good tool to manage your MongoDB installation is Robomongo. It is free and"
+" available for different operating system. Use it at your own discretion. "
 "Please, be careful when you use a tool to manipulate the database. Effektif "
 "does not guarantee that any manipulated data can be restored. The tool can "
 "be downloaded from this site:"
 msgstr ""
-"A good tool to manage your MongoDB installation is Robomongo. It is free and "
-"available for different operating system. Use it at your own discretion. "
+"A good tool to manage your MongoDB installation is Robomongo. It is free and"
+" available for different operating system. Use it at your own discretion. "
 "Please, be careful when you use a tool to manipulate the database. Effektif "
 "does not guarantee that any manipulated data can be restored. The tool can "
 "be downloaded from this site:"
 
 #~ msgid ""
-#~ "A good tool to manage your MongoDB installation is Robomongo. It is free "
-#~ "and available for different operating system. Use it at your own "
-#~ "discretion. It can be downloaded from this site:"
+#~ "A good tool to manage your MongoDB installation is Robomongo. It is free and"
+#~ " available for different operating system. Use it at your own discretion. It"
+#~ " can be downloaded from this site:"
 #~ msgstr ""
-#~ "A good tool to manage your MongoDB installation is Robomongo. It is free "
-#~ "and available for different operating system. Use it at your own "
-#~ "discretion. It can be downloaded from this site:"
+#~ "A good tool to manage your MongoDB installation is Robomongo. It is free and"
+#~ " available for different operating system. Use it at your own discretion. It"
+#~ " can be downloaded from this site:"

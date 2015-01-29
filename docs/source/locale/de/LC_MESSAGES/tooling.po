@@ -1,4 +1,4 @@
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: Effektif adminstrators guide 2.11\n"
@@ -27,26 +27,26 @@ msgstr ""
 "Ihre Effektif-Installation zu verwalten und zu warten. Nutzen Sie die "
 "entsprechenden Werkeuge auf Ihre eigene Verantwortung."
 
-#: ../../source/tooling.rst:6
+#: ../../source/tooling.rst:8
 msgid "MongoDB"
 msgstr "MongoDB"
 
-#: ../../source/tooling.rst:9
+#: ../../source/tooling.rst:11
 msgid "http://robomongo.org/"
 msgstr "http://robomongo.org/"
 
-#: ../../source/tooling.rst:7
+#: ../../source/tooling.rst:9
 msgid ""
-"A good tool to manage your MongoDB installation is Robomongo. It is free and "
-"available for different operating system. Use it at your own discretion. "
+"A good tool to manage your MongoDB installation is Robomongo. It is free and"
+" available for different operating system. Use it at your own discretion. "
 "Please, be careful when you use a tool to manipulate the database. Effektif "
 "does not guarantee that any manipulated data can be restored. The tool can "
 "be downloaded from this site:"
 msgstr ""
 "Ein gutes Tool zur Verwaltung Ihrer MongoDB Installation ist Robomongo. Es "
 "ist kostenfrei und für die gängigen Betriebssysteme verfügbar. Gehen Sie "
-"jedoch vorsichtig bei der Nutzung vor – beim eigenständigen Manipulieren der "
-"Datenbank kann es bei fahrlässiger Vorgehensweise natürlich vorkommen, dass "
-"Daten beschädigt werden, ohne dass das Effektif System eine "
+"jedoch vorsichtig bei der Nutzung vor – beim eigenständigen Manipulieren der"
+" Datenbank kann es bei fahrlässiger Vorgehensweise natürlich vorkommen, dass"
+" Daten beschädigt werden, ohne dass das Effektif System eine "
 "Wiederherstellung garantieren kann. Das Tool kann unter dem folgenden Link "
 "heruntergeladen werden: "

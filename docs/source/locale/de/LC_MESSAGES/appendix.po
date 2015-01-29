@@ -1,0 +1,179 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Effektif adminstrators guide 2.16\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-01-29 18:44+0100\n"
+"PO-Revision-Date: 2015-01-29 19:36+0100\n"
+"Last-Translator: Christian Wiggert <christian.wiggert@signavio.com>\n"
+"Language-Team: Effektif <dev@effektif.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"X-Generator: Poedit 1.6.9\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+#: ../../source/appendix.rst:2
+msgid "Appendix"
+msgstr "Anhang"
+
+#: ../../source/appendix.rst:4
+msgid ""
+"This chapter contains content to various topics which extend the "
+"descriptions in the administration guide."
+msgstr ""
+"Dieses Kapitel enthält Inhalt zu verschiedenen Theme, welche die "
+"Beschreibungen im Adminstratorenhandbuch vertiefen."
+
+#: ../../source/appendix.rst:7
+msgid "How to add the Effektif MongoDB user with Robomongo"
+msgstr "Wie fügt man den Effektif MongoDB-Nutzer mit Robomongo hinzu"
+
+#: ../../source/appendix.rst:9
+msgid ""
+"This section will show an alternative approach on how to create the Effektif "
+"database user in MongoDB instead of using the command line. For this "
+"approach we will use the free GUI application Robomongo to adminstrate "
+"MongoDB. See section :ref:`tooling-mongodb` for more information on "
+"Robomongo and where to download it."
+msgstr ""
+"Dieser Abschnitt wird einen alternativen Ansatz zeigen, wie man den Effektif "
+"Datenbanknutzer in MongoDB anlegen kann ohne die Kommandozeile zu verwenden. "
+"Für diesen Ansatz benötigen Sie die frei verfügbare, grafische Anwendung "
+"Robomongo um MongoDB zu verwalten. Kapitel :ref:`tooling-mongodb` liefert "
+"Ihnen mehr Informationen zu Robomongo und woher Sie die Anwendung beziehen "
+"können."
+
+#: ../../source/appendix.rst:11
+msgid ""
+"*Important: This methods works only if you execute Robomongo on the same "
+"system where your MongoDB server is already running. When authentication is "
+"turned on, MongoDB will only accept connections from localhost to create the "
+"initial user.*"
+msgstr ""
+"*Wichtig: Diese Methode funktioniert nur, wenn Sie Robomongo auf dem "
+"gleichen System ausführen auf dem auch Ihr MongoDB-Server läuft. Sobald "
+"Authentifizierung aktiviert ist, akzeptiert MongoDB nur Verbindungen von "
+"localhost um den initialen Datenbanknutzer zu erstellen.*"
+
+#: ../../source/appendix.rst:13
+msgid "Make sure your MongoDB server is running and open Robomongo."
+msgstr ""
+"Stellen Sie sicher, dass der MongoDB-Server läuft und öffnen Sie Robomongo."
+
+#: ../../source/appendix.rst:19
+msgid "In the upper left corner click on the icon to open a new connection."
+msgstr ""
+"Klicken sie auf das Symbol in der oberen linken Ecke um eine neue Verbindung "
+"zu öffnen."
+
+#: ../../source/appendix.rst:25
+msgid "Click on the link *Create* to setup a new connection."
+msgstr ""
+"Klicken Sie auf den Link *Create* um eine neue Verbindung zu erstellen."
+
+#: ../../source/appendix.rst:31
+msgid ""
+"In the dialog that opens up you can rename the connection. Do not change the "
+"address and leave ``localhost`` there. The method explained in this guide "
+"will only work when you execute Robomongo on the same server that runs the "
+"MongoDB."
+msgstr ""
+"In dem Dialog, der sich nun öffnet, können Sie die Verbindung umbenennen. "
+"Ändern Sie bitte nicht die Adresse und nutzen Sie den Wert ``localhost`` . "
+"Der hier beschriebene Ansatz funktioniert nur, wenn Robomongo auf dem "
+"gleichen System ausgeführt wird, auf dem auch der MongoDB-Server läuft."
+
+#: ../../source/appendix.rst:37
+msgid "Click on *Save* to create the new connection."
+msgstr "Klicken Sie auf *Save* um die neue Verbindung zu erstellen."
+
+#: ../../source/appendix.rst:43
+msgid "Select the new item in the list and click on *Connect*\\ ."
+msgstr ""
+"Wählen Sie den neuen Eintrag in der Liste aus und klicken Sie auf *Connect*"
+"\\ ."
+
+#: ../../source/appendix.rst:49
+msgid ""
+"You will see the connection in the left panel. Open the folder *System* > "
+"*admin* and select the folder *Users*\\ ."
+msgstr ""
+"Nun sehen Sie die Verbindung auf der linken Seite der Anwendung. Öffnen Sie "
+"den Ordner *System* > *admin* und wählen Sie den Ordner *Users* aus."
+
+#: ../../source/appendix.rst:55
+msgid ""
+"Right click on the folder *Users* and select the menu entry *Add Users…*\\ ."
+msgstr ""
+"Machen Sie einen Rechtsklick auf den Ordner *Users* und wählen Sie den "
+"Menüeintrag *Add Users…* aus."
+
+#: ../../source/appendix.rst:61
+msgid ""
+"In the dialog enter the *Name* ``effektif`` and choose a password. Remember "
+"this password, you will have to fill it into the Effektif configuration "
+"file. Furthermore, select the four roles ``clusterAdmin``\\ , "
+"``readWriteAnyDatabase``\\ , ``userAdminAnyDatabas``\\ , and "
+"``dbAdminAnyDatabase``\\ . Eventually, click on *Save*\\ . Your Effektif "
+"user has been created."
+msgstr ""
+"Geben Sie in diesem Dialog für das Feld *Name* ``effektif`` ein und wählen "
+"Sie ein Passwort. Merken Sie sich dieses Passwort, Sie müssen es später in "
+"die Effektif Konfigurationsdatei eintragen. Wählen Sie zusätzlich die vier "
+"Rollen ``clusterAdmin``\\ , ``readWriteAnyDatabase``\\ , "
+"``userAdminAnyDatabas``\\ , und ``dbAdminAnyDatabase`` aus. Klicken Sie "
+"anschliessend auf *Save*\\ . Ihr Effektif Datenbanknutzer wurde nun angelegt."
+
+#: ../../source/appendix.rst:67
+msgid ""
+"Because you created a new user, the connection to the MongoDB server now "
+"requires a user name and a password. Right click on the connection (in this "
+"case *localhost*) in the left panel and select the menu entry *Disconnect*"
+"\\ . Afterwards, click on the icon for a new connection."
+msgstr ""
+"Da Sie einen neuen Nutzer angelegt haben, ist es nun notwendig, dass Sie für "
+"die Verbindung zum MongoDB-Server Nutzername und Passwort angeben. Machen "
+"Sie einen Rechtsklick auf die Verbindung (in diesem Fall *localhost*) auf "
+"der linken Seite der Anwendung und wählen Sie den Menüeintrag *Disconnect* "
+"aus. Klicken Sie anschließend auf das Symbol für eine neue Verbindung."
+
+#: ../../source/appendix.rst:73
+msgid "Select the connection you have created before and click on *edit*\\ ."
+msgstr ""
+"Wählen Sie die Verbindung, die Sie angelegt haben aus und klicken Sie auf "
+"*edit*\\ ."
+
+#: ../../source/appendix.rst:79
+msgid ""
+"Go to the tab *Authentication* and activate the option *Perform "
+"authentication*\\ . Then enter *User Name* (``effektif``) and the *Password* "
+"you have chosen before. Finally, click on *Save*\\ ."
+msgstr ""
+"Öffnen Sie den Tab *Authentication* und aktivieren Sie die Option *Perform "
+"authentication*\\ . Tragen Sie nun die Werte für *User Name* (``effektif``) "
+"und *Password* (Ihr gewähltes Passwort) ein. Klicken Sie auf *Save*\\ ."
+
+#: ../../source/appendix.rst:85
+msgid ""
+"The connection indicates now that it is using the configured user "
+"credentials. If you click on *Connect* now, your connection should work "
+"again."
+msgstr ""
+"Die Verbindung zeigt Ihnen nun an, dass die konfigurierten Zugangsdaten "
+"genutzt werden. Wenn Sie jetzt auf *Connect* klicken, sollte Ihre Verbindung "
+"wieder funktionieren."
+
+#: ../../source/appendix.rst:91
+msgid ""
+"When you open the folders *System* > *admin* > *Users*\\ , you will see the "
+"Effektif user, you have created before. If you select the user, do a right "
+"click and select the menu entry *Edit User*\\ , you can verify the user was "
+"created with the four required roles."
+msgstr ""
+"Wenn Sie nun den Ordner *System* > *admin* > *Users* öffnen, sollten Sie den "
+"Effektif-Nutzer sehen, den Sie eben angelegt haben. Wenn Sie den Nutzer "
+"auswählen, einen Rechtsklick machen und den Menüeintrag *Edit User* "
+"auswählen, können Sie überprüfen, ob der Nutzer mit allen vier Rollen "
+"angelegt wurde."
