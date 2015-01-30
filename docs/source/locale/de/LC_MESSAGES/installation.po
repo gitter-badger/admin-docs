@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: Effektif adminstrators guide 2.11\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-10-31 11:18+0100\n"
-"PO-Revision-Date: 2015-01-27 16:27+0100\n"
+"PO-Revision-Date: 2015-01-30 15:27+0100\n"
 "Last-Translator: Christian Wiggert <christian.wiggert@signavio.com>\n"
 "Language-Team: Effektif <dev@effektif.com>\n"
 "MIME-Version: 1.0\n"
@@ -343,16 +343,8 @@ msgid "sets UTF-8 as Apache Tomcats default encoding mechanism"
 msgstr "setzt UTF-8 als den Standard-Encodingsmechanismus des Apache Tomcats"
 
 #: ../../source/installation.rst:130
-msgid "``-XXPermSize=128m``"
-msgstr "``-XXPermSize=128m``"
-
-#: ../../source/installation.rst:130
 msgid "initial permanent generation space in MB"
 msgstr "initialer “Permantent Generation Space” in MB"
-
-#: ../../source/installation.rst:132
-msgid "``-XXMaxPermSize=256m``"
-msgstr "``-XXMaxPermSize=256m``"
 
 #: ../../source/installation.rst:132
 msgid "maximum permanent generation space in MB"
@@ -1531,3 +1523,17 @@ msgstr ""
 "detaillierten Beschreibungen und Anweisungen einfach Schritt für Schritt. "
 "Wenn Sie Effektif bereits installiert haben und das System auf eine neuere "
 "Version aktualisieren möchten, dann können Sie dieses Kapitel überspringen."
+
+#: ../../source/installation.rst:130
+msgid "``-XX:PermSize=128m``"
+msgstr "``-XX:PermSize=128m``"
+
+#: ../../source/installation.rst:132
+msgid "``-XX:MaxPermSize=256m``"
+msgstr "``-XX:MaxPermSize=256m``"
+
+#~ msgid "``-XXPermSize=128m``"
+#~ msgstr "``-XXPermSize=128m``"
+
+#~ msgid "``-XXMaxPermSize=256m``"
+#~ msgstr "``-XXMaxPermSize=256m``"

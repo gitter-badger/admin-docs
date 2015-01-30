@@ -127,9 +127,9 @@ There are some Java options that need to be configured before starting the Tomca
 +---------------------------+-----------------------------------------------------------------+
 | ``-Dfile.encoding=UTF-8`` | sets UTF-8 as Apache Tomcats default encoding mechanism         |
 +---------------------------+-----------------------------------------------------------------+
-| ``-XXPermSize=128m``      | initial permanent generation space in MB                        |
+| ``-XX:PermSize=128m``     | initial permanent generation space in MB                        |
 +---------------------------+-----------------------------------------------------------------+
-| ``-XXMaxPermSize=256m``   | maximum permanent generation space in MB                        |
+| ``-XX:MaxPermSize=256m``  | maximum permanent generation space in MB                        |
 +---------------------------+-----------------------------------------------------------------+
 
 In order to allocate sufficient RAM to the Tomcat server you have to set the options Xms and Xmx followed by the number of MB allocated and a literal ‘m’. ``Xms`` defines the initial / minimum amount of RAM that is used and ``Xmx`` the allowed maximum. You are advised to allocate at least 2GB of RAM to the Tomcat. However, it is recommended to use more RAM. For example, if you want to assign 4GB of maximum RAM the option would be ``-Xmx4096m``\ .
