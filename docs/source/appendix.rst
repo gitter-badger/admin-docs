@@ -3,6 +3,8 @@ Appendix
 
 This chapter contains content to various topics which extend the descriptions in the administration guide.
 
+.. _appendix-add-mongodb-user:
+
 How to add the Effektif MongoDB user with Robomongo
 ---------------------------------------------------
 

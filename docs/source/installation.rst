@@ -307,7 +307,7 @@ The user will access the databases for Effektif. Effektif will create two databa
 
 In general, if you want to create a new user in MongoDB you will need to authenticate with an existing user that has the role userAdmin or userAdminAnyDatabase. There is an exception for a fresh MongoDB setup. It will allow you to create the first user from localhost without any authentication. The following examples will show you how to create a new user using the credentials of an admin user and how to do it without any credentials in case of a new MongoDB.
 
-In order to add a new user to MongoDB, the MongoDB server has to be running.
+In order to add a new user to MongoDB, the MongoDB server has to be running. The following subsections will show you how to create the Effektif database user using the command line. Alternatively, you can use a GUI application like Robomongo to create the database user. Section :ref:`appendix-add-mongodb-user` explains how to setup the database user with Robomongo.
 
 Windows
 ^^^^^^^
