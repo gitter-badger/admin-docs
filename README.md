@@ -1,6 +1,8 @@
 Effektif adminstrators guide
 ============================
 
+[![Join the chat at https://gitter.im/effektif/admin-docs](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/effektif/admin-docs?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 The Effektif administrators guide uses [Sphinx](http://sphinx-doc.org/) to create the documentation as HTML and PDF. Sphinx is a Python library. The documentation itself is written using reStructuredText with some Sphinx flavor and is available in english and german. The online version can be found here: [Effektif administrators guide](http://effektif-administrators-guide.readthedocs.org/)
 
 ### Prerequisites
